@@ -42,7 +42,7 @@ contents={%
 \begin{abstract}
 \hrule \vspace{2mm}
 \begin{center}
- Welcome another \emph{Into the Odd} hack that is tuned for the Realm of ???, a patch of land around a lake, that until recently had exactly zero mountains in the middle of it. With the addition of Magic, Injuries, and Quirks, it became its own system
+ Welcome another \emph{Into the Odd} hack that is tuned for the Realm of The Odd, a patch of land around a lake, that until recently had exactly zero mountains in the middle of it. With the addition of Magic, Injuries, and Quirks, it became its own system
  that deserves its own little rulebook.
 
 Great inspirations are taken from \emph{Mythic Bastionland}, \emph{Tales from Elsewhere}, \emph{Blades in the Dark} and \emph{Darkest Dungeon}.
@@ -53,7 +53,7 @@ Great inspirations are taken from \emph{Mythic Bastionland}, \emph{Tales from El
 \section*{\centering Life in the Realm of The Odd}
 \vspace*{0.4 cm}
 
-Todo: describe things that are well known about this realm.
+TODO: describe things that are well known about this realm.
 
 % Before the landfall, almost six hundred years ago, an otherwise unremarkable group of islands had no conscious land dwellers.
 % The journey to a new home was long and perilous. Legends say that the ancient shipwrecks that are still visible above the waves at low tides used to be great arcs built by humans and dwarves together.
@@ -144,12 +144,12 @@ Charming tongue, iron will, fierce heart.
 Knight's creation starts by rolling \texttt{d6 + d12} four times; record not only the sum, but also individual values of each die.
 Each of those rolls determines one of the knight's \texttt{Virtues}; you choose which is which and discard the remaining one. You can use character sheet on page \pageref*{sec:ch_sheet}.
 
-Then, determine the knight's capacity for \texttt{Injury}(\texttt{Injury Slots}), \texttt{Focus} and \texttt{Stress} according to the steps below.
+Then, determine the knight's capacity for \texttt{Injury}(\texttt{Injury Slots}), \texttt{Focus} and \texttt{Stress} according to steps below.
 
 \colbox{
 \begin{itemize}
     \item[\textdagger] Half, rounded up, of \texttt{d6} you assigned to \texttt{Vigor} is the amount of \texttt{Lethal Injuries} the knight can survive before dying.
-    \item[\ding{170}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Vigor} is the amount of \texttt{Serious Injuries} the knight can survive before dying.
+    \item[\ding{170}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Vigor} is the amount of \texttt{Severe Injuries} the knight can survive before dying.
     \item[\ding{84}] The value of \texttt{d6} you assigned to \texttt{Clarity} is maximum \texttt{Focus} the knight has.
     \item[\ding{118}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Spirit} is maximum \texttt{Stress} the knight can endure before suffering a \texttt{Trauma}, minimum is \texttt{2}.
 \end{itemize}
@@ -161,56 +161,33 @@ Indulging a Passion restores \texttt{Spirit} and \texttt{Spellweaving} dice (p.\
 
 \newcolumn
 
+\subsection*{Injury Slots}
+
+When knight suffers an \texttt{Injury} -- fill corresponding \texttt{Injury slot} as described below.
+\colbox{
+\begin{enumerate}[nosep, leftmargin=*]
+    \item Briefly describe an injury 
+    \item Determine if injury is \texttt{Severe} or \texttt{Lethal}
+    \item Record a damage die of the attack which caused the injury
+    \item Roll for \texttt{Affliction}(see p.\pageref*{sec:affliction}) and record it
+\end{enumerate}
+}
+Each injury could be:
+\begin{itemize}[nosep]
+    \item \textbf{Untreated} \texttt{injury} applies \texttt{Affliction}
+    \item \textbf{Treated}(see p. \pageref*{sec:downtime}) \texttt{injury} occupies the slot, but does not apply \texttt{Affliction}
+    \item \textbf{Healed} \texttt{injury} is removed entirely
+\end{itemize}
+If a knight suffers an injury and all corresponding slots are full -- fill one with greater lethality. If they are out of those, the knight is \textbf{Slain}.
+
+\subsection*{Spellcasting}
+
+The Realm is not strange to magic and, though not frequently, knights employ it during their endeavours. 
+Some knights are \textbf{Spellweavers}(see p.\pageref*{sec:spellweaving}) and some are \textbf{Witches}(see p.\pageref*{sec:witchcraft}).
+
 \subsection*{Weapons \& Gear}
 
-Weapons have properties to reflect their behavior.
-
-\begin{itemize}[nosep]
-    \item \textbf{Hefty} weapons require one hand. Only one \textbf{Hefty} item can be wielded at once.
-    \item \textbf{Long} weapons require both hands and are \texttt{Impaired} in confined environments.
-    \item \textbf{Slow} weapons cannot be used if the attacker has moved this turn.
-\end{itemize}
-\paragraph{Common Weapons.}
-\begin{itemize}[nosep, leftmargin=*]
-    \item [] Hefty, simple tools. \texttt{d6 hefty}: pitchfork, hatchet
-    \item [] Long, Slow Tools. \texttt{d8 long, slow}: staff, logging axe, pick
-    \item [] Hand Weapons. \texttt{d6}: dagger, club, handaxe
-    \item [] Hefty Weapons. \texttt{d8 hefty}: spear, mace, axe
-    \item [] Long Weapons. \texttt{d10 long}: poleaxe, billhook
-    \item [] Sling: \texttt{d4 hefty}
-    \item [] Javelin: \texttt{d6 hefty}
-\end{itemize}
-\paragraph{Uncommon Weapons.}
-\begin{itemize}[nosep, leftmargin=*]
-    \item [] Shortbow: \texttt{d6 long, slow}
-    \item [] Shortsword: \texttt{2d6}
-    \item [] Longbow: \texttt{d8 slow}
-\end{itemize}
-\paragraph{Rare Weapons.}
-\begin{itemize}[nosep, leftmargin=*]
-    \item [] Longsword: \texttt{2d8 hefty}
-    \item [] Greatsword: \texttt{2d10 long, slow}
-    \item [] Curvebow: \texttt{2d6 long, slow}
-    \item [] Crossbow: \texttt{2d8 slow}
-\end{itemize}
-
-\paragraph{Armour.} Generally, each layer of armour gives an additional armour point, up to \texttt{A4} with shield.
-Steel protection is rare, so helms, plates and chainmail are very valuable assets.
-\begin{itemize}[nosep, leftmargin=*]
-    \item[] Coat: A1 (mail, gambeson, flexible armour suitable for general wear or beneath plates)
-    \item[] Helm: A1 (kettle, nasal, bucket, coif)
-    \item[] Steel plates: A1 
-\end{itemize}
-
-\paragraph{Shields.} Takes one hand, gives one point in armour, common to find.
-Does not stack if there are two shields. It has \texttt{d4} as a weapon die.
-
-Spiked shields turn that die into \texttt{d6}.
-
-\paragraph{Feats. } Knight knows all three \texttt{Feats}: \texttt{Smite}, \texttt{Focus} and \texttt{Deny}. 
-They can perform them during combat, details of which are on page \pageref*{sec:combat}.
-
-% can be found on Kerkenna and, though not frequently, knights known to employ it during their endeavours. Some knights are \textbf{Mages} and some are \textbf{Witches}.
+TODO: describe equipment of the mage, witch and a knight without spellcasting.
 
 \end{multicols*}
 
@@ -288,6 +265,9 @@ gain bonus dice or benefit from Feats.
 \paragraph{Blast} attacks target everybody in their area,
 rolling each separately.
 
+\paragraph{Feats. } Knight knows all three \texttt{Feats}: \texttt{Smite}, \texttt{Focus} and \texttt{Deny}. 
+They can perform them during combat, details of which are on page \pageref*{sec:combat}.
+
 \end{multicols*}
 
 \newpage
@@ -296,7 +276,7 @@ rolling each separately.
 
 \begin{multicols*}{2}
 \label{sec:combat}
-\subsection*{Damage.}
+\subsection*{Damage}
 \label{sec:wounded}
 
 The attack’s \texttt{Damage} is split between the
@@ -310,13 +290,6 @@ Check if \texttt{Damage} to \texttt{Vigor} causes a \texttt{Scar} or an \texttt{
 
 If it does cause an Injury -- fill the \texttt{Injury slot} of corresponding or greater severity, record damage die that dealt it and apply \texttt{Affliction} (p.\pageref*{sec:affliction}).
 If a knight is injured and has no required injury slot left, they are \textbf{Slain}.
-
-Each injury could be:
-\begin{itemize}[nosep]
-    \item \textbf{Untreated} \texttt{injury} applies \texttt{Affliction}
-    \item \textbf{Treated} \texttt{injury} occupies the slot, but does not apply \texttt{Affliction}
-    \item \textbf{Healed} \texttt{injury} is removed entirely
-\end{itemize}
 
 
 \subsection*{Virtue loss.}
@@ -372,7 +345,7 @@ For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Patch a Wound
     \item \textbf{Stop} a foe from moving next turn
     \item \textbf{Impair} a weapon on their next turn
     \item \textbf{Trap} a shield until your next turn
-    \item \textbf{Dismount} a foe(+d6 to damage dice)
+    \item \textbf{Dismount} a foe(add \texttt{d6} to damage dice)
     \item \textbf{Patch a Wound} of yourself or an ally at arms range
     \item \textbf{Other effect} of a similar level of impact
 \end{itemize}
@@ -408,7 +381,7 @@ Roll a damage die that did that \texttt{Damage} again and consult the table belo
   \label{scars}
     \begin{tabular}{|c|p{5.7cm}|}
         \hline
-        \textbf{Roll d12} & \textbf{Scar} \\
+        \textbf{Roll} & \textbf{Scar} \\
         \hline
         \texttt{1} & A lucky escape, Lose \texttt{d6} \texttt{Spirit}.\\
         \texttt{2} & A permanent mark. If your max \texttt{GD} is \texttt{2} or less, increase it by \texttt{d6}. \\
@@ -417,7 +390,7 @@ Roll a damage die that did that \texttt{Damage} again and consult the table belo
         \texttt{5} & Innards pierced and compressed, Lose \texttt{2d6} \texttt{Vigor}.\\
         \texttt{6} & Flesh torn from bone. When you get stitched up, if your max \texttt{GD} is \texttt{6} or less, increase it by \texttt{d6}.\\
         \texttt{7} & A heavy blow numbs the mind, Lose \texttt{2d6} \texttt{Clarity}.\\
-        \texttt{8} & Something taken in violent struggle. When you get patched up, if your max\texttt{GD} is \texttt{8} or less, increase it by \texttt{d6}.\\
+        \texttt{8} & Something taken in violent struggle. When you get patched up, if your max \texttt{GD} is \texttt{8} or less, increase it by \texttt{d6}.\\
         \texttt{9} & With a crack, a torturous break, Lose \texttt{2d6} \texttt{Spirit}.\\
         \texttt{10} & A limb rendered useless. If your max \texttt{GD} is \texttt{10} or less, increase it by \texttt{d6}. \\
         \texttt{11} & Death searches for you. Gain \texttt{2} \texttt{Stress}. \\
@@ -430,23 +403,20 @@ Roll a damage die that did that \texttt{Damage} again and consult the table belo
 \label{sec:injuries}
 
 A knight's body is tough and trained since childhood, but it can endure only so much.
-Dice that determine a knight's \texttt{Vigor} also define the amount of \texttt{Serious and Lethal Injuries} they can sustain.
+Dice that determine a knight's \texttt{Vigor} also control the amount of \texttt{Severe and Lethal Injuries} they can sustain.
 To track those injuries, use \texttt{Injury Slots} that record the nature of the \texttt{Injury}, the damage die that caused it, and its \texttt{Affliction}.
 
 A knight gets an \texttt{Injury} according to conditions below. Each \texttt{Attack} causes one \texttt{Injury} at most.
 
 \begin{itemize}[nosep]
-    \item[\ding{170}] If a knight lost \texttt{6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Serious Injury}.
+    \item[\ding{170}] If a knight lost \texttt{6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost \texttt{10 or more} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Lethal Injury}.
-    \item[\ding{170}] If a knight lost half or more of their remaining \texttt{Vigor}, but not all of it -- take a \texttt{Serious Injury}.
+    \item[\ding{170}] If a knight lost half or more of their remaining \texttt{Vigor}, but not all of it -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
 \end{itemize}
-If more than one condition applies, take the worst one.
+Take worse one if two or more apply.
 
-\subsection*{Consequences of an Injury} When knight suffers an \texttt{Injury} it fills corresponding \texttt{Injury slot}, recording a die that caused the injury.
-If a knight is out of those slots, fill one with greater lethality. If they are out of those, the knight is \textbf{Slain}.
-
-Each injury comes with \texttt{Afflictions}; after filling a slot, roll \texttt{d4} and consult the table below.
+Each untreated injury comes with \texttt{Affliction}; Roll \texttt{d4} and consult the table below.
 \label{sec:affliction}
 \begin{center}
   \rowcolors{2}{gray!25}{white}
@@ -463,7 +433,8 @@ Each injury comes with \texttt{Afflictions}; after filling a slot, roll \texttt{
 \end{center}
 
 \subsection*{Trauma} When \texttt{Stress} reaches the limit a knight can sustain -- it resets and leaves a \texttt{Trauma} behind.
-\texttt{Trauma} counts as a \texttt{Serious Injury} and can potentially cause a heart attack and kill a knight if they are out of \texttt{Injury Slots}.
+\texttt{Trauma} counts as a \texttt{Severe Injury} and can potentially cause a heart attack and kill a knight if they are out of \texttt{Injury Slots}. 
+It has neither damage die nor \texttt{Afflication}.
 
 \end{multicols*}
 
@@ -491,7 +462,7 @@ If the knight has no \texttt{Focus} left, they can recover \texttt{1} during a \
 It is not enough time to make a fire and cook food, but just right to treat injuries, have a talk, or just zone out to process the latest events.
 
 \paragraph{Focus} is restored, but with decreasing efficiency.
-Each time a knight does an hour of \texttt{Short Rest}, they restore \texttt{Focus} up to their maximum minus the number of hours of \texttt{Short Rest} they already had this day.
+Each time a knight does an hour of \texttt{Short Rest}, they restore \texttt{Focus} up to their maximum minus the number of hours of \texttt{Short Rest} they already had this day, including this one.
 
 \paragraph{Injuries} can be treated during \texttt{Short Rest} without rolls. Knights have basic medical skills to dress and clean wounds. Mark all \texttt{Injuries} as \texttt{Treated}.
 
@@ -556,7 +527,11 @@ Free the \texttt{Injury Slot} that was occupied by the healed \texttt{Injury}.
 
 Choose or make the Referee choose a \texttt{Quirk} (p.\pageref*{sec:quirks}) for you that is described below and permanently add it to your knight.
 
-\paragraph{Dealing with Trauma} removes it completely, but leaves a permanent mark: acquire a \texttt{Quirk}(p.\pageref*{sec:quirks}) as if a knight healed from an \texttt{Injury}.
+\paragraph{Dealing with Trauma} removes it completely. 
+During your sleep pass a \texttt{Clarity} check and a \texttt{Spirit} check to successfully deal with \texttt{Trauma}. 
+For each point of \texttt{Stress} you have -- treat those \texttt{Virtue} checks as if they were opposed with an additional \texttt{Stress}.
+
+Trauma leaves a permanent mark: acquire a \texttt{Quirk}(p.\pageref*{sec:quirks}) as if a knight healed from an \texttt{Injury}.
 
 \subsection*{Brewing}
 
@@ -576,28 +551,30 @@ Should I allow knights to brew stimulants and other consumables?
 
 \subsection*{Weaving a spell}
 
-The power of a mage is represented by a \texttt{Spellweaving Pool}: a set of d6 dice with size equal to the value of their \texttt{Clarity}.
+The power of a mage is represented by a \texttt{Spellweaving Pool}: a set of dice that you can use to weave spells. 
 
 To weave a spell, a weaver rolls any number of dice as an Action from that set and then decides what to cast. This is a \texttt{Spellweaving roll}.
 Only one spell can be cast per roll. If the spell does not state otherwise, \texttt{Smite} \texttt{Feat} is not applicable for attacks performed within them.
 
-If in doubt, know that this roll is affected by \texttt{Focus} and \texttt{Stress} mechanics.
+If in doubt, know that this roll is affected by \texttt{Focus} and \texttt{Stress}.
 
-There are many spells one can learn during their mage training, but regardless of syllabus, but all spellweavers know \textit{Detect Magic} by heart.
+There are many spells one can learn during their mage training, but regardless of syllabus -- all spellweavers know \textit{Detect Magic} by heart.
+
+Several ways exists of how a person might become a mage. 
+A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. 
+This pool is a set of \texttt{d6} dice with size equal to the value of their \texttt{Clarity}.
 
 \subsection*{Rethreading of the arcane}
 
 When a mage rolls dice to weave a spell, in addition to casting, they can choose half, rounded down, of the remaining dice and discard the rest.
 These chosen dice can be stored to cast spells later as if they are included in a roll.
-They persist until spent, and count as in \texttt{Spellweaving Pool}. The total amount of dice in the pool can never exceed the value of the mage's \texttt{Clarity}.
+They persist until spent, and count as in \texttt{Spellweaving Pool}. The total amount of dice in the pool can never exceed the value of the mage's \texttt{Spellweaving Pool} size.
 
 \subsection*{Replenishing strength}
 
 \paragraph{Indulging a Passion} to restore \texttt{Spirit} also allows to regain up to \texttt{3} missing dice from the \texttt{Spellweaving Pool}.
 
-\paragraph{Overnight Rest} also restores up to \texttt{3} dice.
-
-\paragraph{Consuming Spur} refills \texttt{Spellweaving Pool}.
+\paragraph{Overnight Rest} or \textbf{Consuming Spur} also restores up to \texttt{3} dice.
 
 \subsection*{Spells}
 
@@ -608,7 +585,8 @@ For each other die, the answer is either yes, no, or silence if the question is 
 Information for the answer is provided by yourself and spells around you.
 For example, spells usually are not directly marked by their caster and are not aware of their surroundings beyond the spell's design.
 
-You can learn how a spell unknown to you works. Upon discovery do a \texttt{Clarity} check, if successful, ask Referee if you can learn this spell and, if you can, how many times encountering this spell in the wild is enough.
+You can learn how a spell unknown to you works. 
+Upon discovery do a \texttt{Clarity} check, if successful, ask the Referee if you can learn this spell and, if you can, how many times encountering this spell in the wild is enough.
 
 \paragraph{Heat Metal.} Intricate ladder of arcane pulses rapidly heats metal until it glows red hot.
 Pulses should be chained together carefully; pick no less than three dice with consecutive values.
@@ -657,6 +635,8 @@ Does not really understand human ways, but can mimic them with mixed results.
 \newpage
 \section*{\centering \fontsize{35}{45}\selectfont Witchcraft}
 \vspace*{0.4 cm}
+
+\label{sec:witchcraft}
 
 \begin{multicols*}{2}
 
@@ -831,9 +811,9 @@ If you find a puppet master that will agree to such outstanding demand, they cou
 \subsection*{Bloating Infection}
 
 Your wound is infected and at some point in your fever induced delirium you met a foreign presence.
-It asked you to receive a gift. You accepted.
+It asked you to receive a gift.
 
-Fever was gone in a day. Swiftness of your recovery and strength you gathered amazed anybody who ever saw an infected wound like yours.
+Fever was gone in a day. Your recovery amazed anybody who has ever seen an infected wound like yours.
 
 You feel the tint of that presence in each movement of your limbs, in each twitch of a mussels, in each breath and sip of water.
 Numbness, slowness, swelling of legs and arms. Your skin never recovered its natural colour, chest and stomach bloat, your breathing becomes sluggish and with unsettling rocking in lungs.
@@ -850,18 +830,18 @@ Another day you find another ulcer on your skin, you feel neither pain, nor dist
 \subsection*{Weavering Parasite}
 
 Parasite awakes and digs into your body.
-Flash of agony and its gone. Unnatural motions of muscles and skin are the only evidence of where it is.
+You feel flash of agony and then its gone. Unnatural motions of muscles and skin are the only evidence of where it is.
 In a day it reaches your brain and hatches. You can sense more of the arcane than ever before: learn \textit{Detect Magic} spell.
 However, thoughts become mirky and mind drowns in fog.
 
-You lose \texttt{1} \textit{maximum} \texttt{Clarity} and now have a \texttt{Spellweaving Pool} with a \texttt{d4} in it.
+You lose \texttt{1} \textit{maximum} \texttt{Clarity} and now have a \texttt{Spellweaving Pool} with size of \texttt{1} filled with a single \texttt{d4}.
 
 \begin{itemize}[nosep]
     \item Each morning you must feed the parasite.
     After waking up -- roll a die from your \texttt{Spellweaving Pool}, lose that much \texttt{Clarity}.
     Restore \texttt{1} spent die from the pool.
     \item Record total amount of \texttt{Clarity} lost this way.
-    For each \texttt{20} \texttt{Clarity} lost -- lose \texttt{1} \textit{maximum} \texttt{Clarity} and add an additional \texttt{d4} to the pool.
+    For each \texttt{20} \texttt{Clarity} lost -- lose \texttt{1} \textit{maximum} \texttt{Clarity}, increase pool size by \texttt{1} and add an additional \texttt{d4} to the pool.
     Permanently \texttt{Upface} it once for each other die in the pool.
     \item When you have a \texttt{d12} added this way parasite is fully matured and stops feeding.
 
@@ -927,7 +907,7 @@ Once the splitting event is occurred, you switch to the new personality immediat
 
     Each time you receive damage record the damage die. \textbf{Upface} it for each time it was \texttt{Bolstered}. \textbf{Downface} it for each point of damage which was reduced by \texttt{Armour} or did reduce \texttt{Guard} instead of \texttt{Vigor}.
 
-    Add this die to you \texttt{Spellweaving pool}.
+    Add this die to you \texttt{Spellweaving pool}. You add this dice even if your pool is full. 
 
     Learn \emph{Detect Magic} spell.
 
@@ -950,11 +930,24 @@ If your enemy rolls for damage and you spot a \texttt{1} on their die - you can 
 The same goes for you, but then GM claims it for later use. Let's call them hope \& fear dice for no particular reason. 
 
 The dice sets are both public. Party can use them on their own discretion as a form of advantage.
-There is a problem there that it's not clear what this pool represents outside of combat. 
 
 I would say that you can add them to rolls the same way you can use \texttt{Focus}. Maybe before it. 
 
-THat complicates combat a bit, maybe its too much. 
+That complicates combat a bit, maybe its too much. 
+
+\paragraph{TODO:} There is a problem there that it's not clear what this pool represents outside of combat. 
+
+\paragraph{RESOLUTION:} I like the idea that, after the combat finishes, knights convert these dice to \texttt{Focus}, but GM keeps them. 
+Otherwise they can just roll them as an addition to their attack as weapon dice. 
+One roll per participating knight. However, that makes overpowered knights even more busted.
+
+\paragraph{TOOD:} There is a problem that this mechanic actually disgorges using weapons with a lot of dice. 
+There is no benefit to from rolling a maximum value on a die that would counteract fear accumulation.
+
+\paragraph{RESOLUTION:} I have an idea about weapon mastery that you can obtain after using it for a while. 
+When you roll a maximum value on a die of a particular weapon -- mark it. If you have as many marks as the maximum value of the largest die of the weapon -- you get mastery over it. 
+For each level of master you can leave one die that came from \texttt{Focus} or \texttt{Stress} instead of removing it after the roll.
+
 
 \subsection*{Accumulation and usage}
 
@@ -1044,6 +1037,63 @@ Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before cho
 However each time you roll without \texttt{Focus} -- \texttt{Downface} one die in your roll.
 
 
+\end{multicols*}
+
+\newpage
+\section*{\centering \fontsize{35}{45}\selectfont Equipment}
+\vspace*{0.4 cm}
+
+\label{sec:gear}
+
+\begin{multicols*}{2}
+
+\subsection*{Weapons \& Armour}
+
+Weapons have properties to reflect their behavior.
+
+\begin{itemize}[nosep]
+    \item \textbf{Hefty} weapons require one hand. Only one \textbf{Hefty} item can be wielded at once.
+    \item \textbf{Long} weapons require both hands and are \texttt{Impaired} in confined environments.
+    \item \textbf{Slow} weapons cannot be used if the attacker has moved this turn.
+\end{itemize}
+\paragraph{Common Weapons.}
+\begin{itemize}[nosep, leftmargin=*]
+    \item [] Hefty, simple tools. \texttt{d6 hefty}: pitchfork, hatchet
+    \item [] Long, Slow Tools. \texttt{d8 long, slow}: staff, logging axe, pick
+    \item [] Hand Weapons. \texttt{d6}: dagger, club, handaxe
+    \item [] Hefty Weapons. \texttt{d8 hefty}: spear, mace, axe
+    \item [] Long Weapons. \texttt{d10 long}: poleaxe, billhook
+    \item [] Sling: \texttt{d4 hefty}
+    \item [] Javelin: \texttt{d6 hefty}
+\end{itemize}
+\paragraph{Uncommon Weapons.}
+\begin{itemize}[nosep, leftmargin=*]
+    \item [] Shortbow: \texttt{d6 long, slow}
+    \item [] Shortsword: \texttt{2d6}
+    \item [] Longbow: \texttt{d8 slow}
+\end{itemize}
+\paragraph{Rare Weapons.}
+\begin{itemize}[nosep, leftmargin=*]
+    \item [] Longsword: \texttt{2d8 hefty}
+    \item [] Greatsword: \texttt{2d10 long, slow}
+    \item [] Curvebow: \texttt{2d6 long, slow}
+    \item [] Crossbow: \texttt{2d8 slow}
+\end{itemize}
+
+\paragraph{Armour.} Generally, each layer of armour gives an additional armour point, up to \texttt{A4} with shield.
+Steel protection is rare, so helms, plates and chainmail are very valuable assets.
+\begin{itemize}[nosep, leftmargin=*]
+    \item[] Coat: A1 (mail, gambeson, flexible armour suitable for general wear or beneath plates)
+    \item[] Helm: A1 (kettle, nasal, bucket, coif)
+    \item[] Steel plates: A1 
+\end{itemize}
+
+\paragraph{Shields.} Takes one hand, gives one point in armour, common to find.
+Does not stack if there are two shields. It has \texttt{d4} as a weapon die.
+
+Spiked shields turn that die into \texttt{d6}.
+
+    
 \end{multicols*}
 
 \newpage
