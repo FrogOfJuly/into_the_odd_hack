@@ -148,8 +148,8 @@ Then, determine the knight's capacity for \texttt{Injury}(\texttt{Injury Slots})
 
 \colbox{
 \begin{itemize}
-    \item[\textdagger] Half, rounded up, of \texttt{d6} you assigned to \texttt{Vigor} is the amount of \texttt{Lethal Injuries} the knight can survive before dying.
     \item[\ding{170}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Vigor} is the amount of \texttt{Severe Injuries} the knight can survive before dying.
+    \item[\textdagger] Half, rounded up, of \texttt{d6} you assigned to \texttt{Vigor} is the amount of \texttt{Lethal Injuries} the knight can survive before dying.
     \item[\ding{84}] The value of \texttt{d6} you assigned to \texttt{Clarity} is maximum \texttt{Focus} the knight has.
     \item[\ding{118}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Spirit} is maximum \texttt{Stress} the knight can endure before suffering a \texttt{Trauma}, minimum is \texttt{2}.
 \end{itemize}
@@ -169,7 +169,7 @@ When knight suffers an \texttt{Injury} -- fill corresponding \texttt{Injury slot
     \item Briefly describe an injury 
     \item Determine if injury is \texttt{Severe} or \texttt{Lethal}
     \item Record a damage die of the attack which caused the injury
-    \item Roll for \texttt{Affliction}(see p.\pageref*{sec:affliction}) and record it
+    \item Roll \texttt{Affliction}(see p.\pageref*{sec:affliction}) and record it
 \end{enumerate}
 }
 Each injury could be:
@@ -373,7 +373,7 @@ If this one also fails, the injury is still treated, but increases in lethality,
 
 \begin{multicols*}{2}
 
-\subsection*{Scars} Each time a knight sustains \texttt{Damage} that reduced their \texttt{Guard} to zero with overspill into \texttt{Vigor} they gain a \texttt{Scar}.
+\subsection*{Scars} Each time a knight sustains \texttt{Damage} to \texttt{Vigor} that does not reduce their \texttt{Guard} they gain a \texttt{Scar}.
 Roll a damage die that did that \texttt{Damage} again and consult the table below.
 
 \begin{center}
@@ -409,7 +409,7 @@ To track those injuries, use \texttt{Injury Slots} that record the nature of the
 A knight gets an \texttt{Injury} according to conditions below. Each \texttt{Attack} causes one \texttt{Injury} at most.
 
 \begin{itemize}[nosep]
-    \item[\ding{170}] If a knight lost \texttt{6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
+    \item[\ding{170}] If a knight lost \texttt{5, 6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost \texttt{10 or more} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Lethal Injury}.
     \item[\ding{170}] If a knight lost half or more of their remaining \texttt{Vigor}, but not all of it -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
@@ -432,9 +432,11 @@ Each untreated injury comes with \texttt{Affliction}; Roll \texttt{d4} and consu
     \end{tabular}
 \end{center}
 
-\subsection*{Trauma} When \texttt{Stress} reaches the limit a knight can sustain -- it resets and leaves a \texttt{Trauma} behind.
-\texttt{Trauma} counts as a \texttt{Severe Injury} and can potentially cause a heart attack and kill a knight if they are out of \texttt{Injury Slots}. 
-It has neither damage die nor \texttt{Afflication}.
+\subsection*{Trauma} 
+When \texttt{Stress} reaches the limit a knight can sustain -- it resets and leaves a \texttt{Trauma} behind.
+\texttt{Trauma} fills the spot of a \texttt{Severe Injury} and can potentially cause a heart attack and kill a knight if they are out of \texttt{Injury Slots}. 
+It has neither damage die nor \texttt{Afflication}. 
+Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless its explicitly allowed.
 
 \end{multicols*}
 
@@ -822,10 +824,16 @@ You move with visible delay and your reaction is impaired.
 Another day you find another ulcer on your skin, you feel neither pain, nor distress.
 
 \begin{itemize}[nosep]
-    \item Your maximum \texttt{Guard} becomes \texttt{0} if it was even and \texttt{1} if it was odd.
+    \item Each time you do \texttt{Overnight Rest} if your \texttt{Guard} is greater than \texttt{1} reduce it by \texttt{2}.
     \item For each \texttt{2} \texttt{Guard} lost this way increase your maximum \texttt{Vigor} by \texttt{1}, up to \texttt{19}.
-    \item You ignore \texttt{Afflictions} of \texttt{Injuries}
+    \item You ignore \texttt{Afflictions} of \texttt{Injuries}.
 \end{itemize}
+
+% \begin{itemize}[nosep]
+%     \item Your maximum \texttt{Guard} becomes \texttt{0} if it was even and \texttt{1} if it was odd.
+%     \item For each \texttt{2} \texttt{Guard} lost this way increase your maximum \texttt{Vigor} by \texttt{1}, up to \texttt{19}.
+%     \item You ignore \texttt{Afflictions} of \texttt{Injuries}
+% \end{itemize}
 
 \subsection*{Weavering Parasite}
 
