@@ -161,6 +161,15 @@ Indulging a Passion restores \texttt{Spirit} and \texttt{Spellweaving} dice (p.\
 
 \newcolumn
 
+\paragraph{Saves.}
+
+To pass a Save, roll a \texttt{d20} equal or below the
+relevant \texttt{Virtue}. Failure means negative
+consequences, not always a failed action.
+
+\paragraph{Feats. } Knight knows all three \texttt{Feats}: \texttt{Smite}, \texttt{Focus} and \texttt{Deny}. 
+They can perform them during combat, details of which are on page \pageref*{sec:combat}.
+
 \subsection*{Injury Slots}
 
 When knight suffers an \texttt{Injury} -- fill corresponding \texttt{Injury slot} as described below.
@@ -197,15 +206,6 @@ TODO: describe equipment of the mage, witch and a knight without spellcasting.
 
 \begin{multicols*}{2}
 
-\paragraph{Saves.}
-
-To pass a Save, roll a \texttt{d20} equal or below the
-relevant \texttt{Virtue}. Failure means negative
-consequences, not always a failed action.
-
-\paragraph{Turns.} A turn is enough time to Move and then
-perform an Action, always in that order.
-
 \subsection*{Focus \& Stress}
 
 There are two important resources each knight has:
@@ -219,14 +219,17 @@ One can not only plot how to enhance the roll, but also how to sabotage a roll.
 If one character can affect the roll of another destructively, for each \texttt{Focus} spent, the roll accumulates \texttt{Disadvantage}.
 
 Usually, a knight has no restriction on how much \texttt{Focus} they can spend to enhance an action, but
-determining how much focus is possible to spend to oppose a given action should be discussed with the Referee.
+determining how much focus is possible to spend to oppose a given action should be discussed with the Referee. 
+
+Direct confrontation, like overpowering a melee attack -- up to \texttt{2} \texttt{Focus} can be spent.
+Indirect opposition, like falling prone to avoid an arrow -- up to \texttt{1} \texttt{Focus} can be spent.
 
 The order is important, so opposing characters decide how much \texttt{Focus} they spend simultaneously.
 
 \paragraph{Stress.} After a roll is made, a knight can decide that they are not satisfied with the result and try to fix it by acquiring \texttt{Stress}.
 For each gained \texttt{Stress}, add \texttt{Advantage} to that roll. Increasing one's \texttt{Stress} \textbf{must} be done \textbf{after} the roll.
 
-One can also acquire \texttt{Stress} to oppose an action after the roll is made.
+One can also acquire \texttt{Stress} to oppose an action after the roll is made the same way as it works with \texttt{Focus}.
 
 Opposing characters decide how much \texttt{Stress} they spend simultaneously.
 
@@ -238,6 +241,9 @@ If it is, set it to zero and the character suffers a \texttt{Trauma}(p.\pageref*
 \newcolumn
 
 \subsection*{Attacks}
+
+\paragraph{Turns.} A turn is enough time to Move and then
+perform an Action, always in that order.
 
 Take the \texttt{Weapon Dice} noted on your weapon(s), shield, and granted by bonuses.
 Go through the following steps in order:
@@ -264,9 +270,6 @@ gain bonus dice or benefit from Feats.
 
 \paragraph{Blast} attacks target everybody in their area,
 rolling each separately.
-
-\paragraph{Feats. } Knight knows all three \texttt{Feats}: \texttt{Smite}, \texttt{Focus} and \texttt{Deny}. 
-They can perform them during combat, details of which are on page \pageref*{sec:combat}.
 
 \end{multicols*}
 
@@ -409,7 +412,7 @@ To track those injuries, use \texttt{Injury Slots} that record the nature of the
 A knight gets an \texttt{Injury} according to conditions below. Each \texttt{Attack} causes one \texttt{Injury} at most.
 
 \begin{itemize}[nosep]
-    \item[\ding{170}] If a knight lost \texttt{5, 6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
+    \item[\ding{170}] If a knight lost \texttt{6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost \texttt{10 or more} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Lethal Injury}.
     \item[\ding{170}] If a knight lost half or more of their remaining \texttt{Vigor}, but not all of it -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
@@ -464,7 +467,14 @@ If the knight has no \texttt{Focus} left, they can recover \texttt{1} during a \
 It is not enough time to make a fire and cook food, but just right to treat injuries, have a talk, or just zone out to process the latest events.
 
 \paragraph{Focus} is restored, but with decreasing efficiency.
-Each time a knight does an hour of \texttt{Short Rest}, they restore \texttt{Focus} up to their maximum minus the number of hours of \texttt{Short Rest} they already had this day, including this one.
+
+Each time a knight rests during the day for an hour they restore \texttt{Focus}, but with various efficiency. 
+The first hour allows to a knight to reset their \texttt{Focus} to \texttt{4}, the second -- to \texttt{2}, and the thrid one -- to \texttt{1}. 
+Subsequent short rests do not restore \texttt{Focus}. 
+Short rest can't reduce \texttt{Focus} or set it above knight's maximum.
+
+
+% Each time a knight does an hour of \texttt{Short Rest}, they restore \texttt{Focus} up to their maximum minus the number of hours of \texttt{Short Rest} they already had this day, including this one.
 
 \paragraph{Injuries} can be treated during \texttt{Short Rest} without rolls. Knights have basic medical skills to dress and clean wounds. Mark all \texttt{Injuries} as \texttt{Treated}.
 
@@ -481,7 +491,7 @@ Each time a knight does an hour of \texttt{Short Rest}, they restore \texttt{Foc
 There is no or little hospitality, just a safe place in the forest or nearby ruins. You make a tent, fire and a meal.
 This is how life is sometimes.
 
-\paragraph{Stress} is reduced by \texttt{1} each time a knight sleeps full night, \textbf{Focus} is restored fully.
+\paragraph{Stress} is reduced by \texttt{1} each time a knight sleeps full night, \textbf{Focus} can be restored to \texttt{3}.
 
 \paragraph{Virtues} can be restored by 3 points distributed however a knight see fit.
 
@@ -675,7 +685,7 @@ Treasures celebrations that bring sincere joy for those who participate.
 \begin{itemize}[nosep]
     \item[\ding{108}] \textbf{Am I here, am I there.} Suddenly it is very hard to understand where you are and what you are doing.
  Anybody who looks at you feels confused and puzzled, unable to understand your intentions.
- In combat, it means that for the remainder of the combat, when you are attacked, the die of your choice is discarded.
+ In combat, it means that for the remainder of the combat, when you \texttt{Deny} -- an additional die of your choice is discarded.
     \item[\ding{108}] \textbf{Cursed Joke.} You tell your vilest joke and sprinkle enough magic to take it inside the target's head. Upon hearing it, target retracts themself from any conversation they were having or any activity they were doing.
  Goes to the corner or seeks solitude if the corner is unavailable and sits there in an increasingly catatonic state. Target falls unconscious after 10 minutes; when woken up, the effect ends.
  Their memory preserves a feeling of unpleasantness, but the content of the joke vanishes.
@@ -786,10 +796,10 @@ Those changes are irreversible.
 
 Your pupils might turn vertical, scale to appear in places where new skin would have grown.
 
-One can find additions to internal mouth structure or low back growths.
+One can find additions to internal mouth structure or lower back growths.
 
 \begin{itemize}[nosep]
-    \item Once per combat, you spit venom out of your mouth. It is quick and unexpected: add a \texttt{d8} \texttt{Weapon die} to the \texttt{Attack}.
+    \item Once per combat, you spit venom out of your mouth. It is quick and unexpected: add a \texttt{d8} to your weapon dice.
     \item Shape of your head slightly changes, so you can't wear rigid headwear if its not custom made for you.
 \end{itemize}
 
@@ -871,15 +881,15 @@ You lose \texttt{1} \textit{maximum} \texttt{Clarity} and now have a \texttt{Spe
     \begin{itemize}[nosep]
         \item When you can't allocate a new \texttt{Injury} you don't die. Instead your body collapses and your ghostly form emerges.
         \item It has \texttt{1} \texttt{Vigor}, \texttt{0} Armour, but otherwise keeps your parameters.
-              Physical \texttt{Damage} applies to you the same, but is targets \texttt{Spirit} instead of \texttt{Vigor}.
+              Physical \texttt{Damage} applies to you the same, but targets \texttt{Spirit} instead of \texttt{Vigor} and ignores armour.
         \item You keep your \texttt{Traumas}, but not \texttt{Injuries}. For damage to \texttt{Spirit} do the same \texttt{Injury} calculations as for \texttt{Vigor}, but receive \texttt{Trauma} instead. If you can't fit a new \texttt{Trauma} -- you are \textbf{Slain}.
         \item You can't be grappled, pushed or moved and you can't do the same to interact with objects. So, you can't perform \texttt{Gambits} that require physical interaction. However, you can \texttt{Bolster} just fine.
-        \item You don't do physical \texttt{Damage}, but you can give \texttt{Trauma} if you would have dealt enough damage to cause an \texttt{Injury}. Additionally, ignore armour for \texttt{Injury} calculations.
+        \item You deal \texttt{damage} to \texttt{Spirit} and you can give \texttt{Trauma} if you would have dealt enough damage to cause an \texttt{Injury}. Additionally, ignore armour for \texttt{Injury} and \texttt{damage} calculations.
         \item You can't use \texttt{Deny} \texttt{Feat}, but gain ability to go through physical objects.
               There is no limit, but when there is no light you can lose sense of direction and become trapped.
         \item If your physical body dies -- you persist, but its easier to return back to your own mortal vessel than to find a new one. There are no obvious ways to do either though.
     \end{itemize}
-You can choose its appearance and keep two pieces of your gear and one weapon.
+You can choose appearance of your soul and keep two pieces of your gear and one weapon.
 
     \subsection*{Particular Brain Damage}
 
@@ -956,6 +966,17 @@ There is no benefit to from rolling a maximum value on a die that would countera
 When you roll a maximum value on a die of a particular weapon -- mark it. If you have as many marks as the maximum value of the largest die of the weapon -- you get mastery over it. 
 For each level of master you can leave one die that came from \texttt{Focus} or \texttt{Stress} instead of removing it after the roll.
 
+\paragraph{RESOLUTION 2.0:} Party has their hope die pool, you can claim a die from there any time to restore one \texttt{Focus} or to roll it as an addition to your attack.
+You add a die there if the enemy rolled \texttt{1} or if you rolled die's maximum. 
+You can have any die there, but \texttt{d20} can be used only in \texttt{Virtue} checks.
+
+After the fight is over those dice disappear, but before that you can use them to refill \texttt{Focus}. or to mark \texttt{Experience} of knight's weapons.
+
+However, if knight rolls \texttt{1} -- the die goes to fear pool. And that does not go away. 
+The Referee can use those in later events to represent vulnerability of the party.
+
+\paragraph{RESOLUTION 3.0:} You can treat fear as stress budget of whoever is adversarial to the party.
+
 
 \subsection*{Accumulation and usage}
 
@@ -985,13 +1006,36 @@ There could be mechanics for keeping the initiative, but that might be too power
 Technically, during each party's turn there is a cycling through attack targets that might be interesting to explore. 
 
 
-\end{multicols*}
+\subsection*{Crits on Virtue checks}
 
-\newpage
+Crit on a Virtue check is an opportunity to improve. Have three of those there and you can get a revelation.
 
-\begin{multicols*}{2}
+Like a Quirk, but purely positive. Can they be one time things? 
 
-\ %
+\paragraph{Vigor}
+
+\begin{itemize}[nosep]
+    \item you roll with focus if you perform actions that involve balancing 
+    \item once per combat, in the end of your turn you can decide to roll d4 and add rolled value to your guard
+    \item if you didn't move on your turn, you attack as if you spent an additional focus
+    \item if you moved on your turn, you can upface one of the attack dice
+    \item You can throw weapons with great effect?
+\end{itemize}
+
+\paragraph{Clarity} 
+
+\begin{itemize}[nosep]
+    \item Choose a weapon and spend an evening tinkering with it: do a clarity check. On success you permanently upface one of its damage dice, on failure -- downface one.
+    \item Brew a surprise concoction?
+\end{itemize}
+
+\paragraph{Spirit}
+
+\begin{itemize}[nosep]
+    \item Ignore affliction
+    \item 
+\end{itemize}
+
 
 \end{multicols*}
 
@@ -1044,6 +1088,13 @@ However, whenever you take a \texttt{Clarity} save during socialization, treat i
 Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before choosing what die to copy with \texttt{Focus}. 
 However each time you roll without \texttt{Focus} -- \texttt{Downface} one die in your roll.
 
+\paragraph{Overconfident.} For some reasons, after all the pain, you feel like you have figured it all out. Each time you perform a \texttt{Feat} -- gain one \texttt{Focus} after the attack. 
+However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
+
+\paragraph{They never learned.} Record each time you are \texttt{Fatigued}. Each fourth time -- reset the count and gain \texttt{1} \texttt{Stress} instead.
+
+\paragraph{}
+
 
 \end{multicols*}
 
@@ -1060,17 +1111,20 @@ However each time you roll without \texttt{Focus} -- \texttt{Downface} one die i
 Weapons have properties to reflect their behavior.
 
 \begin{itemize}[nosep]
-    \item \textbf{Hefty} weapons require one hand. Only one \textbf{Hefty} item can be wielded at once.
-    \item \textbf{Long} weapons require both hands and are \texttt{Impaired} in confined environments.
+    \item \textbf{Hefty} weapons require one hand. Only one such item can be wielded at once. 
+    \item \textbf{Heavy} weapons require both hands
+    \item \textbf{Long} weapons are \textbf{Heavy} and are \texttt{Impaired} in confined environments.
     \item \textbf{Slow} weapons cannot be used if the attacker has moved this turn.
 \end{itemize}
+Melee hefty weapons can be two-handed: add \texttt{d4} to their damage dice.
+
 \paragraph{Common Weapons.}
 \begin{itemize}[nosep, leftmargin=*]
-    \item [] Hefty, simple tools. \texttt{d6 hefty}: pitchfork, hatchet
-    \item [] Long, Slow Tools. \texttt{d8 long, slow}: staff, logging axe, pick
-    \item [] Hand Weapons. \texttt{d6}: dagger, club, handaxe
-    \item [] Hefty Weapons. \texttt{d8 hefty}: spear, mace, axe
-    \item [] Long Weapons. \texttt{d10 long}: poleaxe, billhook
+    \item [] Simple tools: \texttt{d6 hefty}. (pitchfork, hatchet)
+    \item [] Long, Slow Tools: \texttt{d8 long, slow}. (staff, logging axe, pick)
+    \item [] Hand Weapons: \texttt{d6}. (dagger, club, handaxe)
+    \item [] Hefty Weapons: \texttt{d8 hefty}. (spear, mace, axe)
+    \item [] Long Weapons: \texttt{d10 long}. (poleaxe, billhook)
     \item [] Sling: \texttt{d4 hefty}
     \item [] Javelin: \texttt{d6 hefty}
 \end{itemize}
@@ -1085,10 +1139,10 @@ Weapons have properties to reflect their behavior.
     \item [] Longsword: \texttt{2d8 hefty}
     \item [] Greatsword: \texttt{2d10 long, slow}
     \item [] Curvebow: \texttt{2d6 long, slow}
-    \item [] Crossbow: \texttt{2d8 slow}
+    \item [] Crossbow: \texttt{2d8 heavy, slow}
 \end{itemize}
 
-\paragraph{Armour.} Generally, each layer of armour gives an additional armour point, up to \texttt{A4} with shield.
+\paragraph{Armour.} Generally, each of three layers of armour gives an additional armour point, up to \texttt{A4} with a shield.
 Steel protection is rare, so helms, plates and chainmail are very valuable assets.
 \begin{itemize}[nosep, leftmargin=*]
     \item[] Coat: A1 (mail, gambeson, flexible armour suitable for general wear or beneath plates)
