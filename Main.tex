@@ -349,7 +349,7 @@ For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Patch a Wound
     \item \textbf{Impair} a weapon on their next turn
     \item \textbf{Trap} a shield until your next turn
     \item \textbf{Dismount} a foe(add \texttt{d6} to damage dice)
-    \item \textbf{Patch a Wound} of yourself or an ally at arms range
+    \item \textbf{Patch a Wound} of yourself or an ally at arms reach
     \item \textbf{Other effect} of a similar level of impact
 \end{itemize}
 
@@ -376,7 +376,9 @@ If this one also fails, the injury is still treated, but increases in lethality,
 
 \begin{multicols*}{2}
 
-\subsection*{Scars} Each time a knight sustains \texttt{Damage} to \texttt{Vigor} that does not reduce their \texttt{Guard} they gain a \texttt{Scar}.
+\subsection*{Scars} 
+
+Each time a knight sustains \texttt{Damage} to \texttt{Vigor} that does not reduce their \texttt{Guard} they gain a \texttt{Scar}.
 Roll a damage die that did that \texttt{Damage} again and consult the table below.
 
 \begin{center}
@@ -387,16 +389,16 @@ Roll a damage die that did that \texttt{Damage} again and consult the table belo
         \textbf{Roll} & \textbf{Scar} \\
         \hline
         \texttt{1} & A lucky escape, Lose \texttt{d6} \texttt{Spirit}.\\
-        \texttt{2} & A permanent mark. If your max \texttt{GD} is \texttt{2} or less, increase it by \texttt{d6}. \\
-        \texttt{3} & A sudden spray of blood, Lose \texttt{d6} \texttt{Vigor}.\\
+        \texttt{2} & Wood cracks as shield fails. If your max \texttt{GD} is \texttt{2} or less, increase it by \texttt{d6}. \\
+        \texttt{3} & A sudden pain demands attention, Lose \texttt{1} \texttt{Focus}.\\
         \texttt{4} & Pain drowns the senses, Lose \texttt{d6} \texttt{Clarity}. If your max \texttt{GD} is \texttt{4} or less, increase it by \texttt{d6}.\\
-        \texttt{5} & Innards pierced and compressed, Lose \texttt{2d6} \texttt{Vigor}.\\
-        \texttt{6} & Flesh torn from bone. When you get stitched up, if your max \texttt{GD} is \texttt{6} or less, increase it by \texttt{d6}.\\
+        \texttt{5} & Something wrong on the inside. Gain \texttt{1} \texttt{Stress}.\\
+        \texttt{6} & Gruesome vision of torn flesh, Lose \texttt{2} \texttt{Focus}. If your max \texttt{GD} is \texttt{6} or less, increase it by \texttt{d6}.\\
         \texttt{7} & A heavy blow numbs the mind, Lose \texttt{2d6} \texttt{Clarity}.\\
-        \texttt{8} & Something taken in violent struggle. When you get patched up, if your max \texttt{GD} is \texttt{8} or less, increase it by \texttt{d6}.\\
+        \texttt{8} & Something taken in violent struggle, Gain \texttt{2} \texttt{Stress}. When you get patched up, if your max \texttt{GD} is \texttt{8} or less, increase it by \texttt{d6}.\\
         \texttt{9} & With a crack, a torturous break, Lose \texttt{2d6} \texttt{Spirit}.\\
-        \texttt{10} & A limb rendered useless. If your max \texttt{GD} is \texttt{10} or less, increase it by \texttt{d6}. \\
-        \texttt{11} & Death searches for you. Gain \texttt{2} \texttt{Stress}. \\
+        \texttt{10} & A limb rendered useless for combat. If your max \texttt{GD} is \texttt{10} or less, increase it by \texttt{d6}. \\
+        \texttt{11} & Death searches for you. Gain \texttt{4} \texttt{Stress}. \\
         \texttt{12} & A most dolorous stroke. When you achieve revenge, if your max \texttt{GD} is 12 or less, increase it by d6.\\
         \hline
     \end{tabular}
@@ -430,7 +432,7 @@ Each untreated injury comes with \texttt{Affliction}; Roll \texttt{d4} and consu
         \texttt{1} & The cut is deep, you are \texttt{Bleeding}:\newline lose \texttt{1} \texttt{Vigor} when your turn starts\\
         \texttt{2} & Pain is unbearable, you are in \texttt{Agony}:\newline lose \texttt{1} \texttt{Clarity} when your turn starts\\
         \texttt{3} & Grievous wound, you are in \texttt{Distress}:\newline lose \texttt{1} \texttt{Spirit} when your turn starts\\
-        \texttt{4} & Luck is on your side, no affliction \\
+        \texttt{4} & If this injury is Lethal you blackout until treated\\
         \hline
     \end{tabular}
 \end{center}
@@ -439,7 +441,7 @@ Each untreated injury comes with \texttt{Affliction}; Roll \texttt{d4} and consu
 When \texttt{Stress} reaches the limit a knight can sustain -- it resets and leaves a \texttt{Trauma} behind.
 \texttt{Trauma} fills the spot of a \texttt{Severe Injury} and can potentially cause a heart attack and kill a knight if they are out of \texttt{Injury Slots}. 
 It has neither damage die nor \texttt{Afflication}. 
-Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless its explicitly allowed.
+Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless explicitly permitted.
 
 \end{multicols*}
 
@@ -755,6 +757,18 @@ Knows about improper burials and rewards those who make peace with the dead.
     \item[\ding{108}] \textbf{Let me take all the pain.} You touch a willing creature and transfer any one of their \texttt{Injuries} to yourself.
 \end{itemize}
 
+\paragraph{4 Favour Spells.}
+
+\begin{itemize}[nosep]
+    \item[\ding{108}] \textbf{You and me, friends.} You summon an animal to aid you. 
+    It understands you when you speak with it, can't speak back, but can transmit emotions and follow simple instructions. 
+    You can choose any size as long as it is no larger then a well-fed barn cat. 
+    Depending on the size roll for \texttt{Vigor}. Roll 1d1 if its tiny, like a mice, 1d4 for a bird, like an owl, 2d4 for a badger or opossum, d8 for a cat or a small dog. 
+    Roll d6 for \texttt{Clarity} and \texttt{Spirit}. Roll d4 for \texttt{Guard}. If it dies you can summon it again after sunset. 
+    Its natural weapons allows to attack for a \texttt{d4} damage. It can perform \emph{Bolster}, \emph{Impair}, \emph{Move} and \emph{Stop} gambits.
+    It has one \texttt{Severe} injury slot.
+\end{itemize}
+
 \newpage
 
 \subsection*{Aestur, the ravaging spirit}
@@ -1020,6 +1034,7 @@ Like a Quirk, but purely positive. Can they be one time things?
     \item if you didn't move on your turn, you attack as if you spent an additional focus
     \item if you moved on your turn, you can upface one of the attack dice
     \item You can throw weapons with great effect?
+    \item If you have four knives in your possession you can make a ranged attack with \texttt{4d6} damage divided arbitrary between up to four targets.
 \end{itemize}
 
 \paragraph{Clarity} 
@@ -1033,6 +1048,7 @@ Like a Quirk, but purely positive. Can they be one time things?
 
 \begin{itemize}[nosep]
     \item Ignore affliction
+    \item Shout a cruse - next attack is impaired if target can hear you and fails spirit check. You can oppose this check with arbitrary amount of \texttt{Focus}.
     \item 
 \end{itemize}
 
