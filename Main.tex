@@ -185,7 +185,7 @@ Each injury could be:
 \begin{itemize}[nosep]
     \item \textbf{Untreated} \texttt{injury} applies \texttt{Affliction}
     \item \textbf{Treated}(see p. \pageref*{sec:downtime}) \texttt{injury} occupies the slot, but does not apply \texttt{Affliction}
-    \item \textbf{Healed} \texttt{injury} is removed entirely
+    \item \textbf{Healed} \texttt{injury} is removed entirely, but leaves a Quirk(see p.\pageref*{sec:quirks}).
 \end{itemize}
 If a knight suffers an injury and all corresponding slots are full -- fill one with greater lethality. If they are out of those, the knight is \textbf{Slain}.
 
@@ -216,27 +216,28 @@ Those are tracked by \texttt{Focus} and \texttt{Stress} respectively.
 enhance it. It \textbf{must} be declared \textbf{before} rolling the dice. For each point of \texttt{Focus} spent -- add \texttt{Advantage} to that roll.
 
 One can not only plot how to enhance the roll, but also how to sabotage a roll.
-If one character can affect the roll of another destructively, for each \texttt{Focus} spent, the roll accumulates \texttt{Disadvantage}.
+If one character can affect the roll of another destructively by planning in advance, for each \texttt{Focus} spent, the roll accumulates \texttt{Disadvantage}.
+\emph{Defense} governs this interaction for the attack rolls, see below.
 
 Usually, a knight has no restriction on how much \texttt{Focus} they can spend to enhance an action, but
 determining how much focus is possible to spend to oppose a given action should be discussed with the Referee. 
-
-Direct confrontation, like overpowering a melee attack -- up to \texttt{2} \texttt{Focus} can be spent.
-Indirect opposition, like falling prone to avoid an arrow -- up to \texttt{1} \texttt{Focus} can be spent.
 
 The order is important, so opposing characters decide how much \texttt{Focus} they spend simultaneously.
 
 \paragraph{Stress.} After a roll is made, a knight can decide that they are not satisfied with the result and try to fix it by acquiring \texttt{Stress}.
 For each gained \texttt{Stress}, add \texttt{Advantage} to that roll. Increasing one's \texttt{Stress} \textbf{must} be done \textbf{after} the roll.
 
-One can also acquire \texttt{Stress} to oppose an action after the roll is made the same way as it works with \texttt{Focus}.
+Similar to \texttt{Focus}, one can also acquire \texttt{Stress} to oppose an action reactively -- after the roll is made.
+
+Dealing with an explicit incoming danger -- any amount of \texttt{Stress} can be spent.
+For split second reaction, like avoiding sudden fall or dodging an arrow -- up to \texttt{2} \texttt{Stress} can be spent.
 
 Opposing characters decide how much \texttt{Stress} they spend simultaneously.
 
-A character can't spend \texttt{Stress} if they are at maximum stress.
-
-After resolving an action, check if your stress is at maximum.
+A character can't spend \texttt{Stress} if they are at maximum \texttt{Stress}. After resolving an action, check if your \texttt{Stress} is at maximum.
 If it is, set it to zero and the character suffers a \texttt{Trauma}(p.\pageref*{sec:injuries}).
+% Maybe it is worth to reduce it by one instead. 
+% That depends if gaining trauma to reset stress is desirable behavior.
 
 \newcolumn
 
@@ -249,10 +250,10 @@ Take the \texttt{Weapon Dice} noted on your weapon(s), shield, and granted by bo
 Go through the following steps in order:
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
-    \item Declare and spend \texttt{Focus}, target declares opposition and matching \texttt{(Dis)Advantages} are removed.
-    \item All combatants that attack the same target roll simultaneously, but do not mix the dice together as \texttt{Focus} and \texttt{Stress} are applied individually.
+    \item Declare and spend \texttt{Focus}, if target allocated any \texttt{Focus} for its defense -- they may spent it. Remove matching \texttt{(Dis)Advantages}.
+    \item Combatants attacking the same target roll at the same time. Don't mix the dice yet: \texttt{Focus} and \texttt{Stress} applies individually.
     \item Remove extra dice added through \texttt{Focus}.
-    \item Declare \texttt{Stress} gain, target declares opposition, remove matching \texttt{(Dis)Advantages}, roll added dice.
+    \item Declare \texttt{Stress} gain. Target declares their \texttt{Stress} gain. Remove matching \texttt{(Dis)Advantages} and roll added dice.
     \item Remove extra dice from \texttt{Stress}.
     \item Now you can mix all dice and declare which one is used as a damage die and which are spent on \texttt{Gambits}.
     \item If the target or their nearby allies can \texttt{Deny}, they may use it.
@@ -270,6 +271,10 @@ gain bonus dice or benefit from Feats.
 
 \paragraph{Blast} attacks target everybody in their area,
 rolling each separately.
+
+\paragraph{Defense} is declared at the end of the turn. 
+Allocate any amount of \texttt{Focus}, when you are attacked next turn -- you can spend any amount allocated to apply \texttt{Disadvantage} to the attack.
+In the end of that turn mark all \texttt{Focus} allocated for the defense as spent.
 
 \end{multicols*}
 
@@ -378,18 +383,18 @@ If this one also fails, the injury is still treated, but increases in lethality,
 
 \subsection*{Scars} 
 
-Each time a knight sustains \texttt{Damage} to \texttt{Vigor} that does not reduce their \texttt{Guard} they gain a \texttt{Scar}.
-Roll a damage die that did that \texttt{Damage} again and consult the table below.
+Each time a knight sustains \texttt{Damage} to \texttt{Vigor} which does not reduce their \texttt{Guard} they gain a \texttt{Scar}.
+Roll the damage die again, add amount of your \texttt{injuries} and consult the table below. 
 
 \begin{center}
   \rowcolors{2}{gray!25}{white}
   \label{scars}
-    \begin{tabular}{|c|p{5.7cm}|}
+    \begin{tabular}{|c|p{6.4cm}|}
         \hline
         \textbf{Roll} & \textbf{Scar} \\
         \hline
         \texttt{1} & A lucky escape, Lose \texttt{d6} \texttt{Spirit}.\\
-        \texttt{2} & Wood cracks as shield fails. If your max \texttt{GD} is \texttt{2} or less, increase it by \texttt{d6}. \\
+        \texttt{2} & An old wound opens. One \texttt{injury} becomes untreated again. If your max \texttt{GD} is \texttt{2} or less, increase it by \texttt{d6}. \\
         \texttt{3} & A sudden pain demands attention, Lose \texttt{1} \texttt{Focus}.\\
         \texttt{4} & Pain drowns the senses, Lose \texttt{d6} \texttt{Clarity}. If your max \texttt{GD} is \texttt{4} or less, increase it by \texttt{d6}.\\
         \texttt{5} & Something wrong on the inside. Gain \texttt{1} \texttt{Stress}.\\
@@ -398,8 +403,9 @@ Roll a damage die that did that \texttt{Damage} again and consult the table belo
         \texttt{8} & Something taken in violent struggle, Gain \texttt{2} \texttt{Stress}. When you get patched up, if your max \texttt{GD} is \texttt{8} or less, increase it by \texttt{d6}.\\
         \texttt{9} & With a crack, a torturous break, Lose \texttt{2d6} \texttt{Spirit}.\\
         \texttt{10} & A limb rendered useless for combat. If your max \texttt{GD} is \texttt{10} or less, increase it by \texttt{d6}. \\
-        \texttt{11} & Death searches for you. Gain \texttt{4} \texttt{Stress}. \\
+        \texttt{11} & Death hunts you. Gain \texttt{4} \texttt{Stress}. \\
         \texttt{12} & A most dolorous stroke. When you achieve revenge, if your max \texttt{GD} is 12 or less, increase it by d6.\\
+        \texttt{13+} & A spiral of death makes another turn. Gain one \texttt{Severe Injury}.\\
         \hline
     \end{tabular}
 \end{center}
@@ -411,7 +417,7 @@ A knight's body is tough and trained since childhood, but it can endure only so 
 Dice that determine a knight's \texttt{Vigor} also control the amount of \texttt{Severe and Lethal Injuries} they can sustain.
 To track those injuries, use \texttt{Injury Slots} that record the nature of the \texttt{Injury}, the damage die that caused it, and its \texttt{Affliction}.
 
-A knight gets an \texttt{Injury} according to conditions below. Each \texttt{Attack} causes one \texttt{Injury} at most.
+A knight gets an \texttt{Injury} according to conditions below. Damage from the \texttt{Attack} causes at most one \texttt{Injury} and one more can come from gaining a \texttt{Scar}.
 
 \begin{itemize}[nosep]
     \item[\ding{170}] If a knight lost \texttt{6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
