@@ -154,7 +154,7 @@ Then, determine the knight's capacity for \texttt{Injury}(\texttt{Injury Slots})
     \item[\ding{118}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Spirit} is maximum \texttt{Stress} the knight can endure before suffering a \texttt{Trauma}, minimum is \texttt{2}.
 \end{itemize}
 }
-\paragraph{Guard.} Roll \texttt{d6} to determine the maximum \texttt{Guard} the knight has.
+\paragraph{Guard.} Roll \texttt{d6} to determine the maximum \texttt{Guard(GD)} the knight has.
 
 \paragraph{Choose a Passion. } Something dear to the knight's heart, or something weird that allows them to shrug off a failure.
 Indulging a Passion restores \texttt{Spirit} and \texttt{Spellweaving} dice (p.\pageref*{sec:spellweaving}). Consult with your Referee if in doubt.
@@ -254,7 +254,7 @@ Go through the following steps in order:
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
     \item Declare and spend \texttt{Focus}, if target allocated any \texttt{Focus} for its defense -- they may spent it. Remove matching \texttt{(Dis)Advantages}.
-    \item Combatants attacking the same target roll at the same time. Don't mix the dice yet: \texttt{Focus} and \texttt{Stress} applies individually.
+    \item Combatants attacking the same target roll at the same time. Don't mix the dice: \texttt{Focus} and \texttt{Stress} applies individually.
     \item Remove extra dice added through \texttt{Focus}.
     \item Declare \texttt{Stress} gain. Target declares their \texttt{Stress} gain. Remove matching \texttt{(Dis)Advantages} and roll added dice.
     \item Remove extra dice from \texttt{Stress}.
@@ -357,7 +357,8 @@ For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Patch a Wound
     \item \textbf{Impair} a weapon on their next turn
     \item \textbf{Trap} a shield until your next turn
     \item \textbf{Dismount} a foe(add \texttt{d6} to damage dice)
-    \item \textbf{Patch a Wound} of yourself or an ally at arms reach
+    \item \textbf{Step back} keeping defense up(restore \texttt{1} GD)
+    \item \textbf{Patch a Wound} on yourself or on ally nearby
     \item \textbf{Other effect} of a similar level of impact
 \end{itemize}
 
@@ -365,7 +366,7 @@ If a die of \texttt{8} or higher is used in melee, then a Strong Gambit is perfo
 
 \begin{itemize}[nosep]
     \item \textbf{No Save} is granted to the target
-    \item \textbf{Greater effect} such as disarming an item, breaking a wooden shield, or removing a helm. Bolster can't add more than \texttt{1} \texttt{Damage}.
+    \item \textbf{Greater effect} such as disarming an item, breaking a wooden shield, or removing a helm. \emph{Bolster} and \emph{Step Back} are not affected.
 \end{itemize}
 
 \paragraph{Patching a Wound} \texttt{Gambit} allows one knight to tend to another one, or one knight to tend to themselves.
@@ -374,7 +375,7 @@ If that save failed the targeted knight must survive the pain of misjudged treat
 If this one also fails, the injury is still treated, but increases in lethality, potentially killing the knight.
 
 \paragraph{Death.} Even the boldest Knight can die a sudden or ignoble death. Prepare yourself for this.
-% When a Knight dies, the player creates a new Knight, and they are added to the Company as quickly as possible.
+When a Knight dies, the player creates a new Knight, and they are added to the Company as quickly as possible.
 
 \end{multicols*}
 
@@ -386,8 +387,8 @@ If this one also fails, the injury is still treated, but increases in lethality,
 
 \subsection*{Scars} 
 
-Each time a knight sustains \texttt{Damage} to \texttt{Vigor} which does not reduce their \texttt{Guard} they gain a \texttt{Scar}.
-Roll the damage die again, add amount of your \texttt{injuries} and consult the table below. 
+Each time a knight sustains \texttt{Damage} to \texttt{Vigor} which does not reduce their \texttt{GD} they gain a \texttt{Scar}.
+Roll the damage die again, add amount of your occupied \texttt{injury slots} and see the table below. 
 
 \begin{center}
   \rowcolors{2}{gray!25}{white}
@@ -467,8 +468,8 @@ Additionally, if you can heal an \texttt{Injury} by some means, you can't deal w
 \paragraph{Stress \& Focus} can also be dealt with quickly, but require consuming certain items.
 
 \begin{itemize}[nosep]
-    \item[\ding{60}] \textbf{Spur} restores \texttt{Focus} and \texttt{Spellweaving} dice
-    \item[\ding{60}] \textbf{Sedative} reduces \texttt{Stress} by \texttt{2}
+    \item[\ding{60}] \textbf{Spur} replenishes \texttt{Focus} and restores up to \texttt{3} \texttt{Spellweaving} dice
+    \item[\ding{60}] \textbf{Sedative} removes \texttt{Stress}
 \end{itemize}
 
 If the knight has no \texttt{Focus} left, they can recover \texttt{1} during a \texttt{breather} by acquiring \texttt{1} \texttt{Stress}.
@@ -587,6 +588,8 @@ Several ways exists of how a person might become a mage.
 A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. 
 This pool is a set of \texttt{d6} dice with size equal to the value of their \texttt{Clarity}.
 
+TODO: describe spellweaving pool more formally. 
+
 \subsection*{Rethreading of the arcane}
 
 When a mage rolls dice to weave a spell, in addition to casting, they can choose half, rounded down, of the remaining dice and discard the rest.
@@ -696,7 +699,7 @@ Treasures celebrations that bring sincere joy for those who participate.
 \begin{itemize}[nosep]
     \item[\ding{108}] \textbf{Am I here, am I there.} Suddenly it is very hard to understand where you are and what you are doing.
  Anybody who looks at you feels confused and puzzled, unable to understand your intentions.
- In combat, it means that for the remainder of the combat, when you \texttt{Deny} -- an additional die of your choice is discarded.
+ In combat, it means that for the remainder of it, when you \texttt{Deny} -- an additional die of your choice is discarded.
     \item[\ding{108}] \textbf{Cursed Joke.} You tell your vilest joke and sprinkle enough magic to take it inside the target's head. Upon hearing it, target retracts themself from any conversation they were having or any activity they were doing.
  Goes to the corner or seeks solitude if the corner is unavailable and sits there in an increasingly catatonic state. Target falls unconscious after 10 minutes; when woken up, the effect ends.
  Their memory preserves a feeling of unpleasantness, but the content of the joke vanishes.
@@ -746,7 +749,7 @@ Knows about improper burials and rewards those who make peace with the dead.
 
 \begin{itemize}[nosep]
     \item[\ding{108}] \textbf{They are within reach.} When you search for somebody you know, you can determine if this person is dead or alive and peek into their thoughts and emotions.
-    \item[\ding{108}] \textbf{Grow my beloved, grow.} You put a new life into dead vegetation with your touch.
+    \item[\ding{108}] \textbf{Grow my beloved, grow.} You put a new life into potentially dead vegetation with your touch.
  It grows very fast and obeys your commands.
  Branches can grapple your enemies, fix objects, and obstruct passage.
  Without water and soil, it dies soon after you leave, expending all its resources.
@@ -769,7 +772,7 @@ Knows about improper burials and rewards those who make peace with the dead.
 \paragraph{4 Favour Spells.}
 
 \begin{itemize}[nosep]
-    \item[\ding{108}] \textbf{You and me, friends.} You summon an animal to aid you. 
+    \item[\ding{108}] \textbf{You and me: friends.} You summon an animal to aid you. 
     It understands you when you speak with it, can't speak back, but can transmit emotions and follow simple instructions. 
     You can choose any size as long as it is no larger then a well-fed barn cat. 
     Depending on the size roll for \texttt{Vigor}. Roll 1d1 if its tiny, like a mice, 1d4 for a bird, like an owl, 2d4 for a badger or opossum, d8 for a cat or a small dog. 
@@ -857,7 +860,7 @@ You move with visible delay and your reaction is impaired.
 Another day you find another ulcer on your skin, you feel neither pain, nor distress.
 
 \begin{itemize}[nosep]
-    \item Each time you do \texttt{Overnight Rest} if your \texttt{Guard} is greater than \texttt{1} reduce it by \texttt{2}.
+    \item Each time you do \texttt{Overnight Rest} if your \texttt{max GD} is greater than \texttt{1} reduce it by \texttt{2}.
     \item For each \texttt{2} \texttt{Guard} lost this way increase your maximum \texttt{Vigor} by \texttt{1}, up to \texttt{19}.
     \item You ignore \texttt{Afflictions} of \texttt{Injuries}.
 \end{itemize}
@@ -1000,12 +1003,6 @@ The Referee can use those in later events to represent vulnerability of the part
 
 \paragraph{RESOLUTION 3.0:} You can treat fear as stress budget of whoever is adversarial to the party.
 
-\paragraph{IDEA} It would be cool to restore or spent guard as a gambit. 
-For example, you use bolster to increase damage, but the opposite of bolstering would increase guard by one.
-Additionally, it would be nice to spend guard to promote any dice to a gambit, recklessness is worth it sometimes.
-I think making up the difference between the die and the gambit-value.
-
-
 \subsection*{Accumulation and usage}
 
 However. Those might be preferable to actual \texttt{Focus \& Stress} mechanics as they promote interparty communication. 
@@ -1038,7 +1035,7 @@ Technically, during each party's turn there is a cycling through attack targets 
 
 Crit on a Virtue check is an opportunity to improve. Have three of those there and you can get a revelation.
 
-Like a Quirk, but purely positive. Can they be one time things? 
+Like a Quirk, but purely positive. Can they be one time things? Or maybe its pure martial's thing to have these?
 
 \paragraph{Vigor}
 
@@ -1122,9 +1119,7 @@ However each time you roll without \texttt{Focus} -- \texttt{Downface} one die i
 \paragraph{Overconfident.} For some reasons, after all the pain, you feel like you have figured it all out. Each time you perform a \texttt{Feat} -- gain one \texttt{Focus} after the attack. 
 However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
 
-\paragraph{They never learned.} Record each time you are \texttt{Fatigued}. Each fourth time -- reset the count and gain \texttt{1} \texttt{Stress} instead.
-
-\paragraph{}
+\paragraph{You never learned.} Record each time you are \texttt{Fatigued}. Each fourth time reset the count, resist the Fatigue and gain \texttt{1} \texttt{Stress}.
 
 
 \end{multicols*}
@@ -1191,6 +1186,35 @@ Spiked shields turn that die into \texttt{d6}.
 \newpage
 \label{sec:ch_sheet}
 \includepdf[pages={1}]{media/character-sheet.pdf}
+
+\newpage
+\section*{\centering \fontsize{35}{45}\selectfont Ideas}
+\vspace*{0.4 cm}
+
+\begin{multicols*}{2}
+
+\paragraph{IDEA} It would be cool to restore or spent guard as a gambit. 
+For example, you use bolster to increase damage, but the opposite of bolstering would increase guard by one.
+Additionally, it would be nice to spend guard to promote any dice to a gambit, recklessness is worth it sometimes.
+I think making up the difference between the die and the gambit-value. Could that part be a quirk?
+
+\paragraph{IDEA} Everybody gets five injury slots. Those are guarded by \texttt{d4, d6, d8, d10, d12} respectively. 
+Once you receive damage to \texttt{Vigor} you choose an injury slot to risk: roll corresponding die and if its greater or equal to received damage you avoid the injury, otherwise the injury slot is filled.
+Record the damage and the die that dealt it on the injury slot, roll and record affliction. 
+During overnight rest roll one guarding die of the occupied injury slot, reduce recorded damage by that amount. 
+If it reaches zero or below - injury is healed. If you guard is less then a maximum that could be rolled on the guarding die - roll it and increase your max GD by the rolled value.
+
+Also, if just getting injury slots is boring -- one can roll \texttt{d4 + d6 + d8 + d10 + d12} and distribute their injuries as one see fit.
+Optimal configuration, I suspect, would be to have as many d4s as possible, but alas. Trauma just occupies an injury slot and is solved by same mechanic that is used now.
+
+If one would consider even more death-spiraly mechanic, then after healing an injury -- die of the healed slot is downfaced.
+
+Dealing with increasing/decreasing injury dice can be a whole area of expertise. 
+
+
+
+
+\end{multicols*}
 
 \end{document}
 
