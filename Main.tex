@@ -254,7 +254,7 @@ Go through the following steps in order:
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
     \item Declare and spend \texttt{Focus}, if target allocated any \texttt{Focus} for its defense -- they may spent it. Remove matching \texttt{(Dis)Advantages}.
-    \item Combatants attacking the same target roll at the same time. Don't mix the dice: \texttt{Focus} and \texttt{Stress} applies individually.
+    \item Those attacking the same target roll at the same time. Don't mix the dice: \texttt{Focus} and \texttt{Stress} applies individually.
     \item Remove extra dice added through \texttt{Focus}.
     \item Declare \texttt{Stress} gain. Target declares their \texttt{Stress} gain. Remove matching \texttt{(Dis)Advantages} and roll added dice.
     \item Remove extra dice from \texttt{Stress}.
@@ -345,9 +345,9 @@ they rest.
 \subsection*{Gambits}
 
 Attackers can discard any number of dice in \texttt{Attack Roll} with value 4 or higher to perform \texttt{Gambits}, each one causing one of the effects below.
-The affected foe must be the same as the target of the attack, except for \texttt{Patch a Wound} \texttt{Gambit}.
+The affected foe must be the same as the target of the attack, except for \texttt{Makeshift treatment} \texttt{Gambit}.
 
-For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Patch a Wound}, the target receives a \texttt{Vigor Save} to ignore the effect.
+For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Makeshift treatment}, the target receives a \texttt{Vigor Save} to ignore the effect.
 
 \begin{itemize}[nosep]
     \item \textbf{Bolster} the \texttt{Attack} for +1 total \texttt{Damage}
@@ -358,7 +358,7 @@ For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Patch a Wound
     \item \textbf{Trap} a shield until your next turn
     \item \textbf{Dismount} a foe(add \texttt{d6} to damage dice)
     \item \textbf{Step back} keeping defense up(restore \texttt{1} GD)
-    \item \textbf{Patch a Wound} on yourself or on ally nearby
+    \item \textbf{Makeshift treatment} of your or an ally's injury within arm’s reach.
     \item \textbf{Other effect} of a similar level of impact
 \end{itemize}
 
@@ -369,7 +369,7 @@ If a die of \texttt{8} or higher is used in melee, then a Strong Gambit is perfo
     \item \textbf{Greater effect} such as disarming an item, breaking a wooden shield, or removing a helm. \emph{Bolster} and \emph{Step Back} are not affected.
 \end{itemize}
 
-\paragraph{Patching a Wound} \texttt{Gambit} allows one knight to tend to another one, or one knight to tend to themselves.
+\paragraph{Makeshift treatment} \texttt{Gambit} allows one knight to tend to another one, or one knight to tend to themselves.
 Tending knight rolls a \texttt{Clarity Save} and the one untended \texttt{Injury} becomes tended.
 If that save failed the targeted knight must survive the pain of misjudged treatment, by passing a \texttt{Vigor Save}.
 If this one also fails, the injury is still treated, but increases in lethality, potentially killing the knight.
@@ -479,7 +479,6 @@ If the knight has no \texttt{Focus} left, they can recover \texttt{1} during a \
 It is not enough time to make a fire and cook food, but just right to treat injuries, have a talk, or just zone out to process the latest events.
 
 \paragraph{Focus} is restored, but with decreasing efficiency.
-
 Each time a knight rests during the day for an hour they restore \texttt{Focus}, but with various efficiency. 
 The first hour allows a knight to reset their \texttt{Focus} to \texttt{4}, the second -- to \texttt{2}, and the thrid one -- to \texttt{1}. 
 Subsequent short rests do not restore \texttt{Focus}. 
@@ -536,11 +535,15 @@ This is a tricky endeavour which usually requires a professional to accomplish a
 
 Still, in dire circumstances, a knight can attempt to heal themselves or another knight:
 \begin{enumerate}[nosep, leftmargin=*]
-    \item Roll a single \texttt{d20} against healing knight's \texttt{Clarity}, below or equal is a success. No \texttt{Focus} or \texttt{Stress} can be used, as the knight has no mastery over the craft of healing.
-    \item Roll a single \texttt{d20} against healed knight's \texttt{Vigor}, below or equal is a success. No \texttt{Focus} or \texttt{Stress} can be used.
+    \item The \textbf{healing} knight rolls a \texttt{Clarity} check it determine how to treat this type of \texttt{Injury} most effectively.
+    % Roll a single \texttt{d20} against healing knight's \texttt{Clarity}, below or equal is a success. 
+    % Might be too punishing if no allowed
+    % No \texttt{Focus} or \texttt{Stress} can be used, as the knight has no mastery over the craft of healing.
+    \item The \textbf{healed} knight who is treated rolls a \texttt{Spirit} check to withstand the pain.
+    % Roll a single \texttt{d20} against healed knight's \texttt{Vigor}, below or equal is a success. 
+    % No \texttt{Focus} or \texttt{Stress} can be used.
 \end{enumerate}
-
-Only if both of the above rolls are successful, the knight is healed from an \texttt{Injury}.
+Only if both of the above checks are successful, the knight is healed from the \texttt{Injury}.
 Any one knight can endure only \texttt{1} healing attempt per day.
 
 \paragraph{Getting tougher and acquiring quirks.} After suffering through the agony of medicine without painkillers, a knight is relieved from an injury completely.
@@ -553,7 +556,7 @@ Choose or make the Referee choose a \texttt{Quirk} (p.\pageref*{sec:quirks}) for
 
 \paragraph{Dealing with Trauma} removes it completely. 
 During your sleep pass a \texttt{Clarity} check and a \texttt{Spirit} check to successfully deal with \texttt{Trauma}. 
-For each point of \texttt{Stress} you have -- treat those \texttt{Virtue} checks as if they were opposed with an additional \texttt{Stress}.
+For each point of \texttt{Stress} you have -- treat those \texttt{Virtue} checks as if they were opposed with an additional \texttt{Focus}.
 
 Trauma leaves a permanent mark: acquire a \texttt{Quirk}(p.\pageref*{sec:quirks}) as if a knight healed from an \texttt{Injury}.
 
@@ -575,32 +578,44 @@ Should I allow knights to brew stimulants and other consumables?
 
 \subsection*{Weaving a spell}
 
-The power of a mage is represented by a \texttt{Spellweaving Pool}: a set of dice that you can use to weave spells. 
+The power of a mage is represented by a \texttt{Spellweaving Pool}: a set of dice that you can use to weave spells. It is described by three components:
+\begin{itemize}[nosep]
+    \item Amount and kind of dice it can hold
+    \item How one restores those dice
+    \item What actions, if any, could change it
+\end{itemize} 
+If several effects grant you a spellweaving pool, those exist independently unless specified. Consuming \textbf{Spur} refills \texttt{3} dice from any combination of pools.
 
-To weave a spell, a weaver rolls any number of dice as an Action from that set and then decides what to cast. This is a \texttt{Spellweaving roll}.
+To weave a spell, a weaver rolls any number of those dice from any available pools as an Action from that set and then decides what to cast. This is a \texttt{Spellweaving roll}.
 Only one spell can be cast per roll. If the spell does not state otherwise, \texttt{Smite} \texttt{Feat} is not applicable for attacks performed within them.
 
-If in doubt, know that this roll is affected by \texttt{Focus} and \texttt{Stress}.
-
 There are many spells one can learn during their mage training, but regardless of syllabus -- all spellweavers know \textit{Detect Magic} by heart.
-
-Several ways exists of how a person might become a mage. 
-A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. 
-This pool is a set of \texttt{d6} dice with size equal to the value of their \texttt{Clarity}.
-
-TODO: describe spellweaving pool more formally. 
 
 \subsection*{Rethreading of the arcane}
 
 When a mage rolls dice to weave a spell, in addition to casting, they can choose half, rounded down, of the remaining dice and discard the rest.
 These chosen dice can be stored to cast spells later as if they are included in a roll.
-They persist until spent, and count as in \texttt{Spellweaving Pool}. The total amount of dice in the pool can never exceed the value of the mage's \texttt{Spellweaving Pool} size.
+They persist until spent, and count as in \texttt{Spellweaving Pool}. The amount of dice in the pool, both unused and stored, can't exceed its size.
 
-\subsection*{Replenishing strength}
+% Several ways exists of how a person might become a mage. 
+% A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. 
+% This pool is a set of \texttt{d6} dice with size equal to the value of their \texttt{Clarity}. 
+% In order to restore dice knight must indulge their passion, this action restores \texttt{3} of them.
 
-\paragraph{Indulging a Passion} to restore \texttt{Spirit} also allows to regain up to \texttt{3} missing dice from the \texttt{Spellweaving Pool}.
 
-\paragraph{Overnight Rest} or \textbf{Consuming Spur} also restores up to \texttt{3} dice.
+\subsection*{Becoming a mage}
+
+A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. They know any three spells from the list below apart from \emph{Detect Magic}.
+\begin{itemize}[nosep]
+    \item \textbf{Dice} are all \texttt{d6}'s and their amount is equal to the value of knights \texttt{Clarity}.
+    \item \textbf{Restoring} the pool is done through \texttt{Overnight Rest} or indulging a \texttt{Passion}, both methods restore \texttt{3} of the missing dice.
+    \item \textbf{Improving} this pool is challenging. Usually knight is tough as much as possible during their training.
+\end{itemize}
+
+
+% \paragraph{Indulging a Passion} to restore \texttt{Spirit} also allows to regain up to \texttt{3} missing dice from the \texttt{Spellweaving Pool}.
+
+% \paragraph{Overnight Rest} or \textbf{Consuming Spur} also restores up to \texttt{3} dice.
 
 \subsection*{Spells}
 
@@ -631,6 +646,10 @@ Pick three dice that have a value of \texttt{1}.
 For the remaining combat, anyone who attacks the bearer of this curse can add a die from the picked ones as an additional weapon die before rolling.
 The die is not spent and can be used by multiple attackers, but only a single Hex can be cast upon any one creature.
 
+\paragraph{Soothing Visions. } Pick two dice both with the same value rolled as the target's \texttt{Stress}. Reduce their \texttt{Stress} by \texttt{1}.
+
+\newpage
+
 \paragraph{True Strike.}
 Pick any number of dice, then perform an Attack as usual.
 You can replace any die of the attack with any die from those you picked.
@@ -642,8 +661,6 @@ Can be used with \texttt{Smite} \texttt{Feat}.
 
 \paragraph{Haste.} Pick any amount of dice that amount to target's Vigor or greater.
 Each time a hasted creature attacks, choose a weapon and add its \texttt{Weapon dice} to the \texttt{Attack} one additional time.
-
-\paragraph{Soothing Visions. } Pick two dice both with the same value rolled as the target's \texttt{Stress}. Reduce their \texttt{Stress} by \texttt{1}.
 
 \paragraph{Conjure embodiment of magic.} Pick up to two dice three times; values for each pick determine virtues of the embodiment.
 Then pick an additional die -- this is its guard.
@@ -885,9 +902,9 @@ You lose \texttt{1} \textit{maximum} \texttt{Clarity} and now have a \texttt{Spe
     After waking up -- roll a die from your \texttt{Spellweaving Pool}, lose that much \texttt{Clarity}.
     Restore \texttt{1} spent die from the pool.
     \item Record total amount of \texttt{Clarity} lost this way.
-    For each \texttt{20} \texttt{Clarity} lost -- lose \texttt{1} \textit{maximum} \texttt{Clarity}, increase pool size by \texttt{1} and add an additional \texttt{d4} to the pool.
+    For each \texttt{5} \texttt{Clarity} lost -- lose \texttt{1} \textit{maximum} \texttt{Clarity}, increase pool size by \texttt{1} and add an additional \texttt{d4} to the pool.
     Permanently \texttt{Upface} it once for each other die in the pool.
-    \item When you have a \texttt{d12} added this way parasite is fully matured and stops feeding.
+    \item When you have a \texttt{d12} added this way -- parasite is fully matured and stops feeding.
 
 \end{itemize}
 
@@ -947,16 +964,229 @@ Once the splitting event is occurred, you switch to the new personality immediat
 
     \subsection*{Unsettling Discovery}
 
-    You can't refill \texttt{Spellweaving pool} by resting or indulging a passion. If you didn't have a \texttt{Spellweaving pool} before you get one. 
+    You can't refill any \texttt{Spellweaving pool} by resting or indulging a passion. If you didn't have a \texttt{Spellweaving pool} before you get one. 
 
     Each time you receive damage record the damage die. \textbf{Upface} it for each time it was \texttt{Bolstered}. \textbf{Downface} it for each point of damage which was reduced by \texttt{Armour} or did reduce \texttt{Guard} instead of \texttt{Vigor}.
 
-    Add this die to you \texttt{Spellweaving pool}. You add this dice even if your pool is full. 
+    Add this die to any of your \texttt{Spellweaving pools}. You add this dice even if your pool is full. 
 
     Learn \emph{Detect Magic} spell.
 
 \end{multicols*}
 
+
+\newpage
+
+
+\section*{\centering \fontsize{35}{45}\selectfont Quirks}
+\vspace*{0.4 cm}
+
+
+
+\label{sec:quirks}
+
+\begin{multicols*}{2}
+
+\paragraph{Bloodlust.} A visceral reaction to blood fuels strength, but lessens control.
+You can \texttt{Upface} one die of your weapon if you are \texttt{Wounded}(p.\pageref*{sec:wounded}). However, if somebody is wounded, you can't engage them with nonlethal force.
+
+\paragraph{Desensitized.} The things you saw made everything else bleak in comparison; you don't feel much ever since.
+When you treat an injury on the battlefield, you roll with an additional \texttt{Focus}. However, you can't treat yourself.
+
+\paragraph{Thick-skinned.} After you recovered, your skin changed. It became rougher and harder to pierce.
+You ignore the first \texttt{Damage} to your \texttt{Vigor} per combat if it is not larger than \texttt{2}.
+However, when your injury is treated on the battlefield, the roll is treated as if it is opposed with an additional \texttt{Focus}.
+
+\paragraph{High pain tolerance.} Your body seems determined to never let you suffer again.
+You can ignore up to one \texttt{Agony} consequence of your \texttt{injury}.
+However, each time you roll 20 on a \texttt{Vigor Save}, you lose \texttt{1} \texttt{Vigor}.
+
+\paragraph{Masochistic.} Pain is unbearable, but somehow it's a good thing. You regain all \texttt{Focus} each time you suffer an \texttt{Injury}.
+However, don't recover \texttt{Focus} during \texttt{Short Rest}.
+
+\paragraph{Blade obsession.} At the beginning of each day, randomly determine a weapon you own that you are obsessed with.
+You can \texttt{Upface} any die of that weapon. However, each time you strike, you must strike with the weapon you are obsessed with.
+You can't part with it; during combat it must be in your hand, otherwise at arms length at most.
+
+\paragraph{Gore fascination.} You ignore \texttt{Distress} conditions of your \texttt{Injuries}.
+However, you must treat your \texttt{Injuries} by yourself.
+
+\paragraph{Stressjunkie.} Each time you gain \texttt{Stress}, also gain \texttt{Focus}.
+However, your maximum \texttt{Stress} is halved, rounded up. It can't go lower than \texttt{1}.
+
+\paragraph{Sadistic.} Restore one \texttt{Focus} each time an \texttt{Attack} you participate in reduces both \texttt{Vigor} and \texttt{Guard}.
+However, gain one \texttt{Stress} when an attack you participate in does not reduce target's \texttt{Vigor}. If this point of \texttt{Stress} would cause \texttt{Trauma}, gain no \texttt{Stress} instead.
+
+\paragraph{Smile like no other.} You don't smile a lot, but when you do, people feel what you have been through.
+You can \texttt{Downface} any die which is used in Attack against you.
+However, whenever you take a \texttt{Clarity} save during socialization, treat it as if it was opposed with one additional \texttt{Focus}.
+
+\paragraph{Traumatic visions.} Each time you swing at your enemy, pain returns. You can keep it at bay, but it takes effort and willpower you don't always have to spare.
+Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before choosing what die to copy with \texttt{Focus}. 
+However each time you roll without \texttt{Focus} -- \texttt{Downface} one die in your roll.
+
+\paragraph{Overconfident.} For some reasons, after all the pain, you feel like you have figured it all out. Each time you perform a \texttt{Feat} -- gain one \texttt{Focus} after the attack. 
+However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
+
+\paragraph{You never learned.} Record each time you are \texttt{Fatigued}. Each third time reset the count, resist the \texttt{Fatigue} and gain \texttt{2} \texttt{Stress}.
+
+
+\end{multicols*}
+
+\newpage
+\section*{\centering \fontsize{35}{45}\selectfont Equipment}
+\vspace*{0.4 cm}
+
+\label{sec:gear}
+
+\begin{multicols*}{2}
+
+\subsection*{Weapons \& Armour}
+
+Weapons have properties to reflect their behavior.
+
+\begin{itemize}[nosep]
+    \item \textbf{Hefty} weapons require one hand. Only one such item can be wielded at once. 
+    \item \textbf{Heavy} weapons require both hands
+    \item \textbf{Long} weapons are \textbf{Heavy} and are \texttt{Impaired} in confined environments.
+    \item \textbf{Slow} weapons cannot be used if the attacker has moved this turn.
+\end{itemize}
+Melee hefty weapons can be two-handed: add its lowest weapon die to the attack and \texttt{Downface} it.
+
+\paragraph{Common Weapons.}
+\begin{itemize}[nosep, leftmargin=*]
+    \item [] Simple tools: \texttt{d6 hefty}. (pitchfork, hatchet)
+    \item [] Long, Slow Tools: \texttt{d8 long, slow}. (staff, logging axe, pick)
+    \item [] Hand Weapons: \texttt{d6}. (dagger, club, handaxe)
+    \item [] Hefty Weapons: \texttt{d8 hefty}. (spear, mace, axe)
+    \item [] Long Weapons: \texttt{d10 long}. (poleaxe, billhook)
+    \item [] Sling: \texttt{d4 hefty}
+    \item [] Javelin: \texttt{d6 hefty}
+\end{itemize}
+\paragraph{Uncommon Weapons.}
+\begin{itemize}[nosep, leftmargin=*]
+    \item [] Shortbow: \texttt{d6 long, slow}
+    \item [] Shortsword: \texttt{2d6}
+    \item [] Longbow: \texttt{d8 slow}
+\end{itemize}
+\paragraph{Rare Weapons.}
+\begin{itemize}[nosep, leftmargin=*]
+    \item [] Longsword: \texttt{2d8 hefty}
+    \item [] Greatsword: \texttt{2d10 long, slow}
+    \item [] Curvebow: \texttt{2d6 long, slow}
+    \item [] Crossbow: \texttt{2d8 heavy, slow}
+\end{itemize}
+
+\paragraph{Armour.} Generally, each of three layers of armour gives an additional armour point, up to \texttt{A4} with a shield.
+Steel protection is rare, so helms, plates and chainmail are very valuable assets.
+\begin{itemize}[nosep, leftmargin=*]
+    \item[] Coat: A1 (mail, gambeson, flexible armour suitable for general wear or beneath plates)
+    \item[] Helm: A1 (kettle, nasal, bucket, coif)
+    \item[] Steel plates: A1 
+\end{itemize}
+
+\paragraph{Shields.} Takes one hand, gives one point in armour, common to find.
+Does not stack if there are two shields. It has \texttt{d4} as a weapon die.
+
+Spiked shields turn that die into \texttt{d6}.
+
+\subsection*{Consumables}
+
+\paragraph{Virtue restoration.}
+\begin{itemize}[nosep]
+    \item[\ding{60}] \textbf{Sustenance} for \texttt{Vigor}
+    \item[\ding{60}] \textbf{Stimulant} for \texttt{Clarity}
+    \item[\ding{60}] \textbf{Sacrament} for \texttt{Spirit}
+\end{itemize} 
+Provide individual restoration by themselves, but can be shared with Company during \texttt{Short Rest}.
+
+\paragraph{Physic.}
+\begin{itemize}[nosep]
+    \item[\ding{60}] \textbf{Spur} replenishes \texttt{Focus} and restores up to \texttt{3} \texttt{Spellweaving} dice
+    \item[\ding{60}] \textbf{Sedative} removes \texttt{Stress}
+\end{itemize}
+Can only be used by a single person. 
+\paragraph{Medicine.}
+\begin{itemize}[nosep]
+    \item[\ding{60}] \textbf{Painkiller} removes \texttt{Vigor} check from injury treatment. 
+    Allows treatment of an additional injury today while in effect. Wears off in an hour.
+    \item[\ding{60}] \textbf{Hallucinogen} renders knight unable to perform basic tasks for six hours and allows them to fight their inner daemons.
+    For each \texttt{Trauma} roll a \texttt{Spirit} check. 
+    After each failed check - corresponding \texttt{Trauma} worsens and changes injury slot to lethal, otherwise its removed and knight receives a Quirk(p.\pageref*{sec:quirks}).
+    Can be taken during sleep.
+\end{itemize}
+These also can only be used individually. 
+
+
+\end{multicols*}
+
+\newpage
+\label{sec:ch_sheet}
+\includepdf[pages={1}]{media/character-sheet.pdf}
+
+\newpage
+\section*{\centering \fontsize{35}{45}\selectfont Ideas}
+\vspace*{0.4 cm}
+
+\begin{multicols*}{2}
+
+\subsection*{IDEA: restoring and spending guard} 
+
+It would be cool to restore or spent guard as a gambit. 
+For example, you use bolster to increase damage, but the opposite of bolstering would increase guard by one.
+Additionally, it would be nice to spend guard to promote any dice to a gambit, recklessness is worth it sometimes.
+I think making up the difference between the die and the gambit-value. Could that part be a quirk?
+
+\subsection*{IDEA: Alternative injury mechanic} 
+
+Everybody gets five injury slots. Those are guarded by \texttt{d4, d6, d8, d10, d12} respectively. 
+Once you receive damage to \texttt{Vigor} you choose an injury slot to risk: roll corresponding die and if its greater or equal to received damage you avoid the injury, otherwise the injury slot is filled.
+Record the damage and the die that dealt it on the injury slot, roll and record affliction. 
+During overnight rest roll one guarding die of the occupied injury slot, reduce recorded damage by that amount. 
+If it reaches zero or below - injury is healed. If you guard is less then a maximum that could be rolled on the guarding die - roll it and increase your max GD by the rolled value.
+
+Also, if just getting injury slots is boring -- one can roll \texttt{d4 + d6 + d8 + d10 + d12} and distribute their injuries as one see fit.
+Optimal configuration, I suspect, would be to have as many d4s as possible, but alas. Trauma just occupies an injury slot and is solved by same mechanic that is used now.
+
+If one would consider even more death-spiraly mechanic, then after healing an injury -- die of the healed slot is downfaced.
+
+Dealing with increasing/decreasing injury dice can be a whole area of expertise. 
+
+\subsection*{IDEA: Crits on Virtue checks}
+
+Crit on a Virtue check is an opportunity to improve. Have three of those there and you can get a revelation.
+
+Like a Quirk, but purely positive. Can they be one time things? Or maybe its pure martial's thing to have these?
+
+\paragraph{Vigor}
+
+\begin{itemize}[nosep]
+    \item you roll with focus if you perform actions that involve balancing 
+    \item once per combat, in the end of your turn you can decide to roll d4 and add rolled value to your guard
+    \item if you didn't move on your turn, you attack as if you spent an additional focus
+    \item if you moved on your turn, you can upface one of the attack dice
+    \item You can throw weapons with great effect?
+    \item If you have four knives in your possession you can make a ranged attack with \texttt{4d6} damage divided arbitrary between up to four targets.
+\end{itemize}
+
+\paragraph{Clarity} 
+
+\begin{itemize}[nosep]
+    \item Choose a weapon and spend an evening tinkering with it: do a clarity check. On success you permanently upface one of its damage dice, on failure -- downface one.
+    \item Brew a surprise concoction?
+    \item Next time you shoot, instead of moving you can put an arrow, bolt or other projectile into the ground in front of you. This time you can shoot two times.
+\end{itemize}
+
+\paragraph{Spirit}
+
+\begin{itemize}[nosep]
+    \item Ignore affliction
+    \item Shout a cruse - next attack is impaired if target can hear you and fails spirit check. You can oppose this check with arbitrary amount of \texttt{Focus}.
+\end{itemize}
+
+
+
+\end{multicols*}
 
 \newpage
 
@@ -968,7 +1198,6 @@ Once the splitting event is occurred, you switch to the new personality immediat
 \subsection*{Introduction}
 
 It seems that there is very fun thing to do during combat. 
-
 If your enemy rolls for damage and you spot a \texttt{1} on their die - you can claim it after the roll is resolved.
 
 The same goes for you, but then GM claims it for later use. Let's call them hope \& fear dice for no particular reason. 
@@ -976,8 +1205,7 @@ The same goes for you, but then GM claims it for later use. Let's call them hope
 The dice sets are both public. Party can use them on their own discretion as a form of advantage.
 
 I would say that you can add them to rolls the same way you can use \texttt{Focus}. Maybe before it. 
-
-That complicates combat a bit, maybe its too much. 
+That complicates combat, maybe its too much. 
 
 \paragraph{TODO:} There is a problem there that it's not clear what this pool represents outside of combat. 
 
@@ -1031,190 +1259,8 @@ There could be mechanics for keeping the initiative, but that might be too power
 Technically, during each party's turn there is a cycling through attack targets that might be interesting to explore. 
 
 
-\subsection*{Crits on Virtue checks}
-
-Crit on a Virtue check is an opportunity to improve. Have three of those there and you can get a revelation.
-
-Like a Quirk, but purely positive. Can they be one time things? Or maybe its pure martial's thing to have these?
-
-\paragraph{Vigor}
-
-\begin{itemize}[nosep]
-    \item you roll with focus if you perform actions that involve balancing 
-    \item once per combat, in the end of your turn you can decide to roll d4 and add rolled value to your guard
-    \item if you didn't move on your turn, you attack as if you spent an additional focus
-    \item if you moved on your turn, you can upface one of the attack dice
-    \item You can throw weapons with great effect?
-    \item If you have four knives in your possession you can make a ranged attack with \texttt{4d6} damage divided arbitrary between up to four targets.
-\end{itemize}
-
-\paragraph{Clarity} 
-
-\begin{itemize}[nosep]
-    \item Choose a weapon and spend an evening tinkering with it: do a clarity check. On success you permanently upface one of its damage dice, on failure -- downface one.
-    \item Brew a surprise concoction?
-    \item Next time you shoot, instead of moving you can put an arrow, bolt or other projectile into the ground in front of you. This time you can shoot two times.
-\end{itemize}
-
-\paragraph{Spirit}
-
-\begin{itemize}[nosep]
-    \item Ignore affliction
-    \item Shout a cruse - next attack is impaired if target can hear you and fails spirit check. You can oppose this check with arbitrary amount of \texttt{Focus}.
-    \item 
-\end{itemize}
-
-
 \end{multicols*}
 
-
-
-\section*{\centering \fontsize{35}{45}\selectfont Quirks}
-\vspace*{0.4 cm}
-
-
-
-\label{sec:quirks}
-
-\begin{multicols*}{2}
-
-\paragraph{Bloodlust.} A visceral reaction to blood fuels strength, but lessens control.
-You can \texttt{Upface} one die of your weapon if you are \texttt{Wounded}(p.\pageref*{sec:wounded}). However, if somebody is wounded, you can't engage them with nonlethal force.
-
-\paragraph{Desensitized.} The things you saw made everything else bleak in comparison; you don't feel much ever since.
-When you treat an injury on the battlefield, you roll with an additional \texttt{Focus}. However, you can't treat yourself.
-
-\paragraph{Thick-skinned.} After you recovered, your skin changed. It became rougher and harder to pierce.
-You ignore the first \texttt{Damage} to your \texttt{Vigor} per combat if it is not larger than \texttt{2}.
-However, when your injury is treated on the battlefield, the roll is treated as if it is opposed with an additional \texttt{Focus}.
-
-\paragraph{High pain tolerance.} Your body seems determined to never let you suffer again.
-You can ignore up to one \texttt{Agony} consequence of your \texttt{injury}.
-However, each time you roll 20 on a \texttt{Vigor Save}, you lose \texttt{1} \texttt{Vigor}.
-
-\paragraph{Masochistic.} Pain is unbearable, but somehow it's a good thing. You regain all \texttt{Focus} each time you suffer an \texttt{Injury}.
-However, don't recover \texttt{Focus} during \texttt{Short Rest}.
-
-\paragraph{Blade obsession.} At the beginning of each day, randomly determine a weapon you own that you are obsessed with.
-You can \texttt{Upface} any die of that weapon. However, each time you strike, you must strike with the weapon you are obsessed with.
-You can't part with it; during combat it must be in your hand, otherwise at arms length at most.
-
-\paragraph{Gore fascination.} You ignore \texttt{Distress} conditions of your \texttt{Injuries}.
-However, you must treat your \texttt{Injuries} by yourself.
-
-\paragraph{Stressjunkie.} Each time you gain \texttt{Stress}, also gain \texttt{Focus}.
-However, your maximum \texttt{Stress} is halved, rounded up. It can't go lower than \texttt{1}.
-
-\paragraph{Sadistic.} Restore one \texttt{Focus} each time an \texttt{Attack} you participate in reduces both \texttt{Vigor} and \texttt{Guard}.
-However, gain one \texttt{Stress} when an attack you participate in does not reduce target's \texttt{Vigor}. If this point of \texttt{Stress} would cause \texttt{Trauma}, gain no \texttt{Stress} instead.
-
-\paragraph{Smile like no other.} You don't smile a lot, but when you do, people feel what you have been through.
-You can \texttt{Downface} any die which is used in Attack against you.
-However, whenever you take a \texttt{Clarity} save during socialization, treat it as if it was opposed with one additional \texttt{Focus}.
-
-\paragraph{Traumatic visions.} Each time you swing at your enemy, pain returns. You can keep it at bay, but it takes effort and willpower you don't always have to spare.
-Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before choosing what die to copy with \texttt{Focus}. 
-However each time you roll without \texttt{Focus} -- \texttt{Downface} one die in your roll.
-
-\paragraph{Overconfident.} For some reasons, after all the pain, you feel like you have figured it all out. Each time you perform a \texttt{Feat} -- gain one \texttt{Focus} after the attack. 
-However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
-
-\paragraph{You never learned.} Record each time you are \texttt{Fatigued}. Each fourth time reset the count, resist the Fatigue and gain \texttt{1} \texttt{Stress}.
-
-
-\end{multicols*}
-
-\newpage
-\section*{\centering \fontsize{35}{45}\selectfont Equipment}
-\vspace*{0.4 cm}
-
-\label{sec:gear}
-
-\begin{multicols*}{2}
-
-\subsection*{Weapons \& Armour}
-
-Weapons have properties to reflect their behavior.
-
-\begin{itemize}[nosep]
-    \item \textbf{Hefty} weapons require one hand. Only one such item can be wielded at once. 
-    \item \textbf{Heavy} weapons require both hands
-    \item \textbf{Long} weapons are \textbf{Heavy} and are \texttt{Impaired} in confined environments.
-    \item \textbf{Slow} weapons cannot be used if the attacker has moved this turn.
-\end{itemize}
-Melee hefty weapons can be two-handed: add \texttt{d4} to their damage dice.
-
-\paragraph{Common Weapons.}
-\begin{itemize}[nosep, leftmargin=*]
-    \item [] Simple tools: \texttt{d6 hefty}. (pitchfork, hatchet)
-    \item [] Long, Slow Tools: \texttt{d8 long, slow}. (staff, logging axe, pick)
-    \item [] Hand Weapons: \texttt{d6}. (dagger, club, handaxe)
-    \item [] Hefty Weapons: \texttt{d8 hefty}. (spear, mace, axe)
-    \item [] Long Weapons: \texttt{d10 long}. (poleaxe, billhook)
-    \item [] Sling: \texttt{d4 hefty}
-    \item [] Javelin: \texttt{d6 hefty}
-\end{itemize}
-\paragraph{Uncommon Weapons.}
-\begin{itemize}[nosep, leftmargin=*]
-    \item [] Shortbow: \texttt{d6 long, slow}
-    \item [] Shortsword: \texttt{2d6}
-    \item [] Longbow: \texttt{d8 slow}
-\end{itemize}
-\paragraph{Rare Weapons.}
-\begin{itemize}[nosep, leftmargin=*]
-    \item [] Longsword: \texttt{2d8 hefty}
-    \item [] Greatsword: \texttt{2d10 long, slow}
-    \item [] Curvebow: \texttt{2d6 long, slow}
-    \item [] Crossbow: \texttt{2d8 heavy, slow}
-\end{itemize}
-
-\paragraph{Armour.} Generally, each of three layers of armour gives an additional armour point, up to \texttt{A4} with a shield.
-Steel protection is rare, so helms, plates and chainmail are very valuable assets.
-\begin{itemize}[nosep, leftmargin=*]
-    \item[] Coat: A1 (mail, gambeson, flexible armour suitable for general wear or beneath plates)
-    \item[] Helm: A1 (kettle, nasal, bucket, coif)
-    \item[] Steel plates: A1 
-\end{itemize}
-
-\paragraph{Shields.} Takes one hand, gives one point in armour, common to find.
-Does not stack if there are two shields. It has \texttt{d4} as a weapon die.
-
-Spiked shields turn that die into \texttt{d6}.
-
-\end{multicols*}
-
-\newpage
-\label{sec:ch_sheet}
-\includepdf[pages={1}]{media/character-sheet.pdf}
-
-\newpage
-\section*{\centering \fontsize{35}{45}\selectfont Ideas}
-\vspace*{0.4 cm}
-
-\begin{multicols*}{2}
-
-\paragraph{IDEA} It would be cool to restore or spent guard as a gambit. 
-For example, you use bolster to increase damage, but the opposite of bolstering would increase guard by one.
-Additionally, it would be nice to spend guard to promote any dice to a gambit, recklessness is worth it sometimes.
-I think making up the difference between the die and the gambit-value. Could that part be a quirk?
-
-\paragraph{IDEA} Everybody gets five injury slots. Those are guarded by \texttt{d4, d6, d8, d10, d12} respectively. 
-Once you receive damage to \texttt{Vigor} you choose an injury slot to risk: roll corresponding die and if its greater or equal to received damage you avoid the injury, otherwise the injury slot is filled.
-Record the damage and the die that dealt it on the injury slot, roll and record affliction. 
-During overnight rest roll one guarding die of the occupied injury slot, reduce recorded damage by that amount. 
-If it reaches zero or below - injury is healed. If you guard is less then a maximum that could be rolled on the guarding die - roll it and increase your max GD by the rolled value.
-
-Also, if just getting injury slots is boring -- one can roll \texttt{d4 + d6 + d8 + d10 + d12} and distribute their injuries as one see fit.
-Optimal configuration, I suspect, would be to have as many d4s as possible, but alas. Trauma just occupies an injury slot and is solved by same mechanic that is used now.
-
-If one would consider even more death-spiraly mechanic, then after healing an injury -- die of the healed slot is downfaced.
-
-Dealing with increasing/decreasing injury dice can be a whole area of expertise. 
-
-
-
-
-\end{multicols*}
 
 \end{document}
 
