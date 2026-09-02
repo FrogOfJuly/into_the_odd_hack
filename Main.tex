@@ -172,15 +172,17 @@ They can perform them during combat, details of which are on page \pageref*{sec:
 
 \subsection*{Injury Slots}
 
-When knight suffers an \texttt{Injury} -- fill corresponding \texttt{Injury slot} as described below.
+When knight suffers an \texttt{Injury} -- fill an \texttt{Injury slot} following steps described below.
+
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
-    \item Briefly describe an injury 
     \item Determine if injury is \texttt{Severe} or \texttt{Lethal}
-    \item Record a damage die of the attack which caused the injury
+    \item Briefly describe an injury 
+    \item Record the damage die of the attack which caused the injury
     \item Roll \texttt{Affliction}(see p.\pageref*{sec:affliction}) and record it
 \end{enumerate}
 }
+
 Each injury could be:
 \begin{itemize}[nosep]
     \item \textbf{Untreated} \texttt{injury} applies \texttt{Affliction}
@@ -196,7 +198,10 @@ Some knights are \textbf{Spellweavers}(see p.\pageref*{sec:spellweaving}) and so
 
 \subsection*{Weapons \& Gear}
 
-TODO: describe equipment of the mage, witch and a knight without spellcasting.
+When picking gear for a knight consult with the Referee, but the rule of thumb is as follows: you have budget of 12 points, these points can be spent on weapons and armour. 
+
+Weapon costs as much as its damage dice. For example, shortsword(2d6 damage) costs 12 points, knife(d6 damage) - 6 points. Each gear providing armour costs 2 per armour point. 
+Usually it makes sense to limit the starting equipment to be common rarity with a single uncommon item as a prized possession of your knight.
 
 \end{multicols*}
 
@@ -230,7 +235,7 @@ For each gained \texttt{Stress}, add \texttt{Advantage} to that roll. Increasing
 Similar to \texttt{Focus}, one can also acquire \texttt{Stress} to oppose an action reactively -- after the roll is made.
 
 Dealing with an explicit incoming danger -- any amount of \texttt{Stress} can be spent.
-For split second reaction, like avoiding sudden fall or dodging an arrow -- up to \texttt{2} \texttt{Stress} can be spent.
+For split second reaction, like avoiding sudden fall or dodging an arrow -- up to \texttt{1} \texttt{Stress} can be spent.
 
 Opposing characters decide how much \texttt{Stress} they spend simultaneously.
 
@@ -251,6 +256,7 @@ perform an Action, always in that order.
 
 Take the \texttt{Weapon Dice} noted on your weapon(s), shield, and granted by bonuses.
 Go through the following steps in order:
+
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
     \item Declare and spend \texttt{Focus}, if target allocated any \texttt{Focus} for its defense -- they may spent it. Remove matching \texttt{(Dis)Advantages}.
@@ -465,20 +471,19 @@ Additionally, if you can heal an \texttt{Injury} by some means, you can't deal w
 
 \paragraph{Guard} requires only a swift moment of safety to recover.
 
-\paragraph{Stress \& Focus} can also be dealt with quickly, but require consuming certain items.
-
-\begin{itemize}[nosep]
-    \item[\ding{60}] \textbf{Spur} replenishes \texttt{Focus} and restores up to \texttt{3} \texttt{Spellweaving} dice
-    \item[\ding{60}] \textbf{Sedative} removes \texttt{Stress}
-\end{itemize}
-
+\paragraph{Stress \& Focus} can also be dealt with quickly, but require consuming \textbf{physic}(p. \pageref*{sec:gear}).
 If the knight has no \texttt{Focus} left, they can recover \texttt{1} during a \texttt{breather} by acquiring \texttt{1} \texttt{Stress}.
+
+% \begin{itemize}[nosep]
+%     \item[\ding{60}] \textbf{Spur} replenishes \texttt{Focus} and restores up to \texttt{3} \texttt{Spellweaving} dice
+%     \item[\ding{60}] \textbf{Sedative} removes \texttt{Stress}
+% \end{itemize}
 
 \subsection*{Short Rest}
 
 It is not enough time to make a fire and cook food, but just right to treat injuries, have a talk, or just zone out to process the latest events.
 
-\paragraph{Focus} is restored, but with decreasing efficiency.
+\paragraph{Focus} is restored with decreasing efficiency.
 Each time a knight rests during the day for an hour they restore \texttt{Focus}, but with various efficiency. 
 The first hour allows a knight to reset their \texttt{Focus} to \texttt{4}, the second -- to \texttt{2}, and the thrid one -- to \texttt{1}. 
 Subsequent short rests do not restore \texttt{Focus}. 
@@ -490,12 +495,12 @@ Short rest can't reduce \texttt{Focus} or set it above knight's maximum.
 \paragraph{Injuries} can be treated during \texttt{Short Rest} without rolls. Knights have basic medical skills to dress and clean wounds. Mark all \texttt{Injuries} as \texttt{Treated}.
 
 
-\paragraph{Virtue restoration.} During a \texttt{Short Rest} it is possible to restore Virtue, provided a knight has required supplies.
-\begin{itemize}[nosep]
-    \item[\ding{60}] \textbf{Sustenance} for \texttt{Vigor}
-    \item[\ding{60}] \textbf{Stimulant} for \texttt{Clarity}
-    \item[\ding{60}] \textbf{Sacrament} for \texttt{Spirit}
-\end{itemize} They are consumed upon usage and provide individual restoration by themselves, but can be shared with Company during \texttt{Short Rest}.
+\paragraph{Virtue restoration.} During a \texttt{Short Rest} it is possible to restore Virtue, provided a knight has required \textbf{Remedy}(p. \pageref*{sec:gear}).
+% \begin{itemize}[nosep]
+%     \item[\ding{60}] \textbf{Sustenance} for \texttt{Vigor}
+%     \item[\ding{60}] \textbf{Stimulant} for \texttt{Clarity}
+%     \item[\ding{60}] \textbf{Sacrament} for \texttt{Spirit}
+% \end{itemize} They are consumed upon usage and provide individual restoration by themselves, but can be shared with Company during \texttt{Short Rest}.
 
 \subsection*{Overnight Rest}
 
@@ -518,16 +523,6 @@ This takes a night, a day, and another night to have full effect.
 
 \paragraph{Virtues \& Focus} are restored fully, acquired \textbf{Stress} is removed.
 
-\end{multicols*}
-
-\newpage
-\section*{\centering \fontsize{35}{45}\selectfont Downtime Activities} \label{sec:downtime}
-\vspace*{0.4 cm}
-
-I like the idea of giving downtime tokens to knights for them to spend them on treating wounds, healing injuries, reducing stress, restoring focus and brewing(?) consumables.
-
-\begin{multicols*}{2}
-
 \subsection*{Healing}
 
 \paragraph{Healing an Injury} removes it completely.
@@ -535,11 +530,11 @@ This is a tricky endeavour which usually requires a professional to accomplish a
 
 Still, in dire circumstances, a knight can attempt to heal themselves or another knight:
 \begin{enumerate}[nosep, leftmargin=*]
-    \item The \textbf{healing} knight rolls a \texttt{Clarity} check it determine how to treat this type of \texttt{Injury} most effectively.
+    \item The \textbf{healing} knight rolls a \texttt{Clarity} check to determine how to treat this type of \texttt{Injury} most effectively.
     % Roll a single \texttt{d20} against healing knight's \texttt{Clarity}, below or equal is a success. 
     % Might be too punishing if no allowed
     % No \texttt{Focus} or \texttt{Stress} can be used, as the knight has no mastery over the craft of healing.
-    \item The \textbf{healed} knight who is treated rolls a \texttt{Spirit} check to withstand the pain.
+    \item The \textbf{healed} knight rolls a \texttt{Spirit} check to see if the are able to withstand the pain.
     % Roll a single \texttt{d20} against healed knight's \texttt{Vigor}, below or equal is a success. 
     % No \texttt{Focus} or \texttt{Stress} can be used.
 \end{enumerate}
@@ -560,15 +555,67 @@ For each point of \texttt{Stress} you have -- treat those \texttt{Virtue} checks
 
 Trauma leaves a permanent mark: acquire a \texttt{Quirk}(p.\pageref*{sec:quirks}) as if a knight healed from an \texttt{Injury}.
 
-\subsection*{Brewing}
-
-Should I allow knights to brew stimulants and other consumables?
-
-\newcolumn
-
-\subsection*{Crafting magical items with essences?}
 
 \end{multicols*}
+
+\newpage
+
+
+\section*{\centering \fontsize{35}{45}\selectfont Quirks}
+\vspace*{0.4 cm}
+
+
+
+\label{sec:quirks}
+
+\begin{multicols*}{2}
+
+\paragraph{Bloodlust.} A visceral reaction to blood fuels strength, but lessens control.
+You can \texttt{Upface} one die of your weapon if you are \texttt{Wounded}(p.\pageref*{sec:wounded}). However, if somebody is wounded, you can't engage them with nonlethal force.
+
+\paragraph{Desensitized.} The things you saw made everything else bleak in comparison; you don't feel much ever since.
+When you treat an injury on the battlefield, you roll with an additional \texttt{Focus}. However, you can't treat yourself.
+
+\paragraph{Thick-skinned.} After you recovered, your skin changed. It became rougher and harder to pierce.
+You ignore the first \texttt{Damage} to your \texttt{Vigor} per combat if it is not larger than \texttt{2}.
+However, when your injury is treated on the battlefield, the roll is treated as if it is opposed with an additional \texttt{Focus}.
+
+\paragraph{High pain tolerance.} Your body seems determined to never let you suffer again.
+You can ignore up to one \texttt{Agony} consequence of your \texttt{injury}.
+However, each time you roll 20 on a \texttt{Vigor Save}, you lose \texttt{1} \texttt{Vigor}.
+
+\paragraph{Masochistic.} Pain is unbearable, but somehow it's a good thing. You regain all \texttt{Focus} each time you suffer an \texttt{Injury}.
+However, don't recover \texttt{Focus} during \texttt{Short Rest}.
+
+\paragraph{Blade obsession.} At the beginning of each day, randomly determine a weapon you own that you are obsessed with.
+You can \texttt{Upface} any die of that weapon. However, each time you strike, you must strike with the weapon you are obsessed with.
+You can't part with it; during combat it must be in your hand, otherwise at arms length at most.
+
+\paragraph{Gore fascination.} You ignore \texttt{Distress} conditions of your \texttt{Injuries}.
+However, you must treat your \texttt{Injuries} by yourself.
+
+\paragraph{Stressjunkie.} Each time you gain \texttt{Stress}, also gain \texttt{Focus}.
+However, your maximum \texttt{Stress} is halved, rounded up. It can't go lower than \texttt{1}.
+
+\paragraph{Sadistic.} Restore one \texttt{Focus} each time an \texttt{Attack} you participate in reduces both \texttt{Vigor} and \texttt{Guard}.
+However, gain one \texttt{Stress} when an attack you participate in does not reduce target's \texttt{Vigor}. If this point of \texttt{Stress} would cause \texttt{Trauma}, gain no \texttt{Stress} instead.
+
+\paragraph{Smile like no other.} You don't smile a lot, but when you do, people feel what you have been through.
+You can \texttt{Downface} any die which is used in Attack against you.
+However, whenever you take a \texttt{Clarity} save during socialization, treat it as if it was opposed with one additional \texttt{Focus}.
+
+\paragraph{Traumatic visions.} Each time you swing at your enemy, pain returns. You can keep it at bay, but it takes effort and willpower you don't always have to spare.
+Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before choosing what die to copy with \texttt{Focus}. 
+However each time you roll without \texttt{Focus} -- \texttt{Downface} one die in your roll.
+
+\paragraph{Overconfident.} For some reasons, after all the pain, you feel like you have figured it all out. Each time you perform a \texttt{Feat} -- gain one \texttt{Focus} after the attack. 
+However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
+
+\paragraph{You never learned.} Record each time you are \texttt{Fatigued}. Each third time reset the count, resist the \texttt{Fatigue} and gain \texttt{2} \texttt{Stress}.
+
+
+\end{multicols*}
+
 
 \newpage
 \section*{\centering \fontsize{35}{45}\selectfont Spellweaving} \label{sec:spellweaving}
@@ -603,9 +650,9 @@ They persist until spent, and count as in \texttt{Spellweaving Pool}. The amount
 % In order to restore dice knight must indulge their passion, this action restores \texttt{3} of them.
 
 
-\subsection*{Becoming a mage}
+\subsection*{Becoming a spellweaver}
 
-A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. They know any three spells from the list below apart from \emph{Detect Magic}.
+A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. They know any three spells from the list below additionally to \emph{Detect Magic}.
 \begin{itemize}[nosep]
     \item \textbf{Dice} are all \texttt{d6}'s and their amount is equal to the value of knights \texttt{Clarity}.
     \item \textbf{Restoring} the pool is done through \texttt{Overnight Rest} or indulging a \texttt{Passion}, both methods restore \texttt{3} of the missing dice.
@@ -646,7 +693,7 @@ Pick three dice that have a value of \texttt{1}.
 For the remaining combat, anyone who attacks the bearer of this curse can add a die from the picked ones as an additional weapon die before rolling.
 The die is not spent and can be used by multiple attackers, but only a single Hex can be cast upon any one creature.
 
-\paragraph{Soothing Visions. } Pick two dice both with the same value rolled as the target's \texttt{Stress}. Reduce their \texttt{Stress} by \texttt{1}.
+\paragraph{Soothing Visions. } Pick two dice both with the same value rolled as the target's \texttt{Stress}. Reduce their \texttt{Stress} by \texttt{2}.
 
 \newpage
 
@@ -975,63 +1022,6 @@ Once the splitting event is occurred, you switch to the new personality immediat
 \end{multicols*}
 
 
-\newpage
-
-
-\section*{\centering \fontsize{35}{45}\selectfont Quirks}
-\vspace*{0.4 cm}
-
-
-
-\label{sec:quirks}
-
-\begin{multicols*}{2}
-
-\paragraph{Bloodlust.} A visceral reaction to blood fuels strength, but lessens control.
-You can \texttt{Upface} one die of your weapon if you are \texttt{Wounded}(p.\pageref*{sec:wounded}). However, if somebody is wounded, you can't engage them with nonlethal force.
-
-\paragraph{Desensitized.} The things you saw made everything else bleak in comparison; you don't feel much ever since.
-When you treat an injury on the battlefield, you roll with an additional \texttt{Focus}. However, you can't treat yourself.
-
-\paragraph{Thick-skinned.} After you recovered, your skin changed. It became rougher and harder to pierce.
-You ignore the first \texttt{Damage} to your \texttt{Vigor} per combat if it is not larger than \texttt{2}.
-However, when your injury is treated on the battlefield, the roll is treated as if it is opposed with an additional \texttt{Focus}.
-
-\paragraph{High pain tolerance.} Your body seems determined to never let you suffer again.
-You can ignore up to one \texttt{Agony} consequence of your \texttt{injury}.
-However, each time you roll 20 on a \texttt{Vigor Save}, you lose \texttt{1} \texttt{Vigor}.
-
-\paragraph{Masochistic.} Pain is unbearable, but somehow it's a good thing. You regain all \texttt{Focus} each time you suffer an \texttt{Injury}.
-However, don't recover \texttt{Focus} during \texttt{Short Rest}.
-
-\paragraph{Blade obsession.} At the beginning of each day, randomly determine a weapon you own that you are obsessed with.
-You can \texttt{Upface} any die of that weapon. However, each time you strike, you must strike with the weapon you are obsessed with.
-You can't part with it; during combat it must be in your hand, otherwise at arms length at most.
-
-\paragraph{Gore fascination.} You ignore \texttt{Distress} conditions of your \texttt{Injuries}.
-However, you must treat your \texttt{Injuries} by yourself.
-
-\paragraph{Stressjunkie.} Each time you gain \texttt{Stress}, also gain \texttt{Focus}.
-However, your maximum \texttt{Stress} is halved, rounded up. It can't go lower than \texttt{1}.
-
-\paragraph{Sadistic.} Restore one \texttt{Focus} each time an \texttt{Attack} you participate in reduces both \texttt{Vigor} and \texttt{Guard}.
-However, gain one \texttt{Stress} when an attack you participate in does not reduce target's \texttt{Vigor}. If this point of \texttt{Stress} would cause \texttt{Trauma}, gain no \texttt{Stress} instead.
-
-\paragraph{Smile like no other.} You don't smile a lot, but when you do, people feel what you have been through.
-You can \texttt{Downface} any die which is used in Attack against you.
-However, whenever you take a \texttt{Clarity} save during socialization, treat it as if it was opposed with one additional \texttt{Focus}.
-
-\paragraph{Traumatic visions.} Each time you swing at your enemy, pain returns. You can keep it at bay, but it takes effort and willpower you don't always have to spare.
-Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before choosing what die to copy with \texttt{Focus}. 
-However each time you roll without \texttt{Focus} -- \texttt{Downface} one die in your roll.
-
-\paragraph{Overconfident.} For some reasons, after all the pain, you feel like you have figured it all out. Each time you perform a \texttt{Feat} -- gain one \texttt{Focus} after the attack. 
-However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
-
-\paragraph{You never learned.} Record each time you are \texttt{Fatigued}. Each third time reset the count, resist the \texttt{Fatigue} and gain \texttt{2} \texttt{Stress}.
-
-
-\end{multicols*}
 
 \newpage
 \section*{\centering \fontsize{35}{45}\selectfont Equipment}
@@ -1092,11 +1082,11 @@ Spiked shields turn that die into \texttt{d6}.
 
 \subsection*{Consumables}
 
-\paragraph{Virtue restoration.}
+\paragraph{Remedy.}
 \begin{itemize}[nosep]
-    \item[\ding{60}] \textbf{Sustenance} for \texttt{Vigor}
-    \item[\ding{60}] \textbf{Stimulant} for \texttt{Clarity}
-    \item[\ding{60}] \textbf{Sacrament} for \texttt{Spirit}
+    \item[\ding{60}] \textbf{Sustenance} restores \texttt{Vigor}
+    \item[\ding{60}] \textbf{Stimulant} restores \texttt{Clarity}
+    \item[\ding{60}] \textbf{Sacrament} restores \texttt{Spirit}
 \end{itemize} 
 Provide individual restoration by themselves, but can be shared with Company during \texttt{Short Rest}.
 
@@ -1260,6 +1250,26 @@ Technically, during each party's turn there is a cycling through attack targets 
 
 
 \end{multicols*}
+
+\newpage
+\section*{\centering \fontsize{35}{45}\selectfont Downtime Activities} \label{sec:downtime}
+\vspace*{0.4 cm}
+
+I like the idea of giving downtime tokens to knights for them to spend them on treating wounds, healing injuries, reducing stress, restoring focus and brewing(?) consumables.
+
+\begin{multicols*}{2}
+
+
+\subsection*{Brewing}
+
+Should I allow knights to brew stimulants and other consumables?
+
+\newcolumn
+
+\subsection*{Crafting magical items with essences?}
+
+\end{multicols*}
+
 
 
 \end{document}
