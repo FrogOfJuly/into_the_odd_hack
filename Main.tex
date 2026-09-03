@@ -45,7 +45,7 @@ contents={%
  Welcome another \emph{Into the Odd} hack that is tuned for the Realm of The Odd, a patch of land around a lake, that until recently had exactly zero mountains in the middle of it. With the addition of Magic, Injuries, and Quirks, it became its own system
  that deserves its own little rulebook.
 
-Great inspirations are taken from \emph{Mythic Bastionland}, \emph{Tales from Elsewhere}, \emph{Blades in the Dark} and \emph{Darkest Dungeon}.
+Great inspirations are taken from \emph{Mythic Bastionland}, \emph{Tales from Elsewhere}, \emph{Blades in the Dark}, \emph{Daggerheart} and \emph{Darkest Dungeon}.
 \end{center}
 \vspace{2mm} \hrule
 \end{abstract}
@@ -200,10 +200,15 @@ Some knights are \textbf{Spellweavers}(see p.\pageref*{sec:spellweaving}) and so
 
 When picking gear for a knight consult with the Referee, but the rule of thumb is as follows: you have budget of 12 points, these points can be spent on weapons and armour. 
 
-Weapon costs as much as its damage dice. For example, shortsword(2d6 damage) costs 12 points, knife(d6 damage) - 6 points. Each gear providing armour costs 2 per armour point. 
-Usually it makes sense to limit the starting equipment to be common rarity with a single uncommon item as a prized possession of your knight.
+Weapon costs as much as its damage dice. For example, shortsword(2d6 damage) costs 12 points, knife(d6 damage) - 6 points. Each gear providing armour costs 2 per armour point, e.g. shield costs 6 points. 
+Usually it makes sense to limit the starting equipment(p. \pageref*{sec:gear}) to be common rarity with a single uncommon item as a prized possession of your knight.
 
 \end{multicols*}
+
+
+\newpage
+\label{sec:ch_sheet}
+\includepdf[pages={1}]{media/character-sheet.pdf}
 
 \newpage
 \section*{\centering \fontsize{35}{45}\selectfont \fontsize{35}{45}\selectfont Basic Rules}
@@ -252,10 +257,9 @@ If it is, set it to zero and the character suffers a \texttt{Trauma}(p.\pageref*
 \subsection*{Attacks}
 
 \paragraph{Turns.} A turn is enough time to Move and then
-perform an Action, always in that order.
+perform an Action always in that order.
 
-Take the \texttt{Weapon Dice} noted on your weapon(s), shield, and granted by bonuses.
-Go through the following steps in order:
+To attack -- take the \texttt{Weapon Dice} noted on your weapon(s), shield, and granted by bonuses and go through the steps below.
 
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
@@ -299,25 +303,26 @@ In the end of that turn mark all \texttt{Focus} allocated for the defense as spe
 The attack’s \texttt{Damage} is split between the
 target’s \texttt{Guard} and their \texttt{Vigor} at the target's discretion; both are reduced by the respective amount.
 
-If there was no overspill into \texttt{Vigor}, then they evade the \texttt{Attack}.
+\textbf{If} their \texttt{Vigor} is unchanged -- they evade the \texttt{Attack}.
 
-If it overspills into target’s \texttt{Vigor} -- they are \texttt{Wounded}.
+\textbf{If} damage overspills into their \texttt{Vigor} -- they are \texttt{Wounded}.
 
-Check if \texttt{Damage} to \texttt{Vigor} causes a \texttt{Scar} or an \texttt{Injury}.
+\textbf{Check if} \texttt{Damage} to \texttt{Vigor} causes a \texttt{Scar} or an \texttt{Injury}, see p.\pageref*{sec:injuries}.
 
-If it does cause an Injury -- fill the \texttt{Injury slot} of corresponding or greater severity, record damage die that dealt it and apply \texttt{Affliction} (p.\pageref*{sec:affliction}).
-If a knight is injured and has no required injury slot left, they are \textbf{Slain}.
+\textbf{If} it does cause an Injury -- fill the \texttt{Injury slot}, record damage die that dealt it and apply \texttt{Affliction}, also see p.\pageref*{sec:affliction}.
+
+\textbf{If} a knight is injured and has no required injury slot left, they are \textbf{Slain}.
 
 
 \subsection*{Virtue loss.}
 
 Victims are only \textbf{Slain}, \texttt{Wounded} or \texttt{Injured} if the Virtue was reduced by \texttt{Damage}, never as a result of \emph{Virtue Loss}.
 
-At \texttt{0} \texttt{Vigor} you are \texttt{Exhausted} and cannot Attack if you have moved this turn.
+\textbf{At 0 Vigor} you are \texttt{Exhausted} and cannot Attack if you have moved this turn.
 
-At \texttt{0} \texttt{Clarity} you are Exposed and treated as having \texttt{0} \texttt{Guard}.
+\textbf{At 0 Clarity} you are Exposed and treated as having \texttt{0} \texttt{Guard}.
 
-At \texttt{0} \texttt{Spirit} your attacks are Impaired, rolling a single d4 only.
+\textbf{At 0 Spirit} your attacks are \texttt{Impaired}.
 
 \subsection*{Feats}
 
@@ -326,27 +331,27 @@ be performed as described below. Using Feats
 risks the knight becoming \texttt{Fatigued} which
 prevents them from using further \texttt{Feats} until
 they rest.
-
+\colbox{
 \paragraph{Smite.} \textit{Release your righteous fury}
 \begin{itemize}[nosep, leftmargin=*]
     \item Use before rolling a melee \texttt{Attack}.
     \item The \texttt{Attack} gains either \texttt{+1d12} or \texttt{Blast}.
-    \item Pass \texttt{Vigor Save} or become \texttt{Fatigued}.
+    \item Pass \texttt{Vigor} save or become \texttt{Fatigued}.
 \end{itemize}
 \paragraph{Focus.} \textit{Create an opening to exploit}
 \begin{itemize}[nosep, leftmargin=*]
     \item Use after rolling an \texttt{Attack}.
     \item Perform a Gambit without using a die.
-    \item Pass \texttt{Clarity Save} or become \texttt{Fatigued}.
+    \item Pass \texttt{Clarity} save or become \texttt{Fatigued}.
 \end{itemize}
 
 \paragraph{Deny.} \textit{Rebuff an attack before it lands}
 \begin{itemize}[nosep, leftmargin=*]
     \item Use after an \texttt{Attack} roll against you or an ally within arm’s reach.
     \item Discard one Attack die from the roll.
-    \item Pass \texttt{Spirit Save} or become \texttt{Fatigued}.
+    \item Pass \texttt{Spirit} save or become \texttt{Fatigued}.
 \end{itemize}
-
+}
 
 \subsection*{Gambits}
 
@@ -355,19 +360,20 @@ The affected foe must be the same as the target of the attack, except for \textt
 
 For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Makeshift treatment}, the target receives a \texttt{Vigor Save} to ignore the effect.
 
+\colbox{
 \begin{itemize}[nosep, leftmargin=*]
-    \item \textbf{Bolster} the \texttt{Attack} for +1 total \texttt{Damage}
+    \item \textbf{Bolster} the \texttt{Attack} for \texttt{+1} total \texttt{Damage}
     \item \textbf{Move} after the Attack, even if you already moved or are unable to move
     \item \textbf{Repel} a foe away from you
     \item \textbf{Stop} a foe from moving next turn
     \item \textbf{Impair} a weapon on their next turn
     \item \textbf{Trap} a shield until your next turn
     \item \textbf{Dismount} a foe(add \texttt{d6} to damage dice)
-    \item \textbf{Step back} keeping defense up(restore \texttt{1} GD)
+    \item \textbf{Step back} keeping defense up(\texttt{+1} GD)
     \item \textbf{Makeshift treatment} of your or an ally's injury within arm’s reach.
     \item \textbf{Other effect} of a similar level of impact
 \end{itemize}
-
+}
 If a die of \texttt{8} or higher is used in melee, then a Strong Gambit is performed, and the attacker chooses one of the following:
 
 \begin{itemize}[nosep, leftmargin=*]
@@ -427,20 +433,23 @@ A knight's body is tough and trained since childhood, but it can endure only so 
 Dice that determine a knight's \texttt{Vigor} also control the amount of \texttt{Severe and Lethal Injuries} they can sustain.
 To track those injuries, use \texttt{Injury Slots} that record the nature of the \texttt{Injury}, the damage die that caused it, and its \texttt{Affliction}.
 
-A knight gets an \texttt{Injury} according to conditions below. Damage from the \texttt{Attack} causes at most one \texttt{Injury} and one more can come from gaining a \texttt{Scar}.
+% A knight gets an \texttt{Injury} according to conditions below. 
+Damage from the \texttt{Attack} causes at most one \texttt{Injury}, see below, and one more can come from gaining a \texttt{Scar}.
 
+\colbox{
 \begin{itemize}[nosep, leftmargin=*]
-    \item[\ding{170}] If a knight lost \texttt{6, 7, 8, or 9} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
+    \item[\ding{170}] If a knight lost \texttt{5} or more \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost \texttt{10 or more} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Lethal Injury}.
     \item[\ding{170}] If a knight lost half or more of their remaining \texttt{Vigor}, but not all of it -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
 \end{itemize}
 Take worse one if two or more apply.
+}
 
-Each untreated injury comes with \texttt{Affliction}; Roll \texttt{d4} and consult the table below.
-\label{sec:affliction}
+Each untreated injury comes with \texttt{Affliction} according to the table below.
 \begin{center}
   \rowcolors{2}{gray!25}{white}
+    \label{sec:affliction}
     \begin{tabular}{|c|p{6.4cm}|}
         \hline
         \textbf{Roll d4} & \textbf{Affliction} \\
@@ -454,10 +463,53 @@ Each untreated injury comes with \texttt{Affliction}; Roll \texttt{d4} and consu
 \end{center}
 
 \subsection*{Trauma} 
-When \texttt{Stress} reaches the limit a knight can sustain -- it resets and leaves a \texttt{Trauma} behind.
-\texttt{Trauma} fills the spot of a \texttt{Severe Injury} and can potentially cause a heart attack and kill a knight if they are out of \texttt{Injury Slots}. 
-It has neither damage die nor \texttt{Afflication}. 
-Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless explicitly permitted.
+When \texttt{Stress} reaches the limit a knight can sustain -- it resets and leaves a \texttt{Trauma} behind: a footprint of a great effort in a form a mental wound.
+\texttt{Trauma} fills an \texttt{Injury slot} and kills a knight by heart attack if they are out of those.
+It has neither damage die nor \texttt{Afflication} and is dealt with differently(p.\pageref*{sec:healing}).
+% Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless explicitly permitted.
+
+\end{multicols*}
+
+\newpage
+\section*{\centering \fontsize{35}{45}\selectfont Fear \& Hope}
+\vspace*{0.4 cm}
+
+\begin{multicols*}{2}
+    The battle rages as much on the field as in the warriors head. 
+    Extinguishing fear and tending to dwindling hope is as important as finding weaknesses in enemy's armour. 
+
+    Also its rare that knights fight alone. 
+
+    \subsection*{Tracking NPC state}
+
+    Usually, non-player characters(NPCs) and especially those who are not knights, are tracked with less granularity than those controlled by players. 
+    And the main stats that is not tracked are \texttt{Injuries}, because its too much bookkeeping and \texttt{Stress} because of its get-out-of-jail nature. 
+
+    Instead of tracking \texttt{Injuries}, each time an NPC takes \texttt{Vigor} damage that is half, rounding up, of their remaining \texttt{Vigor} -- they blackout. 
+    They die if left untreated for a while.
+
+    Instead of tracking \texttt{Stress} of hostile NPCs Referee uses \texttt{Fear}, and \texttt{Hope} can be used to do the same for knights' allies.
+
+    \subsection*{Fear}
+
+    Each time a knight or a friendly npc rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Check the Company accumulates one point of \texttt{Fear}. 
+    This is a resource, but it is spent not by knights, but by the Referee. 
+
+    Any time a hostile NPCs might want to use \texttt{Stress} -- Referee can decide that they spent \texttt{Fear} of the Company as if they were gaining \texttt{Stress}. 
+    NPCs don't acquire \texttt{Trauma}s so its for the Referee to decide how much it is suitable to spend.
+
+    Additionally, if knight attempts something risky -- it might make sense narratively to manifest their \texttt{Fear} as if they were opposed by some external forces. 
+
+    Fear is the property of the Company, so it is persistent across passage of time and scenes.
+
+    \subsection*{Hope}
+
+    Each time an enemy of the Company rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Check the Company accumulates one point of \texttt{Hope}.
+
+    This is a resource, but this time -- for the Company. Any player can use \texttt{Hope} points as \texttt{Focus} for themselves or \texttt{Stress} for friendly NPCs. 
+    Spending \texttt{Hope} does not increase \texttt{Stress} and thus can't cause \texttt{Trauma}.
+
+    Hope does not persistent across fights and scenes, knights should convert it to \texttt{Focus} for themselves or their \texttt{NPCs}.
 
 \end{multicols*}
 
@@ -519,16 +571,19 @@ You have time to be with yourself or with those around you and forget, at least 
 
 This takes a night, a day, and another night to have full effect.
 
-\paragraph{A single Injury} is healed without rolls during a \texttt{Long Rest}.
-
-\paragraph{Virtues \& Focus} are restored fully, acquired \textbf{Stress} is removed.
+\paragraph{A single Injury} is healed without rolls during a \texttt{Long Rest}. 
+Acquired \textbf{Stress} is removed. 
+\textbf{Virtues and Focus} are restored fully, 
 
 \subsection*{Healing}
+\label{sec:healing}
 
 \paragraph{Healing an Injury} removes it completely.
 This is a tricky endeavour which usually requires a professional to accomplish and comes with a price tag.
 
 Still, in dire circumstances, a knight can attempt to heal themselves or another knight:
+
+\colbox{
 \begin{enumerate}[nosep, leftmargin=*]
     \item The \textbf{healing} knight rolls a \texttt{Clarity} check to determine how to treat this type of \texttt{Injury} most effectively.
     % Roll a single \texttt{d20} against healing knight's \texttt{Clarity}, below or equal is a success. 
@@ -538,6 +593,7 @@ Still, in dire circumstances, a knight can attempt to heal themselves or another
     % Roll a single \texttt{d20} against healed knight's \texttt{Vigor}, below or equal is a success. 
     % No \texttt{Focus} or \texttt{Stress} can be used.
 \end{enumerate}
+}
 Only if both of the above checks are successful, the knight is healed from the \texttt{Injury}.
 Any one knight can endure only \texttt{1} healing attempt per day.
 
@@ -625,12 +681,17 @@ However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
 
 \subsection*{Weaving a spell}
 
-The power of a mage is represented by a \texttt{Spellweaving Pool}: a set of dice that you can use to weave spells. It is described by three components:
+The power of a mage is represented by a \texttt{Spellweaving Pool}: a set of dice that you can use to weave spells. 
+
+\colbox{
+Spealwaeving pool is described by
+
 \begin{itemize}[nosep, leftmargin=*]
     \item Amount and kind of dice it can hold
     \item How one restores those dice
     \item What actions, if any, could change it
 \end{itemize} 
+}
 If several effects grant you a spellweaving pool, those exist independently unless specified. Consuming \textbf{Spur} refills \texttt{3} dice from any combination of pools.
 
 To weave a spell, a weaver rolls any number of those dice from any available pools as an Action from that set and then decides what to cast. This is a \texttt{Spellweaving roll}.
@@ -652,11 +713,11 @@ They persist until spent, and count as in \texttt{Spellweaving Pool}. The amount
 
 \subsection*{Becoming a spellweaver}
 
-A knight who has been taught spellweaving since childhood gets their \texttt{Spellweaving Pool} at character creation. They know any three spells from the list below additionally to \emph{Detect Magic}.
+A knight who has been taught spellweaving gets their \texttt{Spellweaving Pool} at character creation. They know any three spells from the list below additionally to \emph{Detect Magic}.
 \begin{itemize}[nosep, leftmargin=*]
     \item \textbf{Dice} are all \texttt{d6}'s and their amount is equal to the value of knights \texttt{Clarity}.
     \item \textbf{Restoring} the pool is done through \texttt{Overnight Rest} or indulging a \texttt{Passion}, both methods restore \texttt{3} of the missing dice.
-    \item \textbf{Improving} this pool is challenging. Usually knight is tough as much as possible during their training.
+    \item \textbf{Improving} this pool is challenging, the limit of what could be thought is reached.
 \end{itemize}
 
 
@@ -869,9 +930,6 @@ By now we live, but soon comes the day we perish under the iron mace of the Aest
 
 \end{multicols*}
 
-\renewcommand\zinetitle{Appendix}
-
-
 \newpage
 \section*{\centering \fontsize{35}{45}\selectfont Sickness \& Malady}
 \vspace*{0.4 cm}
@@ -1045,26 +1103,26 @@ Melee hefty weapons can be two-handed: add its lowest weapon die to the attack a
 
 \paragraph{Common Weapons.}
 \begin{itemize}[nosep, leftmargin=*]
-    \item [\ding{56}] Simple tools: \texttt{d6 hefty}. (pitchfork, hatchet)
-    \item [\ding{56}] Long, Slow Tools: \texttt{d8 long, slow}. (staff, logging axe, pick)
-    \item [\ding{56}] Hand Weapons: \texttt{d6}. (dagger, club, handaxe)
-    \item [\ding{56}] Hefty Weapons: \texttt{d8 hefty}. (spear, mace, axe)
-    \item [\ding{56}] Long Weapons: \texttt{d10 long}. (poleaxe, billhook)
-    \item [\ding{56}] Sling: \texttt{d4 hefty}
-    \item [\ding{56}] Javelin: \texttt{d6 hefty}
+    \item [$\bullet$] Simple tools: \texttt{d6 hefty}. (pitchfork, hatchet)
+    \item [$\bullet$] Long, Slow Tools: \texttt{d8 long, slow}. (staff, logging axe, pick)
+    \item [$\bullet$] Hand Weapons: \texttt{d6}. (dagger, club, handaxe)
+    \item [$\bullet$] Hefty Weapons: \texttt{d8 hefty}. (spear, mace, axe)
+    \item [$\bullet$] Long Weapons: \texttt{d10 long}. (poleaxe, billhook)
+    \item [$\bullet$] Sling: \texttt{d4 hefty}
+    \item [$\bullet$] Javelin: \texttt{d6 hefty}
 \end{itemize}
 \paragraph{Uncommon Weapons.}
 \begin{itemize}[nosep, leftmargin=*]
-    \item [\ding{56}] Shortbow: \texttt{d6 long, slow}
-    \item [\ding{56}] Shortsword: \texttt{2d6}
-    \item [\ding{56}] Longbow: \texttt{d8 slow}
+    \item [$\bullet$] Shortbow: \texttt{d6 long, slow}
+    \item [$\bullet$] Shortsword: \texttt{2d6}
+    \item [$\bullet$] Longbow: \texttt{d8 slow}
 \end{itemize}
 \paragraph{Rare Weapons.}
 \begin{itemize}[nosep, leftmargin=*]
-    \item [\ding{56}] Longsword: \texttt{2d8 hefty}
-    \item [\ding{56}] Greatsword: \texttt{2d10 long, slow}
-    \item [\ding{56}] Curvebow: \texttt{2d6 long, slow}
-    \item [\ding{56}] Crossbow: \texttt{2d8 heavy, slow}
+    \item [$\bullet$] Longsword: \texttt{2d8 hefty}
+    \item [$\bullet$] Greatsword: \texttt{2d10 long, slow}
+    \item [$\bullet$] Curvebow: \texttt{2d6 long, slow}
+    \item [$\bullet$] Crossbow: \texttt{2d8 heavy, slow}
 \end{itemize}
 
 \paragraph{Armour.} Generally, each of three layers of armour gives an additional armour point, up to \texttt{A4} with a shield.
@@ -1110,9 +1168,7 @@ These also can only be used individually.
 
 \end{multicols*}
 
-\newpage
-\label{sec:ch_sheet}
-\includepdf[pages={1}]{media/character-sheet.pdf}
+\renewcommand\zinetitle{Appendix}
 
 \newpage
 \section*{\centering \fontsize{35}{45}\selectfont Ideas}
