@@ -102,7 +102,7 @@ Typically, you want to remove the lowest one, but ultimately it's for you to dec
 
 It is possible to roll with repeated \texttt{Advantage} by adding and then removing corresponding number of dice copies.
 
-To roll with \texttt{Disadvantage} -- do the same, but you must remove the best one (the least one for \texttt{Virtue Checks}, the highest for \texttt{Attack Rolls}) from the roll.
+To roll with \texttt{Disadvantage} -- do the same, but you must remove the best one (the least one for \texttt{Virtue Saves}, the highest for \texttt{Attack Rolls}) from the roll.
 
 If there is a need to simultaneously roll with \texttt{Advantage} and \texttt{Disadvantage}, remove matching pairs of "-antages" until only one of them remains.
 
@@ -492,11 +492,11 @@ It has neither damage die nor \texttt{Afflication} and is dealt with differently
     Instead of tracking \texttt{Injuries}, each time an NPC takes \texttt{Vigor} damage that is half, rounding up, of their remaining \texttt{Vigor} -- they blackout. 
     They die if left untreated for a while.
 
-    Instead of tracking \texttt{Stress} of hostile NPCs Referee uses \texttt{Fear}, and \texttt{Hope} can be used to do the same for knights' allies.
+    Instead of tracking \texttt{Stress} of hostile NPCs Referee uses \texttt{Fear}. The players can use \texttt{Hope} to do the same for knights' allies.
 
     \subsection*{Fear}
 
-    Each time a knight or a friendly npc rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Check the Company accumulates one point of \texttt{Fear}. 
+    Each time a knight or a friendly npc rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Save the Company accumulates one point of \texttt{Fear}. 
     This is a resource, but it is spent not by knights, but by the Referee. 
 
     % \newcolumn{}
@@ -510,7 +510,7 @@ It has neither damage die nor \texttt{Afflication} and is dealt with differently
 
     \subsection*{Hope}
 
-    Each time an enemy of the Company rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Check the Company accumulates one point of \texttt{Hope}.
+    Each time an enemy of the Company rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Save the Company accumulates one point of \texttt{Hope}.
 
     This is a resource, but this time -- for the Company. Any player can use \texttt{Hope} points as \texttt{Focus} for themselves or \texttt{Stress} for friendly NPCs. 
     Spending \texttt{Hope} does not increase \texttt{Stress} and thus can't cause \texttt{Trauma}.
@@ -552,10 +552,10 @@ It has neither damage die nor \texttt{Afflication} and is dealt with differently
 
 \paragraph{Stress \& Focus} can also be dealt with quickly, but require consuming \textbf{physic}(p. \pageref*{sec:gear}).
 
-A knight can restore their \texttt{Focus} by shere willpower. They roll \texttt{d6} and lose that much \texttt{Clarity}. 
+A knight can restore their \texttt{Focus} by shere willpower. They roll \texttt{d4} and lose that much \texttt{Clarity}. 
 For each point of \texttt{Clarity} lost this way, a knight restores one point of \texttt{Focus}.
 
-A knight can also reduce their \texttt{Stress} this way by rolling \texttt{d6} and lost that much \texttt{Spirit}.
+A knight can also reduce their \texttt{Stress} this way by rolling \texttt{d4} and lose that much \texttt{Spirit}.
 If at least one point of \texttt{Clarity} was lost this way they reduce their \texttt{Stress} by \texttt{1}.
 
 % and \texttt{1} during a \texttt{breather} by acquiring \texttt{1} \texttt{Stress}.
@@ -623,16 +623,16 @@ Still, in dire circumstances, a knight can attempt to heal themselves or another
 
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
-    \item The \textbf{healing} knight rolls a \texttt{Clarity} check to determine how to treat this type of \texttt{Injury} most effectively.
+    \item The \textbf{healing} knight rolls a \texttt{Clarity} save to determine how to treat this type of \texttt{Injury} most effectively.
     % Roll a single \texttt{d20} against healing knight's \texttt{Clarity}, below or equal is a success. 
     % Might be too punishing if no allowed
     % No \texttt{Focus} or \texttt{Stress} can be used, as the knight has no mastery over the craft of healing.
-    \item The \textbf{healed} knight rolls a \texttt{Spirit} check to see if the are able to withstand the pain.
+    \item The \textbf{healed} knight rolls a \texttt{Spirit} save to see if the are able to withstand the pain.
     % Roll a single \texttt{d20} against healed knight's \texttt{Vigor}, below or equal is a success. 
     % No \texttt{Focus} or \texttt{Stress} can be used.
 \end{enumerate}
 }
-Only if both of the above checks are successful, the knight is healed from the \texttt{Injury}.
+Only if both of the above saves are successful, the knight is healed from the \texttt{Injury}.
 Any one knight can endure only \texttt{1} healing attempt per day.
 
 \paragraph{Getting tougher and acquiring quirks.} After suffering through the agony of medicine without painkillers, a knight is relieved from an injury completely.
@@ -644,8 +644,8 @@ Free the \texttt{Injury Slot} that was occupied by the healed \texttt{Injury}.
 Choose or make the Referee choose a \texttt{Quirk} (p.\pageref*{sec:quirks}) for you that is described below and permanently add it to your knight.
 
 \paragraph{Dealing with Trauma} removes it completely. 
-During your sleep pass a \texttt{Clarity} check and a \texttt{Spirit} check to successfully deal with \texttt{Trauma}. 
-For each point of \texttt{Stress} you have -- treat those \texttt{Virtue} checks as if they were opposed with an additional \texttt{Focus}.
+During your sleep pass a \texttt{Clarity} save and a \texttt{Spirit} saves to successfully deal with \texttt{Trauma}. 
+For each point of \texttt{Stress} you have -- treat those \texttt{Virtue} saves as if they were opposed with an additional \texttt{Focus}.
 
 Trauma leaves a permanent mark: acquire a \texttt{Quirk}(p.\pageref*{sec:quirks}) as if a knight healed from an \texttt{Injury}.
 
@@ -729,11 +729,11 @@ Provide individual restoration by themselves, but can be shared with Company dur
 Can only be used by a single person. 
 \paragraph{Medicine.}
 \begin{itemize}[nosep, leftmargin=*]
-    \item[\ding{60}] \textbf{Painkiller} removes \texttt{Vigor} check from injury treatment. 
+    \item[\ding{60}] \textbf{Painkiller} removes \texttt{Vigor} save from injury treatment. 
     Allows treatment of an additional injury today while in effect. Wears off in an hour.
-    \item[\ding{60}] \textbf{Hallucinogen} renders knight unable to perform basic tasks for six hours and allows them to fight their inner daemons.
-    For each \texttt{Trauma} roll a \texttt{Spirit} check. 
-    After each failed check - corresponding \texttt{Trauma} worsens and changes injury slot to lethal, otherwise its removed and knight receives a Quirk(p.\pageref*{sec:quirks}).
+    \item[\ding{60}] \textbf{Hallucinogen} renders knight unable to perform basic tasks for six hours and allows them to fight all their inner deamons at once.
+    For each \texttt{Trauma} they may roll a \texttt{Spirit} save. 
+    After each failed save - corresponding \texttt{Trauma} worsens and changes injury slot to lethal, otherwise its removed and knight receives a Quirk(p.\pageref*{sec:quirks}).
     Can be taken during sleep.
 \end{itemize}
 These also can only be used individually. 
@@ -803,7 +803,7 @@ Information for the answer is provided by yourself and spells around you.
 For example, spells usually are not directly marked by their caster and are not aware of their surroundings beyond the spell's design.
 
 You can learn how a spell unknown to you works. 
-Upon discovery do a \texttt{Clarity} check, if successful, ask the Referee if you can learn this spell and, if you can, how many times encountering this spell in the wild is enough.
+Upon discovery do a \texttt{Clarity} save, if successful, ask the Referee if you can learn this spell and, if you can, how many times encountering this spell in the wild is enough.
 
 \paragraph{Heat Metal.} Intricate ladder of arcane pulses rapidly heats metal until it glows red hot.
 Pulses should be chained together carefully; pick no less than three dice with consecutive values.
@@ -848,6 +848,13 @@ You choose the shape and overall appearance of the embodiment, but it still look
 It has no armour, attacks for 2d8, and can use one \texttt{Feat} you choose each morning.
 It is as intelligent as an orca, can't speak, but comprehends languages you know.
 Does not really understand human ways, but can mimic them with mixed results.
+
+\paragraph{Helping hands.} You summon a pair of hands that try to help you. 
+You can control them directly or delegate simple tasks. Choose where they grow from, usually hips or shoulders are the best choice.
+Your productivity increases greatly for tasks you already know how to perform. 
+In combat they can wield either \textbf{two non-Hefty} weapons or \textbf{one Hefty}. 
+They are not very strong, so nothing heavier is feasible. You can still benefit from only one shield. 
+They last for a task you summoned them to fullfil or for one combat. Slowly dissipate when there is nothing for them to do.
 
 \end{multicols*}
 
