@@ -186,7 +186,7 @@ Each injury could be:
 \begin{itemize}[nosep, leftmargin=*]
     \item \textbf{Untreated} \texttt{injury} applies \texttt{Affliction}(p.\pageref*{sec:injuries})
     \item \textbf{Treated}(p.\pageref*{sec:combat}, \pageref*{sec:healing}) \texttt{injury} occupies the slot, but does not apply \texttt{Affliction}
-    \item \textbf{Healed} \texttt{injury} is removed entirely, but leaves a Quirk(p.\pageref*{sec:quirks}).
+    \item \textbf{Healed} \texttt{injury} is removed entirely, but leaves a Quirk(p.\pageref*{sec:quirks}) behind.
 \end{itemize}
 If a knight suffers an injury and all corresponding slots are full -- fill one with greater lethality. If they are out of those, the knight is \textbf{Slain}.
 
@@ -243,8 +243,11 @@ For split second reaction, like avoiding sudden fall or dodging an arrow -- up t
 
 Opposing characters decide how much \texttt{Stress} they spend simultaneously.
 
-A character can't spend \texttt{Stress} if they are at maximum \texttt{Stress}. After resolving an action, check if your \texttt{Stress} is at maximum.
-If it is, set it to zero and the character suffers a \texttt{Trauma}(p.\pageref*{sec:injuries}).
+A character can't spend \texttt{Stress} if they are at maximum \texttt{Stress}. 
+After resolving an action, if their \texttt{Stress} is at maximum: 
+    reduce it by \textbf{1}, 
+    they lose \texttt{d6} \texttt{Spirit} and 
+    suffer a \textbf{Trauma}(p.\pageref*{sec:injuries}).
 % TODO: 
 % Maybe it is worth to reduce it by one instead. 
 % That depends if gaining trauma to reset stress is desirable behavior.
@@ -431,6 +434,7 @@ Roll the damage die again, add amount of your occupied \texttt{injury slots} and
 A knight's body is tough and trained since childhood, but it can endure only so much.
 Dice that determine a knight's \texttt{Vigor} also control the amount of \texttt{Severe and Lethal Injuries} they can sustain.
 To track those injuries, use \texttt{Injury Slots} that record the nature of the \texttt{Injury}, the damage die that caused it, and its \texttt{Affliction}.
+Injury persists until healed(p.\pageref*{sec:healing})
 
 % A knight gets an \texttt{Injury} according to conditions below. 
 Damage from the \texttt{Attack} causes at most one \texttt{Injury}, see below, and one more can come from gaining a \texttt{Scar}.
@@ -462,9 +466,10 @@ Each untreated injury comes with \texttt{Affliction} according to the table belo
 \end{center}
 
 \subsection*{Trauma} 
-When \texttt{Stress} reaches the limit a knight can sustain -- it resets and leaves a \texttt{Trauma} behind: a footprint of a great effort in a form a mental wound.
-\texttt{Trauma} fills an \texttt{Injury slot} and kills a knight by heart attack if they are out of those.
-It has neither damage die nor \texttt{Afflication} and is dealt with differently(p.\pageref*{sec:healing}).
+When \texttt{Stress} reaches the limit a knight can sustain -- it causes \texttt{Trauma}: a footprint of a great effort in a form a mental wound.
+\texttt{Trauma} fills any \texttt{Injury slot} and kills a knight by heart attack if they are out of them.
+It has neither damage die nor \texttt{Afflication} and is dealt with differently (p.\pageref*{sec:healing}) 
+% leaves behind a Quirk(p.\pageref*{sec:quirks}).
 % Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless explicitly permitted.
 
 \end{multicols*}
@@ -546,7 +551,14 @@ It has neither damage die nor \texttt{Afflication} and is dealt with differently
 \paragraph{Guard} requires only a swift moment of safety to recover.
 
 \paragraph{Stress \& Focus} can also be dealt with quickly, but require consuming \textbf{physic}(p. \pageref*{sec:gear}).
-If the knight has no \texttt{Focus} left, they can recover \texttt{1} during a \texttt{breather} by acquiring \texttt{1} \texttt{Stress}.
+
+A knight can restore their \texttt{Focus} by shere willpower. They roll \texttt{d6} and lose that much \texttt{Clarity}. 
+For each point of \texttt{Clarity} lost this way, a knight restores one point of \texttt{Focus}.
+
+A knight can also reduce their \texttt{Stress} this way by rolling \texttt{d6} and lost that much \texttt{Spirit}.
+If at least one point of \texttt{Clarity} was lost this way they reduce their \texttt{Stress} by \texttt{1}.
+
+% and \texttt{1} during a \texttt{breather} by acquiring \texttt{1} \texttt{Stress}.
 
 % \begin{itemize}[nosep, leftmargin=*]
 %     \item[\ding{60}] \textbf{Spur} replenishes \texttt{Focus} and restores up to \texttt{3} \texttt{Spellweaving} dice
@@ -557,19 +569,23 @@ If the knight has no \texttt{Focus} left, they can recover \texttt{1} during a \
 
 It is not enough time to make a fire and cook food, but just right to treat injuries, have a talk, or just zone out to process the latest events.
 
-\paragraph{Focus} is restored with decreasing efficiency.
-Each time a knight rests during the day for an hour they restore \texttt{Focus}, but with various efficiency. 
-The first hour allows a knight to reset their \texttt{Focus} to \texttt{4}, the second -- to \texttt{2}, and the thrid one -- to \texttt{1}. 
-Subsequent short rests do not restore \texttt{Focus}. 
-Short rest can't reduce \texttt{Focus} or set it above knight's maximum.
+\paragraph{Focus} is restored with limited efficiency. 
+Each knight can restore their Focus through \texttt{Short Rest}, but the amount restored this way in total per day cannot exceed their maximum \texttt{Focus}.
+% During the \texttt{Short rest}, each knight can restore \texttt{Focus} that amounts to no more than their maximum \texttt{Focus} in total.
+% Each time a knight rests during the day for an hour they restore \texttt{Focus}, but with various efficiency. 
+% The first hour allows a knight to reset their \texttt{Focus} to \texttt{4}, the second -- to \texttt{2}, and the thrid one -- to \texttt{1}. 
+% Subsequent short rests do not restore \texttt{Focus}. 
+% Short rest can't reduce \texttt{Focus} or set it above knight's maximum.
 
 
 % Each time a knight does an hour of \texttt{Short Rest}, they restore \texttt{Focus} up to their maximum minus the number of hours of \texttt{Short Rest} they already had this day, including this one.
 
-\paragraph{Injuries} can be treated during \texttt{Short Rest} without rolls. Knights have basic medical skills to dress and clean wounds. Mark all \texttt{Injuries} as \texttt{Treated}.
+\paragraph{Injuries} can be treated during \texttt{Short Rest} without rolls. 
+Knights have basic medical skills to dress and clean wounds. 
+Mark all \texttt{Injuries} as \texttt{Treated}.
 
 
-\paragraph{Virtue restoration.} During a \texttt{Short Rest} it is possible to restore Virtue, provided a knight has required \textbf{Remedy}(p. \pageref*{sec:gear}).
+\paragraph{Virtue restoration} during a \texttt{Short Rest} is possible, provided a knight has required \textbf{Remedy}(p. \pageref*{sec:gear}).
 % \begin{itemize}[nosep, leftmargin=*]
 %     \item[\ding{60}] \textbf{Sustenance} for \texttt{Vigor}
 %     \item[\ding{60}] \textbf{Stimulant} for \texttt{Clarity}
@@ -694,6 +710,8 @@ Does not stack if there are two shields. It has \texttt{d4} as a weapon die.
 Spiked shields turn that die into \texttt{d6}.
 
 \subsection*{Consumables}
+
+Those are hard to come by and usually acquired as a favour from skilled professionals.
 
 \paragraph{Remedy.}
 \begin{itemize}[nosep, leftmargin=*]
@@ -1158,7 +1176,7 @@ However, don't recover \texttt{Focus} during \texttt{Short Rest}.
 You can \texttt{Upface} any die of that weapon. However, each time you strike, you must strike with the weapon you are obsessed with.
 You can't part with it; during combat it must be in your hand, otherwise at arms length at most.
 
-\paragraph{Gore fascination.} You ignore \texttt{Distress} conditions of your \texttt{Injuries}.
+\paragraph{Gore fascination.} You ignore \texttt{Distress} afflictions of your \texttt{Injuries}.
 However, you must treat your \texttt{Injuries} by yourself.
 
 \paragraph{Stressjunkie.} Each time you gain \texttt{Stress}, also gain \texttt{Focus}.
@@ -1172,7 +1190,7 @@ You can \texttt{Downface} any die which is used in Attack against you.
 However, whenever you take a \texttt{Clarity} save during socialization, treat it as if it was opposed with one additional \texttt{Focus}.
 
 \paragraph{Traumatic visions.} Each time you swing at your enemy, pain returns. You can keep it at bay, but it takes effort and willpower you don't always have to spare.
-Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before choosing what die to copy with \texttt{Focus}. 
+Each time you roll with \texttt{Focus} you can \texttt{Upface} on die before choosing what die to copy. 
 However each time you roll without \texttt{Focus} -- \texttt{Downface} one die in your roll.
 
 \paragraph{Overconfident.} For some reasons, after all the pain, you feel like you have figured it all out. Each time you perform a \texttt{Feat} -- gain one \texttt{Focus} after the attack. 
