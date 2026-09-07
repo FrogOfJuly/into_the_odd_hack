@@ -221,7 +221,7 @@ There are two important resources each knight has:
 the amount of thought they can put into perfecting a task and the amount of effort they can put into a failed task to fix it.
 Those are tracked by \texttt{Focus} and \texttt{Stress} respectively.
 
-\paragraph{Focus.} When a roll is performed that can be affected by a character, they can spend Focus to
+\paragraph{Focus.} Before a roll is performed if it can be affected by a character, they can spend Focus to
 enhance it. It \textbf{must} be declared \textbf{before} rolling the dice. For each point of \texttt{Focus} spent -- add \texttt{Advantage} to that roll.
 
 One can not only plot how to enhance the roll, but also how to sabotage a roll.
@@ -231,23 +231,30 @@ If one character can affect the roll of another destructively by planning in adv
 Usually, a knight has no restriction on how much \texttt{Focus} they can spend to enhance an action, but
 determining how much focus is possible to spend to oppose a given action should be discussed with the Referee. 
 
-The order is important, so opposing characters decide how much \texttt{Focus} they spend simultaneously.
+% The order is important, so opposing characters decide how much \texttt{Focus} they spend simultaneously.
 
-\paragraph{Stress.} After a roll is made, a knight can decide that they are not satisfied with the result and try to fix it by acquiring \texttt{Stress}.
+\paragraph{Stress.} After a roll is made, a knight can try to improve it by acquiring \texttt{Stress}.
 For each gained \texttt{Stress}, add \texttt{Advantage} to that roll. Increasing one's \texttt{Stress} \textbf{must} be done \textbf{after} the roll.
 
 Similar to \texttt{Focus}, one can also acquire \texttt{Stress} to oppose an action reactively -- after the roll is made.
-
+`'
 Dealing with an explicit incoming danger -- any amount of \texttt{Stress} can be spent.
 For split second reaction, like avoiding sudden fall or dodging an arrow -- up to \texttt{1} \texttt{Stress} can be spent.
 
-Opposing characters decide how much \texttt{Stress} they spend simultaneously.
+\colbox{
+    \paragraph{Mental breakdown} happens when \texttt{Stress} is full after roll is resolved.
 
-A character can't spend \texttt{Stress} if they are at maximum \texttt{Stress}. 
-After resolving an action, if their \texttt{Stress} is at maximum: 
-    reduce it by \textbf{1}, 
-    they lose \texttt{d6} \texttt{Spirit} and 
-    suffer a \textbf{Trauma}(p.\pageref*{sec:injuries}).
+    \begin{enumerate}[nosep, leftmargin=*]
+        \item Reduce \texttt{Stress} by \textbf{1}
+        \item Lose \texttt{d6} \texttt{Spirit}
+        \item Suffer \textbf{Trauma}(p.\pageref*{sec:injuries})
+    \end{enumerate}
+}
+If the action is contested by \texttt{Focus} or \texttt{Stress}, opposing characters reveal how much they spend simultaneously each time. 
+
+% A character can't spend \texttt{Stress} if they are at full \texttt{Stress}. 
+% After resolving an action, if their \texttt{Stress} is full: 
+    
 % TODO: 
 % Maybe it is worth to reduce it by one instead. 
 % That depends if gaining trauma to reset stress is desirable behavior.
@@ -467,8 +474,8 @@ Each untreated injury comes with \texttt{Affliction} according to the table belo
 
 \subsection*{Trauma} 
 When \texttt{Stress} reaches the limit a knight can sustain -- it causes \texttt{Trauma}: a footprint of a great effort in a form a mental wound.
-\texttt{Trauma} fills any \texttt{Injury slot} and kills a knight by heart attack if they are out of them.
-It has neither damage die nor \texttt{Afflication} and is dealt with differently (p.\pageref*{sec:healing}) 
+\texttt{Trauma} fills an \texttt{Injury slot} and kills the knight by a heart attack if they are out of them.
+It has neither damage die nor \texttt{Afflication} and is dealt with in its own way (p.\pageref*{sec:healing}) 
 % leaves behind a Quirk(p.\pageref*{sec:quirks}).
 % Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless explicitly permitted.
 
@@ -637,7 +644,7 @@ Any one knight can endure only \texttt{1} healing attempt per day.
 
 \paragraph{Getting tougher and acquiring quirks.} After suffering through the agony of medicine without painkillers, a knight is relieved from an injury completely.
 
-If the total \texttt{Guard} of a knight is less than the maximum value on a die that is marked on the \texttt{Injury Slot}, roll it and gain that much more.
+If the maximum \texttt{Guard} of a knight is less than the maximum value on a die that is marked on the \texttt{Injury Slot}, increase \texttt{Guard} by \textbf{1}.
 
 Free the \texttt{Injury Slot} that was occupied by the healed \texttt{Injury}.
 
@@ -1204,6 +1211,8 @@ However each time you roll without \texttt{Focus} -- \texttt{Downface} one die i
 However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
 
 \paragraph{You never learned.} Record each time you are \texttt{Fatigued}. Each third time reset the count, resist the \texttt{Fatigue} and gain \texttt{2} \texttt{Stress}.
+
+\paragraph{Strength in suffering.} When you attack, upface a die if you have at lest one \texttt{Injury Slot} filled.
 
 
 \end{multicols*}
