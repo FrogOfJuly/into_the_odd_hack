@@ -814,26 +814,7 @@ For example, spells usually are not directly marked by their caster and are not 
 You can learn how a spell unknown to you works. 
 Upon discovery do a \texttt{Clarity} save, if successful, ask the Referee if you can learn this spell and, if you can, how many times encountering this spell in the wild is enough.
 
-\paragraph{Heat Metal.} Intricate ladder of arcane pulses rapidly heats metal until it glows red hot.
-Pulses should be chained together carefully; pick no less than three dice with consecutive values.
-If it is a piece of armour, the wearer takes \texttt{Damage} equal to the sum of chosen dice.
-If it is a weapon, the bearer chooses to drop it or persevere through pain, taking half of the sum of the chosen dice.
-Any \texttt{Damage} from this spell ignores \texttt{Guard}.
-
-\paragraph{Magic missile.}
-Identical glowing bolts launch towards chosen targets, piercing bone and muscle.
-Pick any number of dice with the same value rolled.
-You can pick a different target for each bolt; it deals \texttt{Damage} equal to the rolled value.
-
-\paragraph{Hex.}
-A curse of misfortune impairs defense and makes the target more vulnerable.
-Pick three dice that have a value of \texttt{1}.
-For the remaining combat, anyone who attacks the bearer of this curse can add a die from the picked ones as an additional weapon die before rolling.
-The die is not spent and can be used by multiple attackers, but only a single Hex can be cast upon any one creature.
-
 \paragraph{Soothing Visions. } Pick two dice both with the same value rolled as the target's \texttt{Stress}. Reduce their \texttt{Stress} by \texttt{2}.
-
-\newpage
 
 \paragraph{True Strike.}
 Pick any number of dice, then perform an Attack as usual.
@@ -847,32 +828,64 @@ Can be used with \texttt{Smite} \texttt{Feat}.
 \paragraph{Haste.} Pick any number of dice that amount to target's Vigor or greater.
 Each time a hasted creature attacks, choose a weapon and add its \texttt{Weapon dice} to the \texttt{Attack} one additional time.
 
-\paragraph{Conjure embodiment of magic.} Pick up to two dice three times; values for each pick determine virtues of the embodiment.
-Then pick an additional die -- this is its guard.
-Embodiment obeys your commands and vanishes when any of its virtues reach zero.
-At dawn of each day you need to maintain it: pick up to two dice; that's the new Vigor of the embodiment.
-Otherwise, halve each of its virtues, rounding down. Embodiments are unnatural for this world, so at dawn, reduce its Clarity by 2.
-At the end of each combat, reduce its Spirit by 1.
-You choose the shape and overall appearance of the embodiment, but it still looks very unnatural and magical for anybody who glances at it.
-It has no armour, attacks for 2d8, and can use one \texttt{Feat} you choose each morning.
-It is as intelligent as an orca, can't speak, but comprehends languages you know.
-Does not really understand human ways, but can mimic them with mixed results.
+\paragraph{Mind Sliver.} Pick any amount of dice, perform a ranged attack as if those dice are your weapon dice. 
+
+However, the damage from this spell is dealt to \texttt{Spirit} or \texttt{Clarity} instead of \texttt{Vigor}. 
+If half or more \texttt{Virtue} is lost as a result of this spell -- target's attacks are \texttt{Impaired} until your next turn.
+
+
 
 \paragraph{Helping hands.} Pick any number of dice that amount to exactly ten. 
 You summon a pair of hands to help you. 
 You can control them directly or delegate simple tasks. Choose where they grow from, usually hips or shoulders are the best choice.
 Your productivity increases greatly for tasks you already know how to perform. 
-In combat they can wield either \textbf{two non-Hefty} weapons or \textbf{one Hefty}. 
-They are not very strong, so nothing heavier is feasible. You can still benefit from only one shield. 
-They last for a task you summoned them to fullfil or for one combat. Slowly dissipate when there is nothing for them to do.
 
-\paragraph{Blade ward.} Pick any amount of dice, mark them as spent, but the are unrecoverable until discarded from the spell.
+In combat they can wield either \emph{two non-Hefty} weapons or \emph{one Hefty}. 
+They are not very strong, so nothing heavier is feasible. You can still benefit from only one shield. 
+They last for a task you summoned them to fullfil or for one combat. Slowly dissipate when idle.
+
+\paragraph{Hex.}
+A curse of misfortune impairs defense and makes the target more vulnerable.
+Pick three dice that have a value of \texttt{1}. Mark them as spent, but they can't go back to the pool while the spell lasts.
+
+For the remaining combat, anyone who attacks the bearer of this curse can add a die from the picked ones as an additional weapon die before rolling.
+The die is not spent and can be used by multiple attackers, but only a single Hex can be cast upon any one creature.
+Spell is active for a couple of days or until dismissed. 
+
+Outside of combat any die can be used as a penalty to \texttt{Virtue} rolls that could be affected by luck, e.g. thoughts are generally unaffected, but physical and attention dependent actions are.
+
+\paragraph{Conjure embodiment of magic.} Pick up to two dice three times; values for each pick determine virtues of the embodiment.
+Then pick an additional die -- this is its guard.
+Embodiment obeys your commands and vanishes when any of its virtues reach zero.
+At dawn of each day you need to maintain it: pick up to two dice; that's the new Vigor of the embodiment.
+
+Otherwise, halve each of its virtues, rounding down. Embodiments are unnatural for this world, so at dawn, reduce its Clarity by 2.
+At the end of each combat, reduce its Spirit by 1.
+You choose the shape and overall appearance of the embodiment, but it still looks very unnatural and magical for anybody who glances at it.
+
+It has no armour, attacks for 2d8, and can use one \texttt{Feat} you choose each morning.
+It is as intelligent as an orca, can't speak, but comprehends languages you know.
+Does not really understand human ways, but can mimic them with mixed results.
+
+\paragraph{Magic missile.}
+Identical glowing bolts launch towards chosen targets, piercing bone and muscle.
+Pick any number of dice with the same value rolled.
+You can pick a different target for each bolt; it deals \texttt{Damage} equal to the rolled value.
+
+\paragraph{Heat Metal.} Intricate ladder of arcane pulses rapidly heats metal until it glows red hot.
+Pulses should be chained together carefully; pick no less than three dice with consecutive values.
+If it is a piece of armour, the wearer takes \texttt{Damage} equal to the sum of chosen dice.
+If it is a weapon, the bearer chooses to drop it or persevere through pain, taking half of the sum of the chosen dice.
+Any \texttt{Damage} from this spell ignores \texttt{Guard}.
+
+\paragraph{Blade Ward.} Pick any amount of dice, mark them as spent, but they can't go back to the pool while the spell lasts.
+
 Each time an attack would hit you for damage that is exactly equal to value of any picked dice -- treat the attack as if it was evaded. 
 Discard the matching die. The spell persists until dismissed or all dice are spent.
 
-\paragraph{Mind sliver.} Pick any amount of dice, perform a ranged attack as if those dice are your weapon dice. 
-However, the damage from this spell is dealt to \texttt{Spirit} or \texttt{Clarity} instead of \texttt{Vigor}. 
-If half or more \texttt{Virtue} is lost as a result of this spell -- target's attacks are \texttt{Impaired} until your next turn.
+
+
+
 
 
 \end{multicols*}
