@@ -19,8 +19,6 @@ color=black,
 contents={%
  \ifnum\value{page}<4 {
     \ifnum\value{page}=1 {\includegraphics[width=\paperwidth,height=\paperheight]{media/background_handmade_white_both_corners.png}} \fi
-    % \ifnum\value{page}=2 {\includegraphics[width=\paperwidth,height=\paperheight]{media/kerkenna_map_stylized_left_with_corners.png}} \fi
-    % \ifnum\value{page}=3 {\includegraphics[width=\paperwidth,height=\paperheight]{media/kerkenna_map_stylized_right_with_corners.png}} \fi
     \ifnum\value{page}=2 {\includegraphics[width=\paperwidth,height=\paperheight]{media/Realm_cleared-0-border.jpg}} \fi
     \ifnum\value{page}=3 {\includegraphics[width=\paperwidth,height=\paperheight]{media/Realm_cleared-1-border.jpg}} \fi
  } \else {
@@ -31,7 +29,6 @@ contents={%
   \fi}\fi}}
 
 
-% TITLE
 \author{\textit{Written by FrogOfJuly \& Zentas}}
 \renewcommand\zinetitle{The Odd}
 
@@ -253,9 +250,6 @@ A character can't spend \texttt{Stress} if they are at full \texttt{Stress}.
     \end{enumerate}
 }
 If the action is contested by \texttt{Focus} or \texttt{Stress}, opposing characters reveal how much they spend simultaneously each time. 
-
-% After resolving an action, if their \texttt{Stress} is full: 
-    
 % TODO: 
 % Maybe it is worth to reduce it by one instead. 
 % That depends if gaining trauma to reset stress is desirable behavior.
@@ -574,27 +568,12 @@ For each point of \texttt{Clarity} lost this way, a knight restores one point of
 A knight can also reduce their \texttt{Stress} this way by rolling \texttt{d4} and losing that much \texttt{Spirit}.
 If at least one point of \texttt{Clarity} was lost this way, they reduce their \texttt{Stress} by \texttt{1}.
 
-% and \texttt{1} during a \texttt{breather} by acquiring \texttt{1} \texttt{Stress}.
-
-% \begin{itemize}[nosep, leftmargin=*]
-%     \item[\ding{60}] \textbf{Spur} replenishes \texttt{Focus} and restores up to \texttt{3} \texttt{Spellweaving} dice
-%     \item[\ding{60}] \textbf{Sedative} removes \texttt{Stress}
-% \end{itemize}
-
 \subsection*{Short Rest}
 
 It is not enough time to make a fire and cook food, but just right to treat injuries, have a talk, or just zone out to process the latest events.
 
 \paragraph{Focus} is restored with limited efficiency. 
 Each knight can restore their Focus through \texttt{Short Rest}, but the amount restored this way in total per day cannot exceed their maximum \texttt{Focus}.
-% During the \texttt{Short rest}, each knight can restore \texttt{Focus} that amounts to no more than their maximum \texttt{Focus} in total.
-% Each time a knight rests during the day for an hour they restore \texttt{Focus}, but with various efficiency. 
-% The first hour allows a knight to reset their \texttt{Focus} to \texttt{4}, the second -- to \texttt{2}, and the thrid one -- to \texttt{1}. 
-% Subsequent short rests do not restore \texttt{Focus}. 
-% Short rest can't reduce \texttt{Focus} or set it above knight's maximum.
-
-
-% Each time a knight does an hour of \texttt{Short Rest}, they restore \texttt{Focus} up to their maximum minus the number of hours of \texttt{Short Rest} they already had this day, including this one.
 
 \paragraph{Injuries} can be treated during \texttt{Short Rest} without rolls. 
 Knights have basic medical skills to dress and clean wounds. 
@@ -602,11 +581,6 @@ Mark all \texttt{Injuries} as \texttt{Treated}.
 
 
 \paragraph{Virtue restoration} during a \texttt{Short Rest} is possible, provided a knight has required \textbf{Remedy}(p. \pageref*{sec:gear}).
-% \begin{itemize}[nosep, leftmargin=*]
-%     \item[\ding{60}] \textbf{Sustenance} for \texttt{Vigor}
-%     \item[\ding{60}] \textbf{Stimulant} for \texttt{Clarity}
-%     \item[\ding{60}] \textbf{Sacrament} for \texttt{Spirit}
-% \end{itemize} They are consumed upon usage and provide individual restoration by themselves, but can be shared with Company during \texttt{Short Rest}.
 
 \subsection*{Overnight Rest}
 
@@ -640,12 +614,7 @@ Still, in dire circumstances, a knight can attempt to heal themselves or another
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
     \item The \textbf{healing} knight rolls a \texttt{Clarity} save to determine how to treat this type of \texttt{Injury} most effectively.
-    % Roll a single \texttt{d20} against healing knight's \texttt{Clarity}, below or equal is a success. 
-    % Might be too punishing if not allowed
-    % No \texttt{Focus} or \texttt{Stress} can be used, as the knight has no mastery over the craft of healing.
     \item The \textbf{healed} knight rolls a \texttt{Spirit} save to see if the are able to withstand the pain.
-    % Roll a single \texttt{d20} against healed knight's \texttt{Vigor}, below or equal is a success. 
-    % No \texttt{Focus} or \texttt{Stress} can be used.
 \end{enumerate}
 }
 Only if both of the above saves are successful, the knight is healed from the \texttt{Injury}.
@@ -803,11 +772,6 @@ A knight who has been taught spellweaving gets their \texttt{Spellweaving Pool} 
     \item \textbf{Restoring} the pool is done through \texttt{Overnight Rest} or indulging a \texttt{Passion}, both methods restore \texttt{3} of the missing dice.
     \item \textbf{Improving} this pool is challenging; the limit of what could be thought is reached.
 \end{itemize}
-
-
-% \paragraph{Indulging a Passion} to restore \texttt{Spirit} also allows to regain up to \texttt{3} missing dice from the \texttt{Spellweaving Pool}.
-
-% \paragraph{Overnight Rest} or \textbf{Consuming Spur} also restores up to \texttt{3} dice.
 
 \subsection*{Spells}
 
@@ -1107,12 +1071,6 @@ When injured -- you feel neither pain nor distress.
     \item You ignore \texttt{Afflictions} of \texttt{Injuries}.
 \end{itemize}
 
-% \begin{itemize}[nosep, leftmargin=*]
-%     \item Your maximum \texttt{Guard} becomes \texttt{0} if it was even and \texttt{1} if it was odd.
-%     \item For each \texttt{2} \texttt{Guard} lost this way increase your maximum \texttt{Vigor} by \texttt{1}, up to \texttt{19}.
-%     \item You ignore \texttt{Afflictions} of \texttt{Injuries}
-% \end{itemize}
-
 \subsection*{Weavering Parasite}
 
 Parasite awakes and digs into your body.
@@ -1137,8 +1095,6 @@ You lose \texttt{1} \textit{maximum} \texttt{Clarity} and now have a \texttt{Spe
 
 
 \newpage
-% \section*{\centering \fontsize{35}{45}\selectfont Appendix}
-% \vspace*{0.4 cm}
 
 \begin{multicols*}{2}
 
