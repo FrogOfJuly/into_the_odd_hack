@@ -241,6 +241,8 @@ Similar to \texttt{Focus}, one can also acquire \texttt{Stress} to oppose an act
 Dealing with an explicit incoming danger -- any amount of \texttt{Stress} can be spent.
 For split second reaction, like avoiding sudden fall or dodging an arrow -- up to \texttt{1} \texttt{Stress} can be spent.
 
+A character can't spend \texttt{Stress} if they are at full \texttt{Stress}. 
+
 \colbox{
     \paragraph{Mental breakdown} happens when \texttt{Stress} is full after roll is resolved.
 
@@ -252,7 +254,6 @@ For split second reaction, like avoiding sudden fall or dodging an arrow -- up t
 }
 If the action is contested by \texttt{Focus} or \texttt{Stress}, opposing characters reveal how much they spend simultaneously each time. 
 
-% A character can't spend \texttt{Stress} if they are at full \texttt{Stress}. 
 % After resolving an action, if their \texttt{Stress} is full: 
     
 % TODO: 
@@ -444,7 +445,7 @@ To track those injuries, use \texttt{Injury Slots} that record the nature of the
 Injury persists until healed(p.\pageref*{sec:healing})
 
 % A knight gets an \texttt{Injury} according to conditions below. 
-Damage from the \texttt{Attack} causes at most one \texttt{Injury}, see below, and one more can come from gaining a \texttt{Scar}.
+Damage from the \texttt{Attack} causes at most one \texttt{Injury}, see below, and one more can come from gaining a \texttt{Scar}. 
 
 \colbox{
 \begin{itemize}[nosep, leftmargin=*]
@@ -453,10 +454,11 @@ Damage from the \texttt{Attack} causes at most one \texttt{Injury}, see below, a
     \item[\ding{170}] If a knight lost half or more of their remaining \texttt{Vigor}, but not all of it -- take a \texttt{Severe Injury}.
     \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
 \end{itemize}
-Take worse one if two or more apply.
+Take worse one if two or more apply. If injury is \textbf{Lethal} -- knight falls unconsciousness until treated.
 }
 
 Each untreated injury comes with \texttt{Affliction} according to the table below. 
+
 \begin{center}
   \rowcolors{2}{gray!25}{white}
     \label{sec:affliction}
@@ -467,7 +469,7 @@ Each untreated injury comes with \texttt{Affliction} according to the table belo
         \texttt{1} & The cut is deep, you are \texttt{Bleeding}:\newline lose \texttt{1} \texttt{Vigor} when your turn starts\\
         \texttt{2} & Pain is unbearable, you are in \texttt{Agony}:\newline lose \texttt{1} \texttt{Clarity} when your turn starts\\
         \texttt{3} & Grievous wound, you are in \texttt{Distress}:\newline lose \texttt{1} \texttt{Spirit} when your turn starts\\
-        \texttt{4} & If this injury is Lethal you blackout until treated\\
+        \texttt{4} & Luck is on your side: no Affliction.\\
         \hline
     \end{tabular}
 \end{center}
@@ -842,7 +844,7 @@ Can be used with \texttt{Smite} \texttt{Feat}.
  The shield's \texttt{Guard} is spent before theirs.
  Shield's \texttt{Guard} persists until their \texttt{Guard} would be restored normally.
 
-\paragraph{Haste.} Pick any amount of dice that amount to target's Vigor or greater.
+\paragraph{Haste.} Pick any number of dice that amount to target's Vigor or greater.
 Each time a hasted creature attacks, choose a weapon and add its \texttt{Weapon dice} to the \texttt{Attack} one additional time.
 
 \paragraph{Conjure embodiment of magic.} Pick up to two dice three times; values for each pick determine virtues of the embodiment.
@@ -856,12 +858,20 @@ It has no armour, attacks for 2d8, and can use one \texttt{Feat} you choose each
 It is as intelligent as an orca, can't speak, but comprehends languages you know.
 Does not really understand human ways, but can mimic them with mixed results.
 
-\paragraph{Helping hands.} You summon a pair of hands that try to help you. 
+\paragraph{Helping hands.} Pick any number of dice that amount to exactly ten. 
+You summon a pair of hands to help you. 
 You can control them directly or delegate simple tasks. Choose where they grow from, usually hips or shoulders are the best choice.
 Your productivity increases greatly for tasks you already know how to perform. 
 In combat they can wield either \textbf{two non-Hefty} weapons or \textbf{one Hefty}. 
 They are not very strong, so nothing heavier is feasible. You can still benefit from only one shield. 
 They last for a task you summoned them to fullfil or for one combat. Slowly dissipate when there is nothing for them to do.
+
+\paragraph{Blade ward.} Pick any amount of dice, mark them as spent, but the are unrecoverable until discarded from the spell.
+Each time an attack would hit you for damage that is exactly equal to value of any picked dice -- treat the attack as if it was evaded. 
+Discard the matching die. The spell persists until dismissed or all dice are spent.
+
+
+
 
 \end{multicols*}
 
