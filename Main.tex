@@ -248,7 +248,7 @@ A character can't spend \texttt{Stress} if they are at full \texttt{Stress}.
         \item Suffer \textbf{Trauma}(p.\pageref*{sec:injuries})
     \end{enumerate}
 }
-If the action is contested by \texttt{Focus} or \texttt{Stress}, opposing characters reveal how much they spend simultaneously each time. 
+If the action is contested by \texttt{Focus} or \texttt{Stress}, opposing characters reveal how much they spend simultaneously for each. 
 % TODO: 
 % Maybe it is worth to reduce it by one instead. 
 % That depends if gaining trauma to reset stress is desirable behavior.
@@ -266,7 +266,7 @@ To attack -- take the \texttt{Weapon Dice} noted on your weapon(s), shield, and 
 
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
-    \item Declare and spend \texttt{Focus}, if target allocated any \texttt{Focus} for its defense -- they may spent it. Remove matching \texttt{(Dis)Advantages}.
+    \item Declare and spend \texttt{Focus}, if target allocated any \texttt{Focus} for its \emph{Defense} -- they may spent it. Remove matching \texttt{(Dis)Advantages}.
     \item Those attacking the same target roll at the same time. Don't mix the dice: \texttt{Focus} and \texttt{Stress} apply individually.
     \item Remove extra dice added through \texttt{Focus}.
     \item Declare \texttt{Stress} gain. Target declares their \texttt{Stress} gain. Remove matching \texttt{(Dis)Advantages} and roll added dice.
@@ -289,8 +289,8 @@ gain bonus dice or benefit from Feats.
 rolling each separately.
 
 \paragraph{Defense} is declared at the end of the turn. 
-Allocate any amount of \texttt{Focus}; when you are attacked next turn, you can spend any amount allocated to apply \texttt{Disadvantage} to the attack.
-At the end of that turn, mark all \texttt{Focus} allocated for the defense as spent.
+Allocate any amount of \texttt{Focus}; when you are attacked next turn, you can spend any amount of \texttt{Hope} (p.\pageref*{sec:hopefear}) or allocated \texttt{Focus} to apply \texttt{Disadvantage} to the attack.
+At the end of that turn, mark all that \texttt{Focus} as spent. 
 
 \end{multicols*}
 
@@ -510,7 +510,8 @@ It has neither damage die nor \texttt{Afflication} and is dealt with in its own 
 
     \paragraph{Hope.} Each time an enemy of the Company rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Save the Company accumulates one point of \texttt{Hope}.
 
-    This is a resource, but this time -- for the Company. Any player can use \texttt{Hope} points as \texttt{Focus} for themselves or \texttt{Stress} for friendly NPCs. 
+    This is a resource, but this time -- for the Company. 
+    Any player can use \texttt{Hope} for \emph{Defense}, as \texttt{Focus} for themselves or as \texttt{Stress} for friendly NPCs. 
     Spending \texttt{Hope} can't cause \texttt{Trauma}.
 
     Hope is also a property of the Company, so it also persists. 
@@ -522,10 +523,10 @@ It has neither damage die nor \texttt{Afflication} and is dealt with in its own 
     \paragraph{Fluency of Combat} occasionally comes to those who never engaged with the world of magic.
 
     During fights, you can spend your \texttt{Guard} to move in a strange dance of blade and fury. 
-    When deciding what dice to spend on Gambits, you can use dice with value below \texttt{4} as long as you subtract the difference from your \texttt{Guard}.
+    When deciding what dice to spend on Gambits, you can use dice with value below \texttt{4} as long as you compensate the difference by reducing your \texttt{Guard}.
 
     \paragraph{Weapon mastery} manifests when a knight develops an uncanny fascination with their weapons. 
-    They treat them not as mere tools of the craft, but as partners or the most trustworthy friends.
+    They treat them not as mere tools of the craft, but as partners or trustworthy friends.
 
     That allows them to see beyond the material, beyond the function, but towards possibilities.
 
@@ -539,11 +540,12 @@ It has neither damage die nor \texttt{Afflication} and is dealt with in its own 
 
     \paragraph{Riposte} is a risky and potentially deadly \texttt{Feat}. If you choose to \emph{Riposte}, you can use it instead of \texttt{Deny Feat}. 
     Roll your weapon dice as if you are performing an attack. 
-    Choose the number of them equal to \texttt{Focus} you allocated to \emph{Defense}, spending one point per dice.
+    Spend any amount of \texttt{Hope} or \texttt{Focus} you allocated for \emph{Defense}, keep one weapon dice per point spent.
+    % Choose the number of them equal to \texttt{Focus} you allocated to \emph{Defense}, spending one point per dice. You can also spend Hope to add those dice.
     
     You can match any of your dice with lower dice in the attack roll against you. 
-    Deal damage equal to the sum of pairwise differences between matched dice. Discard enemy dice that were matched. 
-    The damage of the attack after \emph{Riposte} modification bypasses your guard.
+    Deal damage equal to the sum of pairwise differences between matched dice. Discard enemy's dice that were matched. 
+    The damage of the enemy's attack after \emph{Riposte} ignores your \texttt{Guard}.
 
     Pass a \texttt{Spirit} save or become \texttt{Fatigued}.
 
@@ -565,7 +567,7 @@ A knight can restore their \texttt{Focus} by sheer willpower. They roll \texttt{
 For each point of \texttt{Clarity} lost this way, a knight restores one point of \texttt{Focus}.
 
 A knight can also reduce their \texttt{Stress} this way by rolling \texttt{d4} and losing that much \texttt{Spirit}.
-If at least one point of \texttt{Clarity} was lost this way, they reduce their \texttt{Stress} by \texttt{1}.
+If at least one point of \texttt{Spirit} was lost this way, they reduce their \texttt{Stress} by \texttt{1}.
 
 \subsection*{Short Rest}
 
@@ -1024,7 +1026,7 @@ Each time you roll maximum on your weapon die gain one favour for each point of 
 \paragraph{1 Favour Spell}
 \begin{itemize}
     \item [\ding{108}] \textbf{Let this iron eat your flesh.} From a piece of iron you touch splits a rough, razor-sharp splinter with jagged edges. You fling it for \texttt{d6 damage}. 
-    If you rolled \textbf{6} on this damage die, you can discard it. In that case you choose either: to you mortally wound(p.\pageref*{sec:hopefear}) your victim or deliver one \texttt{Severe Injury} or execute one Strong Gambit. 
+    If you rolled \textbf{6} on this damage die, you can discard it. In that case you choose either: to mortally wound(p.\pageref*{sec:hopefear}) your victim or deliver one \texttt{Severe Injury} or execute one Strong Gambit. 
     \item [\ding{108}] \textbf{Remember your fears.} Let the presence of Aestur posses you for a split second to project power and rage around. 
     That intimidates the everybody who is near you. Treat the \texttt{Spirit} roll target makes to resist you as if it is opposed with \texttt{1} additional \texttt{Stress}. 
     In combat, treat next incoming attack as if you allocated an additional \texttt{Focus} to your \emph{Defense}(p.\pageref*{sec:basic}) for each attacker.
