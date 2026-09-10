@@ -453,7 +453,7 @@ Damage from the \texttt{Attack} causes at most one \texttt{Injury}; see below, a
 If injury is \textbf{Lethal} -- knight falls unconsciousness until treated.
 }
 
-Each untreated \texttt{Severe Injury} comes with \texttt{Affliction} according to the table below. 
+Each untreated \texttt{Injury} comes with \texttt{Affliction}. For \texttt{Severe Injury} see the table below. 
 
 \begin{center}
   \rowcolors{2}{gray!25}{white}
@@ -855,10 +855,10 @@ If it is a piece of armour, the wearer takes \texttt{Damage} equal to the sum of
 If it is a weapon, the bearer chooses to drop it or persevere through pain, taking half of the sum of the chosen dice.
 Any \texttt{Damage} from this spell ignores \texttt{Guard}.
 
-\paragraph{Blade Ward.} Pick any amount of dice, mark them as spent, but they can't go back to the pool while the spell lasts.
+\paragraph{Blade Ward.} Pick any number of dice, mark them as spent, but they can't go back to the pool while the spell lasts.
 
 Each time an attack would hit you for damage that is exactly equal to the value of any picked dice, treat the attack as if it was evaded. 
-Discard the matching die. The spell persists until dismissed or all dice are spent.
+Return the matching die to the pool, it is no longer part of the spell. The spell persists until dismissed or all dice are spent.
 
 
 
@@ -1232,14 +1232,14 @@ One who interacts with the object hears your voice. You keep your personality an
 If you convince a person to perform a ritual -- you possess their body, while they become bound to the object.
 
 \paragraph{The one pointing the way.} Bury your hands and feet under of a road, trail or passage. 
-Pick any amount of dice. For each die which rolled its maximum value -- ask a question, the answer has as many words as the value rolled.
+Pick any number of dice. For each die which rolled its maximum value -- ask a question, the answer has as many words as the value rolled.
 For each other die -- ask a question the answer will be yes, no or silence.
 
 \paragraph{The one under floorboards.} You turn a hallway behind the door infinite for a duration of the spell. 
 Anybody who enters is immediately lost even if the door is open. If group of people enters the are together as long as they can see each other. 
 The hallway is can be just straight, but upon wish of the caster it can bend, have curves and appear finite at first. 
 
-Pick any amount of dice and calculate the sum of their values: thats how long spell lasts in hours. 
+Pick any number of dice and calculate the sum of their values: thats how long spell lasts in hours. 
 You can support the spell at twilight by picking more dice.
 
 \paragraph{The one gnarled to the bone.} You poor your vengeful power into your body. 
@@ -1251,14 +1251,14 @@ Each time that damage courses an \texttt{Injury} that creature receives one also
 
 The spell lasts until you sleep or fall unconscious.
 
-\paragraph{The one that is not there.} Pick any amount of dice, then pick a die with value equal to amount dice picked before it. 
+\paragraph{The one that is not there.} Pick any number of dice, then pick a die with value equal to that number. 
 Until the spell ends one can't form memories about you. 
 You can't be targeted by attacks or spells and your attacks ignore \texttt{Guard}, but you can only attack alone.
 
-The spell breaks if amount of creatures that would perceive you without it surpasses the value on a dice you picked last for this spell. 
+The spell breaks if number of creatures that would perceive you without it surpasses the value on a dice you picked last for this spell. 
 Spell lasts 15 minutes for each dice you picked for it.
 
-\paragraph{The one bottling tears.} You touch a victim and a jar. Pick any amount of dice that sum to target's \texttt{Vigor}. 
+\paragraph{The one bottling tears.} You touch a victim and a jar. Pick any number of dice that sum to target's \texttt{Vigor} or greater. 
 
 After several horrifying seconds they start liquefying and realize that they are being sucked into that jar you hold.
 The can sense and hear things happening outside of the jar, but not see. When the jar is broken -- the escape and restore themselves to original state. 
@@ -1275,7 +1275,7 @@ Pick a single die that has its rolled value equal to damage dealt. Take that muc
 This damage is dealt directly to \texttt{Vigor}, causes \texttt{Scar} and can result in an \texttt{Injury}. 
 
 \paragraph{Your body is wasted on you. } Choose a target, roll \texttt{d20} and add their \texttt{Vigor}, this value represents how hard they resist you consuming their strength.
- Pick any amount of dice, add them together, add your \texttt{Vigor} that's your drain on them. 
+ Pick any number of dice, add them together, add your \texttt{Vigor} that's your drain on them. 
  If your drain is higher than their ability to resist -- they lose \texttt{Vigor} equal to the difference and you restore as many spellweaving dice as much \texttt{Vigor} was lost this way in any of your pools.
  If they withstand your drain -- you lose \texttt{Vigor} equal to the difference. You can't influence the \texttt{d20} roll with \texttt{Focus} and \texttt{Stress}.
 
