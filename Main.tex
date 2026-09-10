@@ -772,12 +772,27 @@ They persist until spent, and count as in \texttt{Spellweaving Pool}. The amount
 
 \subsection*{Becoming a spellweaver}
 
-A knight who has been taught spellweaving gets their \texttt{Spellweaving Pool} at character creation. They know any three spells from the list below in addition to \emph{Detect Magic}.
+A knight who has been taught spellweaving gets their \texttt{Spellweaving Pool} at character creation. 
+They know any three spells from the list below in addition to \emph{Detect Magic} and one cantrip.
 \begin{itemize}[nosep, leftmargin=*]
     \item \textbf{Dice} are all \texttt{d6}'s, and their amount is equal to the value of knights' \texttt{Clarity}.
     \item \textbf{Restoring} the pool is done through \texttt{Overnight Rest} or indulging a \texttt{Passion}, both methods restore \texttt{3} of the missing dice.
     \item \textbf{Improving} this pool is challenging; the limit of what could be thought is reached.
 \end{itemize}
+
+\subsection*{Cantrips}
+
+\paragraph{Light.} Pick one die, if its odd -- treat it as if you haven't cast this spell.
+You create an immaterial sphere of pale blue light roughly the size of your eyeball. 
+You can change the colour between reddish-yellow and bright blue. 
+It lasts while you are conscious and no more than several step away. 
+You can dismiss it at any time.
+
+\paragraph{Wisper.} Pick one die, if its even -- treat it as if you haven't cast this spell.
+You whisper a message to the target you can see. It hears you as if inside their ear. 
+They can whisper back to you as an answer. 
+You can also whisper to somebody you know is there if you are separated by a non-magical wall less than a arm's reach thick.
+
 
 \subsection*{Spells}
 
@@ -791,19 +806,19 @@ For example, spells usually are not directly marked by their caster and are not 
 You can learn how a spell unknown to you works. 
 Upon discovery, do a \texttt{Clarity} save; if successful, ask the Referee if you can learn this spell and, if you can, how many times encountering this spell in the wild is enough.
 
-\paragraph{Soothing Visions. } Pick two dice both with the same value rolled as the target's \texttt{Stress}. Reduce their \texttt{Stress} by \texttt{2}.
+\paragraph{Haste.} Pick any number of dice that amount to the target's Vigor or greater.
+Each time a hasted creature attacks, choose a weapon and add its \texttt{Weapon dice} to the \texttt{Attack} one additional time.
 
 \paragraph{True Strike.}
 Pick any number of dice, then perform an Attack as usual.
 You can replace any die of the attack with any die from those you picked.
 Can be used with \texttt{Smite} \texttt{Feat}.
 
+\paragraph{Soothing Visions. } Pick two dice both with the same value rolled as the target's \texttt{Stress}. Reduce their \texttt{Stress} by \texttt{2}.
+
 \paragraph{Shield.} Pick two dice and add the smaller rolled value among them to \texttt{Guard} of a willing creature nearby.
  The shield's \texttt{Guard} is spent before theirs.
  Shield's \texttt{Guard} persists until their \texttt{Guard} would be restored normally.
-
-\paragraph{Haste.} Pick any number of dice that amount to the target's Vigor or greater.
-Each time a hasted creature attacks, choose a weapon and add its \texttt{Weapon dice} to the \texttt{Attack} one additional time.
 
 \paragraph{Mind Sliver.} Pick any amount of dice, perform a ranged attack as if those dice are your weapon dice. 
 
@@ -859,6 +874,7 @@ Any \texttt{Damage} from this spell ignores \texttt{Guard}.
 
 Each time an attack would hit you for damage that is exactly equal to the value of any picked dice, treat the attack as if it was evaded. 
 Return the matching die to the pool, it is no longer part of the spell. The spell persists until dismissed or all dice are spent.
+
 
 
 
@@ -1021,7 +1037,7 @@ Each time you roll maximum on your weapon die and chose it as a damage die of yo
 \paragraph{Cantrips}
 \begin{itemize}[nosep, leftmargin=*]
     \item[\ding{108}] \textbf{No, you can't have that.} You crush a small non-living object just outside of your reach. The force you impose is enough to snap anything you can snap with your one hand.
-    \item[\ding{108}] Any time you would attack while having one hand free of the weapon. You can summon a Mace of Aestur for the attack. It's a \textbf{Hefty} d6 weapon. 
+    \item[\ding{108}] Any time you would attack while having one hand free of the weapon. You can summon a Mace of Aestur for the attack. It's a \textbf{Hefty} d8 weapon. 
     You can spend any amount of favor, upface the Mace's weapon die for each spent.
 \end{itemize}
 
@@ -1032,7 +1048,7 @@ Each time you roll maximum on your weapon die and chose it as a damage die of yo
 \begin{itemize}
     \item [\ding{108}] \textbf{Let this iron eat your flesh.} From a piece of iron you touch splits a rough, razor-sharp splinter with jagged edges. You fling it for \texttt{d6 damage}. 
     If you rolled \textbf{6} on this damage die, you can discard it. In that case you choose either: to mortally wound(p.\pageref*{sec:hopefear}) your victim or deliver one \texttt{Severe Injury} or execute one Strong Gambit. 
-    \item [\ding{108}] \textbf{Remember your fears.} Let the presence of Aestur posses you for a split second to project power and danger. 
+    \item [\ding{108}] \textbf{Remember your weakness.} Let the presence of Aestur poss you for a split second to project power and induce fear. 
     That intimidates those near you. Treat the \texttt{Spirit} roll target makes to resist as if it is opposed with \texttt{1} additional \texttt{Stress}. 
     In combat, treat next incoming attack as if you allocated an additional \texttt{Focus} to your \emph{Defense}(p.\pageref*{sec:basic}) for each attacker.
 \end{itemize}
@@ -1044,6 +1060,7 @@ Each time you roll maximum on your weapon die and chose it as a damage die of yo
     \item [\ding{108}] \textbf{This is mine now.} Turn a non-living palm-sized object you touch into solid pure iron. 
     Fine details can't be preserved, e.g. lock will stop working if you alter it like that, but cracks and imperfections vanish. 
     If you throw this object as a ranged attack it has \texttt{2d4} weapon dice. 
+    \item [\ding{108}] \textbf{Rage flows through me.} Until the end of combat you can reroll any weapon dice which rolled \texttt{1} on it. You must use the new value rolled.
 \end{itemize}
 
 
@@ -1051,6 +1068,8 @@ Each time you roll maximum on your weapon die and chose it as a damage die of yo
 \begin{itemize}
     \item [\ding{108}] \textbf{Your staff is broken.} Crush a non-living object you can clearly see. Enough to destroy wooden shields and weapon handles. 
     Not enough to destroy bricks and stone, but enough to send their shrapnel flying with \texttt{2d4 Blast} weapon dice originating from the object.
+
+    
     
 \end{itemize}
 
