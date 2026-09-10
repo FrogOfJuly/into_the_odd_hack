@@ -255,18 +255,13 @@ A character can't spend \texttt{Stress} if they are at full \texttt{Stress}.
     \end{enumerate}
 }
 If the action is contested by \texttt{Focus} or \texttt{Stress}, opposing characters reveal how much they spend simultaneously for each. 
-% TODO: 
-% Maybe it is worth to reduce it by one instead. 
-% That depends if gaining trauma to reset stress is desirable behavior.
-% Another option is to reduce it by d4? and that might be modifiable characteristics. 
-% The overspill can go into focus?
 
 \newcolumn
 
 \subsection*{Attacks}
 
-\paragraph{Turns.} A turn is enough time to Move and then
-perform an Action, always in that order.
+\paragraph{Turn} is enough time to Move and then
+perform an action: attack or gambit, always in that order.
 
 To attack -- take the \texttt{Weapon Dice} noted on your weapon(s), shield, and granted by bonuses and go through the steps below.
 
@@ -367,7 +362,7 @@ they rest.
 Attackers can discard any number of dice in \texttt{Attack Roll} with value 4 or higher to perform \texttt{Gambits}, each one causing one of the effects below.
 The affected foe must be the same as the target of the attack, except for the \texttt{Makeshift treatment} \texttt{Gambit}.
 
-For gambits other than \texttt{Bolster}, \texttt{Move} and \texttt{Makeshift treatment}, the target receives a \texttt{Vigor Save} to ignore the effect.
+For gambits other than \texttt{Bolster}, \texttt{Step Back}, \texttt{Move} and \texttt{Makeshift treatment}, the target receives a \texttt{Vigor Save} to ignore the effect.
 
 \colbox{
 \begin{itemize}[nosep, leftmargin=*]
@@ -435,6 +430,8 @@ Roll the damage die again, add the number of your occupied \texttt{injury slots}
     \end{tabular}
 \end{center}
 
+\newcolumn{}
+
 \subsection*{Injuries}
 \label{sec:injuries}
 
@@ -448,15 +445,15 @@ Damage from the \texttt{Attack} causes at most one \texttt{Injury}; see below, a
 
 \colbox{
 \begin{itemize}[nosep, leftmargin=*]
-    \item[\ding{170}] If a knight lost \texttt{5} or more \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
-    \item[\textbf{\textdagger}] If a knight lost \texttt{10 or more} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Lethal Injury}.
-    \item[\ding{170}] If a knight lost half or more of their remaining \texttt{Vigor}, but not all of it -- take a \texttt{Severe Injury}.
-    \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
+    \item[\ding{170}] If a knight lost from \texttt{4} to half of their remaining \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
+    \item[\textbf{\textdagger}] If a knight lost half or more of their remaining \texttt{Vigor} -- take a \texttt{Lethal Injury}.
+    % \item[\textbf{\textdagger}] If a knight lost \texttt{10 or more} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Lethal Injury}.
+    % \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
 \end{itemize}
-Take the worse one if two or more apply. If injury is \textbf{Lethal} -- knight falls unconsciousness until treated.
+If injury is \textbf{Lethal} -- knight falls unconsciousness until treated.
 }
 
-Each untreated injury comes with \texttt{Affliction} according to the table below. 
+Each untreated \texttt{Severe Injury} comes with \texttt{Affliction} according to the table below. 
 
 \begin{center}
   \rowcolors{2}{gray!25}{white}
@@ -472,6 +469,8 @@ Each untreated injury comes with \texttt{Affliction} according to the table belo
         \hline
     \end{tabular}
 \end{center}
+
+For \texttt{Lethal Injuries} you lose \texttt{1d4} of corresponding virtue instead of \texttt{1}.
 
 \subsection*{Trauma} 
 When \texttt{Stress} reaches the limit a knight can sustain, it causes \texttt{Trauma}: a footprint of a great effort in the form of a mental wound.
@@ -1318,8 +1317,6 @@ This damage is dealt directly to \texttt{Vigor}, causes \texttt{Scar} and can re
  Pick any amount of dice, add them together, add your \texttt{Vigor} that's your drain on them. 
  If your drain is higher than their ability to resist -- they lose \texttt{Vigor} equal to the difference and you restore as many spellweaving dice as much \texttt{Vigor} was lost this way in any of your pools.
  If they withstand your drain -- you lose \texttt{Vigor} equal to the difference. You can't influence the \texttt{d20} roll with \texttt{Focus} and \texttt{Stress}.
-
-
 
 
 \subsection*{Healing}
