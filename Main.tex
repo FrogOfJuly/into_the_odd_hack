@@ -70,7 +70,7 @@ TODO: describe things that are well known about this realm.
 
 \subsection*{Getting Started}
 
-Find a Referee, create a knight, decide if they are a mage, a witch, or neither, and go for it.
+Find a Referee, create a character, decide if they are a mage, a witch, or neither, and go for it.
 
 \subsection*{Dice Rolls}
 
@@ -125,7 +125,7 @@ Then proceed as if they were rolled together.
 \ % The empty page
 
 \newpage
-\section*{\centering \fontsize{35}{45}\selectfont Creating a Knight}
+\section*{\centering \fontsize{35}{45}\selectfont Character Creation}
 \vspace*{0.4 cm}
 
 \begin{multicols*}{2}
@@ -133,7 +133,7 @@ Then proceed as if they were rolled together.
 
 \subsection*{Virtues}
 
-Each knight has three attributes that describe his body, mind, and soul.
+Each character has three attributes that describe his body, mind, and soul.
 
 \textbf{Vigor.}
 Strong limbs, firm hands, powerful lungs.
@@ -145,21 +145,21 @@ Keen instinct, lucid mind, shrewd eyes.
 Charming tongue, iron will, fierce heart.
 
 Knight's creation starts by rolling \texttt{d6 + d12} four times; record not only the sum, but also individual values of each die.
-Each of those rolls determines one of the knight's \texttt{Virtues}; you choose which is which and discard the remaining one. You can use the character sheet on page \pageref*{sec:ch_sheet}.
+Each of those rolls determines one of the character's \texttt{Virtues}; you choose which is which and discard the remaining one. You can use the character sheet on page \pageref*{sec:ch_sheet}.
 
-Then, determine the knight's capacity for \texttt{Injury}(\texttt{Injury Slots}), \texttt{Focus} and \texttt{Stress} according to the steps below.
+Then, determine the character's capacity for \texttt{Injury}(\texttt{Injury Slots}), \texttt{Focus} and \texttt{Stress} according to the steps below.
 
 \colbox{
 \begin{itemize}[leftmargin=*]
-    \item[\ding{170}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Vigor} is the amount of \texttt{Severe Injuries} the knight can survive before dying.
-    \item[\textdagger] Half, rounded up, of \texttt{d6} you assigned to \texttt{Vigor} is the amount of \texttt{Lethal Injuries} the knight can survive before dying.
-    \item[\ding{84}] The value of \texttt{d6} you assigned to \texttt{Clarity} is maximum \texttt{Focus} the knight has.
-    \item[\ding{118}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Spirit} is maximum \texttt{Stress} the knight can endure before suffering a \texttt{Trauma}, minimum is \texttt{2}.
+    \item[\ding{170}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Vigor} is the amount of \texttt{Severe Injuries} the character can survive before dying.
+    \item[\textdagger] Half, rounded up, of \texttt{d6} you assigned to \texttt{Vigor} is the amount of \texttt{Lethal Injuries} the character can survive before dying.
+    \item[\ding{84}] The value of \texttt{d6} you assigned to \texttt{Clarity} is maximum \texttt{Focus} the character has.
+    \item[\ding{118}] Half, rounded up, of \texttt{d12} you assigned to \texttt{Spirit} is maximum \texttt{Stress} the character can endure before suffering a \texttt{Trauma}, minimum is \texttt{2}.
 \end{itemize}
 }
-\paragraph{Guard.} Roll \texttt{d6} to determine the maximum \texttt{Guard(GD)} the knight has.
+\paragraph{Guard.} Roll \texttt{d6} to determine the maximum \texttt{Guard(GD)} the character has.
 
-\paragraph{Choose a Passion. } Something dear to the knight's heart, or something weird that allows them to shrug off a failure.
+\paragraph{Choose a Passion. } Something dear to the character's heart, or something weird that allows them to shrug off a failure.
 Indulging a Passion restores \texttt{Spirit} and \texttt{Spellweaving} dice (p.\pageref*{sec:spellweaving}). Consult with your Referee if in doubt.
 
 \newcolumn
@@ -170,12 +170,9 @@ To pass a Save, roll a \texttt{d20} equal to or below the
 relevant \texttt{Virtue}. Failure means negative
 consequences, not always a failed action.
 
-\paragraph{Feats. } Knight knows all three \texttt{Feats}: \texttt{Smite}, \texttt{Focus} and \texttt{Deny}. 
-They can perform them during combat, details of which are on page \pageref*{sec:combat}.
-
 \subsection*{Injury Slots}
 
-When a knight suffers an \texttt{Injury}, fill an \texttt{Injury slot} following the steps described below.
+When a character suffers an \texttt{Injury}, fill an \texttt{Injury slot} following the steps described below.
 
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
@@ -191,26 +188,104 @@ Each injury could be:
     \item \textbf{Treated}(p.\pageref*{sec:combat}, \pageref*{sec:healing}) \texttt{injury} occupies the slot, but does not apply \texttt{Affliction}
     \item \textbf{Healed} \texttt{injury} is removed entirely, but leaves a Quirk(p.\pageref*{sec:quirks}) behind.
 \end{itemize}
-If a knight suffers an injury and all corresponding slots are full, fill one with greater lethality. If they are out of those, the knight is \textbf{Slain}.
-
-\subsection*{Spellcasting}
-
-The Realm is not strange to magic and, though not frequently, knights employ it during their endeavours. 
-Some knights are \textbf{Spellweavers}(see p.\pageref*{sec:spellweaving}) and some are \textbf{Witches}(see p.\pageref*{sec:witchcraft}). If you choose neither consider \textbf{Martial traits}(p. \pageref*{sec:hopefear})
+If a character suffers an injury and all corresponding slots are full, fill one with greater lethality. If they are out of those, the character is \textbf{Slain}.
 
 \subsection*{Weapons \& Gear}
 
-When picking gear for a knight, consult with the Referee, but the rule of thumb is as follows: you have a budget of 12 points; these points can be spent on weapons and armour. 
+When picking gear for a character, consult with the Referee, but the rule of thumb is as follows: you have a budget of 12 points; these points can be spent on weapons and armour. 
 
 Weapon costs as much as its damage dice. For example, shortsword(2d6 damage) costs 12 points, knife(d6 damage) - 6 points. Each piece of gear providing armour costs 2 per armour point, e.g. a shield costs 6 points. 
-Usually it makes sense to limit starting equipment(p.\pageref*{sec:gear}) to be common rarity with a single uncommon item as a prized possession of your knight.
+Usually it makes sense to limit starting equipment(p.\pageref*{sec:gear}) to be common rarity with a single uncommon item as a prized possession of your character.
+
+\subsection*{Laying the path}
+
+Character is more than just stats, they lived their life in certain way and it should be somehow reflected.
+To complete the character do the following steps: create or choose a background; choose a path; choose a trait(p.\pageref*{sec:martial_traits}) or an incomplete path.
+
+% \subsection*{Spellcasting}
+
+% The Realm is not strange to magic and, though not frequently, knights employ it during their endeavours. 
+% Some knights are \textbf{Spellweavers}(see p.\pageref*{sec:spellweaving}) and some are \textbf{Witches}(see p.\pageref*{sec:witchcraft}). If you choose neither consider \textbf{Martial traits}(p. \pageref*{sec:hopefear})
+
 
 \end{multicols*}
 
-
 \newpage
-\label{sec:ch_sheet}
-\includepdf[pages={1}]{media/character-sheet.pdf}
+% \section*{\centering \fontsize{35}{45}\selectfont Paths Walked}
+% \vspace*{0.4 cm}
+
+\label{sec:paths}
+
+\begin{multicols*}{2}
+
+\subsection*{Background}
+
+These are inspirations of how your life was long before current events. 
+
+\begin{center}
+  \rowcolors{2}{gray!25}{white}
+    \begin{tabular}{|c|p{6.4cm}|}
+        \hline
+        \textbf{Roll} & \textbf{Life long before} \\
+        \hline
+        \texttt{1} & Child of streets\\
+        \texttt{2} & Runaway prisoner \\
+        \texttt{3} & Acquired freedom through bravery\\
+        \texttt{4} & Escaping ruined reputation\\
+        \texttt{5} & Victim of political conflict\\
+        \texttt{6} & Traded to a wizard in childhood\\
+        \texttt{7} & Survivor of failed overseas campaign\\
+        \texttt{8} & Raised on a smuggler vessel\\
+        \texttt{9} & Child of exiles\\
+        \texttt{10} & Cult's object of worship \\
+        \texttt{11} & Survivor of disastrous ritual \\
+        \texttt{12} & Lost heir of a fallen kingdom\\
+        \hline
+    \end{tabular}
+\end{center}
+
+You might have something left from those times, an item, a person you know or maybe somebody searches for you with unclear intent.
+
+Also, throughout early years its possible to pick up spellweaving or be aligned with a patron. 
+It is reasonable to have a pool with single \texttt{d4} and know \emph{Detect Magic} or recognise the patrons's presence and being able to use their cantrips.
+
+Consult Referee when in doubt.
+
+\subsection*{Path of Knight}
+
+If you choose to be a knight -- you know all three \texttt{Feats}: \texttt{Smite}, \texttt{Focus} and \texttt{Deny}. 
+They can perform them during combat, details of which are on page \pageref*{sec:combat}.
+
+\subsection*{Path of Spellweaver}
+
+One who has been taught proper spellweaving gets a \texttt{Spellweaving Pool} at character creation. 
+Rules for spellweaving pool, spellcasting and list of available spells are on p.\pageref*{sec:spellweaving}.  
+
+\subsection*{Path of Witch}
+
+The witch get their patron at character creation. Rules for witchcraft are on p. \pageref*{sec:witchcraft}.
+
+\newcolumn
+
+\subsection*{Incomplete paths}
+
+\paragraph{Ending squireship} was not an easy decision, but not every squire destined to become a knight. 
+However, that does not mean all this time is wasted: you leaned a lot during those years. 
+
+You know one \texttt{Feat} of your choice.
+
+\paragraph{Lurking spellweaving} followed you around all your life, but either mages you encountered did not recognise the potential or you avoided training following your own reasoning.
+You have a spellweaving pool with \texttt{3} \texttt{d6}'s in it. You restore \texttt{3} of your missing dice by indulging your passion or by having an overnight sleep. You know one cantrip and one spell in addition to \emph{Detect Magic}. 
+
+If the total amount of dice in this spellweaving pool is less than half of your \texttt{Clarity} rounded down you can expand it.
+Each time you learn a new spell, you add an additional \texttt{d6} to the pool.
+
+\paragraph{Unacknowledged presense} in your dreams calls you. In times of struggle, you learned that you can ask it for help in exchange for a promise. 
+
+Choose a patron: you know what they want and can use \texttt{2} of their spells.
+You can learn more the same way as a witch(p.\pageref*{sec:witchcraft}) does.
+
+\end{multicols*}
 
 \newpage
 \section*{\centering \fontsize{35}{45}\selectfont \fontsize{35}{45}\selectfont Basic Rules}
@@ -221,21 +296,21 @@ Usually it makes sense to limit starting equipment(p.\pageref*{sec:gear}) to be 
 
 \subsection*{Focus \& Stress}
 
-There are two important resources each knight has:
+There are two important resources each character has:
 the amount of thought they can put into perfecting a task and the amount of effort they can put into a failed task to fix it.
 Those are tracked by \texttt{Focus} and \texttt{Stress}, respectively.
 
 \paragraph{Focus.} Before a roll is performed, if it can be affected by a character, they can spend Focus to
 enhance it. It \textbf{must} be declared \textbf{before} rolling the dice. For each point of \texttt{Focus} spent -- add \texttt{Advantage} to that roll.
 
-One can not only plot how to enhance the roll, but also how to sabotage a roll.
+Sabotaging a roll is also possible.
 If one character can affect the roll of another destructively by planning in advance, for each \texttt{Focus} spent, the roll accumulates \texttt{Disadvantage}.
 \emph{Defense} governs this interaction for the attack rolls; see below.
 
-Usually, a knight has no restriction on how much \texttt{Focus} they can spend to enhance an action, but
+Usually, a character has no restriction on how much \texttt{Focus} they can spend to enhance an action, but
 determining how much focus is possible to spend to oppose a given action should be discussed with the Referee. 
 
-\paragraph{Stress.} After a roll is made, a knight can try to improve it by acquiring \texttt{Stress}.
+\paragraph{Stress.} After a roll is made, a character can try to improve it by acquiring \texttt{Stress}.
 For each gained \texttt{Stress}, add \texttt{Advantage} to that roll. Increasing one's \texttt{Stress} \textbf{must} be done \textbf{after} the roll.
 
 Akin to \texttt{Focus}, one can also acquire \texttt{Stress} to oppose an action after the roll is made.
@@ -315,10 +390,9 @@ target’s \texttt{Guard} and their \texttt{Vigor} at the target's discretion; b
 
 \textbf{If} it does cause an Injury -- fill the \texttt{Injury slot}, record damage die that dealt it and apply \texttt{Affliction}, also see p.\pageref*{sec:affliction}.
 
-\textbf{If} a knight is injured and has no required injury slot left, they are \textbf{Slain}.
+\textbf{If} a character is injured and has no required injury slot left, they are \textbf{Slain}.
 
-
-\subsection*{Virtue loss.}
+\subsection*{Virtue loss}
 
 Victims are only \textbf{Slain}, \texttt{Wounded} or \texttt{Injured} if the Virtue was reduced by \texttt{Damage}, never as a result of \emph{Virtue Loss}.
 
@@ -330,11 +404,8 @@ Victims are only \textbf{Slain}, \texttt{Wounded} or \texttt{Injured} if the Vir
 
 \subsection*{Feats}
 
-These special actions known by knights can
-be performed as described below. Using Feats
-risks the knight becoming \texttt{Fatigued}, which
-prevents them from using further \texttt{Feats} until
-they rest.
+These special actions known by knights can be performed as described below. 
+Using Feats risks the knight becoming \texttt{Fatigued}, which prevents them from using further \texttt{Feats} until they rest.
 \colbox{
 \paragraph{Smite.} \textit{Release your righteous fury}
 \begin{itemize}[nosep, leftmargin=*]
@@ -385,10 +456,10 @@ If a die of \texttt{8} or higher is used in melee, then a Strong Gambit is perfo
     \item \textbf{Greater effect} such as disarming an item, breaking a wooden shield, or removing a helm. \emph{Bolster} and \emph{Step Back} are not affected.
 \end{itemize}
 
-\paragraph{Makeshift treatment} \texttt{Gambit} allows one knight to tend to another one, or one knight to tend to themselves.
-The tending knight rolls a \texttt{Clarity Save}, and the one untended \texttt{Injury} becomes tended.
-If that save fails, the targeted knight must survive the pain of misjudged treatment by passing a \texttt{Vigor Save}.
-If this one also fails, the injury is still treated, but increases in lethality, potentially killing the knight.
+\paragraph{Makeshift treatment} \texttt{Gambit} allows one character to tend to another one, or one character to tend to themselves.
+The one tending rolls a \texttt{Clarity Save}, and the one untended \texttt{Injury} becomes tended.
+If that save fails, the targeted character must survive the pain of misjudged treatment by passing a \texttt{Vigor Save}.
+If this one also fails, the injury is still treated, but increases in lethality, potentially killing the character.
 
 \paragraph{Death.} Even the boldest Knight can die a sudden or ignoble death. Prepare yourself for this.
 When a Knight dies, the player creates a new Knight, and they are added to the Company as quickly as possible.
@@ -403,7 +474,7 @@ When a Knight dies, the player creates a new Knight, and they are added to the C
 
 \subsection*{Scars} 
 
-Once a knight sustains \texttt{Damage} to \texttt{Vigor} that does not reduce their \texttt{GD}, they gain a \texttt{Scar}.
+Once a character sustains \texttt{Damage} to \texttt{Vigor} that does not reduce their \texttt{GD}, they gain a \texttt{Scar}.
 Roll the damage die again, add the number of your occupied \texttt{injury slots}, and see the table below. 
 
 \begin{center}
@@ -435,8 +506,8 @@ Roll the damage die again, add the number of your occupied \texttt{injury slots}
 \subsection*{Injuries}
 \label{sec:injuries}
 
-A knight's body is tough and trained since childhood, but it can endure only so much.
-Dice that determine a knight's \texttt{Vigor} also control the amount of \texttt{Severe and Lethal Injuries} they can sustain.
+% A knight's body is tough and trained since childhood, but it can endure only so much.
+Dice that determine a character's \texttt{Vigor} also control the amount of \texttt{Severe and Lethal Injuries} they can sustain.
 To track those injuries, use \texttt{Injury Slots} that record the nature of the \texttt{Injury}, the damage die that caused it, and its \texttt{Affliction}.
 Injury persists until healed(p.\pageref*{sec:healing})
 
@@ -445,12 +516,12 @@ Damage from the \texttt{Attack} causes at most one \texttt{Injury}; see below, a
 
 \colbox{
 \begin{itemize}[nosep, leftmargin=*]
-    \item[\ding{170}] If a knight lost from \texttt{4} to half of their remaining \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
-    \item[\textbf{\textdagger}] If a knight lost half or more of their remaining \texttt{Vigor} -- take a \texttt{Lethal Injury}.
+    \item[\ding{170}] If a character lost from \texttt{4} to half of their remaining \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Severe Injury}.
+    \item[\textbf{\textdagger}] If a character lost half or more of their remaining \texttt{Vigor} -- take a \texttt{Lethal Injury}.
     % \item[\textbf{\textdagger}] If a knight lost \texttt{10 or more} \texttt{Vigor} through \texttt{Damage} -- take a \texttt{Lethal Injury}.
     % \item[\textbf{\textdagger}] If a knight lost all their \texttt{Vigor} or more through \texttt{Damage} -- take a \texttt{Lethal Injury}.
 \end{itemize}
-If injury is \textbf{Lethal} -- knight falls unconsciousness until treated.
+If injury is \textbf{Lethal} -- character falls unconsciousness until treated.
 }
 
 Each untreated \texttt{Injury} comes with \texttt{Affliction}. For \texttt{Severe Injury} see the table below. 
@@ -473,8 +544,8 @@ Each untreated \texttt{Injury} comes with \texttt{Affliction}. For \texttt{Sever
 For \texttt{Lethal Injuries} you lose \texttt{1d4} of corresponding virtue instead of \texttt{1}.
 
 \subsection*{Trauma} 
-When \texttt{Stress} reaches the limit a knight can sustain, it causes \texttt{Trauma}: a footprint of a great effort in the form of a mental wound.
-\texttt{Trauma} fills an \texttt{Injury slot} and kills the knight by a heart attack if they are out of them.
+When \texttt{Stress} reaches the limit a character can sustain, it causes \texttt{Trauma}: a footprint of a great effort in the form of a mental wound.
+\texttt{Trauma} fills an \texttt{Injury slot} and kills the character by a heart attack if they are out of them.
 It has neither damage die nor \texttt{Afflication} and is dealt with in its own way (p.\pageref*{sec:healing}) 
 % leaves behind a Quirk(p.\pageref*{sec:quirks}).
 % Additionally, if you can heal an \texttt{Injury} by some means, you can't deal with \texttt{Trauma} by those means unless explicitly permitted.
@@ -482,38 +553,40 @@ It has neither damage die nor \texttt{Afflication} and is dealt with in its own 
 \end{multicols*}
 
 \newpage
-\section*{\centering \fontsize{35}{45}\selectfont Battle Flow \& Martial Prowess}
+\section*{\centering \fontsize{35}{45}\selectfont Fear \& Hope}
 \vspace*{0.4 cm}
 \label{sec:hopefear}
 \begin{multicols*}{2}
     The battle rages as much on the field as in the warrior's mind. 
     Extinguishing fear and tending to dwindling hope is as important as finding weaknesses in the enemy's armour. 
 
-    Also, it's rare that knights fight alone. 
-
     \subsection*{Tracking NPC state}
 
-    Usually, non-player characters(NPCs), and especially those who are not knights, are tracked with less granularity than those controlled by players. 
+    Usually, non-player characters(NPCs), are tracked with less granularity than those controlled by players. 
     Main stats that are not tracked are \texttt{Injuries} and \texttt{Stress}: for bookkeeping and get-out-of-jail nature, respectively. 
 
     Instead of tracking \texttt{Injuries}, each time an NPC takes \texttt{Vigor} damage that is half, rounding up, of their remaining \texttt{Vigor} -- they blackout. 
     They die if left untreated for a while.
 
-    Instead of tracking \texttt{Stress} of hostile NPCs Referee uses \texttt{Fear}. The players can use \texttt{Hope} to do the same for knights' allies.
+    Instead of tracking \texttt{Stress} of hostile NPCs Referee uses \texttt{Fear}. The players can use \texttt{Hope} to do the same for characters' allies.
 
-    \subsection*{Fear \& Hope}
+    \newcolumn
+
+    \subsection*{Fear}
     
-    \paragraph{Fear.} Each time a knight or a friendly npc rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Save the Company accumulates one point of \texttt{Fear}. 
-    This is a resource for the Referee, not knights.
+    Each time a character or a friendly npc rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Save the Company accumulates one point of \texttt{Fear}. 
+    This is a resource for the Referee, not characters.
 
     When a hostile NPC wants to use \texttt{Stress} -- the Referee can spend \texttt{Fear} of the Company instead of the NPC's \texttt{Stress}. 
     NPCs don't acquire \texttt{Trauma}s; how much it is suitable to spend is up to the Referee.
 
-    Additionally, if a knight attempts something risky -- it might make sense narratively to manifest their \texttt{Fear} as if they were opposed by some external forces. 
+    Additionally, if a character attempts something risky -- it might make sense narratively to manifest their \texttt{Fear} as if they were opposed by some external forces. 
 
     Fear is a property of the Company, so it is persistent across passage of time and scenes.
 
-    \paragraph{Hope.} Each time an enemy of the Company rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Save the Company accumulates one point of \texttt{Hope}.
+    \subsection*{Hope} 
+    
+    Each time an enemy of the Company rolls \texttt{1} on their weapon die or \texttt{20} on a Virtue Save the Company accumulates one point of \texttt{Hope}.
 
     This is a resource, but this time -- for the Company. 
     Any player can use \texttt{Hope} for \emph{Defense}, as \texttt{Focus} for themselves or as \texttt{Stress} for friendly NPCs. 
@@ -521,39 +594,7 @@ It has neither damage die nor \texttt{Afflication} and is dealt with in its own 
 
     Hope is also a property of the Company, so it also persists. 
 
-    \subsection*{Martial traits}
-
-    TODO: some flavour text about trading spellcasting for combat prowess.
-
-    \paragraph{Fluency of Combat} occasionally comes to those who never engaged with the world of magic.
-
-    During fights, you can spend your \texttt{Guard} to move in a strange dance of blade and fury. 
-    When deciding what dice to spend on Gambits, you can use dice with value below \texttt{4} as long as you compensate the difference by reducing your \texttt{Guard}.
-
-    \paragraph{Weapon mastery} manifests when a knight develops an uncanny fascination with their weapons. 
-    They treat them not as mere tools of the craft, but as partners or trustworthy friends.
-
-    That allows them to see beyond the material, beyond the function, but towards possibilities.
-
-    Each time you roll a maximum value on a weapon die, put a mark on the weapon it belongs to. 
-    When amount of marks matches its largest weapon die -- you obtain a level of mastery with this weapon. 
-
-    When you use \texttt{Focus} or \texttt{Stress} and choose to duplicate the dice that belong to your weapon -- for each mastery level
-    you can keep the dice that otherwise would be discarded due to accumulated \texttt{Advantages}.
-
-    Weapon mastery levels do not transfer between any weapons even if they are of the same type, e.g. replacing one shortsword with another does not allow to keep the mastery level.
-
-    \paragraph{Riposte} is a risky and potentially deadly \texttt{Feat}. If you choose to \emph{Riposte}, you can use it instead of \texttt{Deny Feat}. 
-    Roll your weapon dice as if you are performing an attack. 
-    Spend any amount of \texttt{Hope} or \texttt{Focus} you allocated for \emph{Defense}, keep one weapon dice per point spent.
-    % Choose the number of them equal to \texttt{Focus} you allocated to \emph{Defense}, spending one point per dice. You can also spend Hope to add those dice.
     
-    You can match any of your dice with lower dice in the attack roll against you. 
-    Deal damage equal to the sum of pairwise differences between matched dice. Discard enemy's dice that were matched. 
-    The damage of the enemy's attack after \emph{Riposte} ignores your \texttt{Guard}.
-
-    Pass a \texttt{Spirit} save or become \texttt{Fatigued}.
-
 \end{multicols*}
 
 
@@ -568,10 +609,10 @@ It has neither damage die nor \texttt{Afflication} and is dealt with in its own 
 
 \paragraph{Stress \& Focus} can also be dealt with quickly, but require consuming \textbf{physic}(p. \pageref*{sec:gear}).
 
-A knight can restore their \texttt{Focus} by sheer willpower. They roll \texttt{d4} and lose that much \texttt{Clarity}. 
-For each point of \texttt{Clarity} lost this way, a knight restores one point of \texttt{Focus}.
+A character can restore their \texttt{Focus} by sheer willpower. They roll \texttt{d4} and lose that much \texttt{Clarity}. 
+For each point of \texttt{Clarity} lost this way, a character restores one point of \texttt{Focus}.
 
-A knight can also reduce their \texttt{Stress} this way by rolling \texttt{d4} and losing that much \texttt{Spirit}.
+A character can also reduce their \texttt{Stress} this way by rolling \texttt{d4} and losing that much \texttt{Spirit}.
 If at least one point of \texttt{Spirit} was lost this way, they reduce their \texttt{Stress} by \texttt{1}.
 
 \subsection*{Short Rest}
@@ -579,23 +620,23 @@ If at least one point of \texttt{Spirit} was lost this way, they reduce their \t
 It is not enough time to make a fire and cook food, but just right to treat injuries, have a talk, or just zone out to process the latest events.
 
 \paragraph{Focus} is restored with limited efficiency. 
-Each knight can restore their Focus through \texttt{Short Rest}, but the amount restored this way in total per day cannot exceed their maximum \texttt{Focus}.
+Each character can restore their Focus through \texttt{Short Rest}, but the amount restored this way in total per day cannot exceed their maximum \texttt{Focus}.
 
 \paragraph{Injuries} can be treated during \texttt{Short Rest} without rolls. 
 Knights have basic medical skills to dress and clean wounds. 
 Mark all \texttt{Injuries} as \texttt{Treated}.
 
 
-\paragraph{Virtue restoration} during a \texttt{Short Rest} is possible, provided a knight has required \textbf{Remedy}(p. \pageref*{sec:gear}).
+\paragraph{Virtue restoration} during a \texttt{Short Rest} is possible, provided a character has required \textbf{Remedy}(p. \pageref*{sec:gear}).
 
 \subsection*{Overnight Rest}
 
 There is no or little hospitality, just a safe place in the forest or nearby ruins. You make a tent, fire, and a meal.
 This is how life is sometimes.
 
-\paragraph{Stress} is reduced by \texttt{1} each time a knight sleeps full night, \textbf{Focus} is restored fully.
+\paragraph{Stress} is reduced by \texttt{1} each time a character sleeps full night, \textbf{Focus} is restored fully.
 
-\paragraph{Virtues} can be restored by 3 points distributed however a knight sees fit.
+\paragraph{Virtues} can be restored by 3 points distributed however a character sees fit.
 
 \subsection*{Long Rest}
 
@@ -615,30 +656,30 @@ Acquired \textbf{Stress} is removed.
 \paragraph{Healing an Injury} removes it completely.
 This is a tricky endeavour which usually requires a professional to accomplish and comes with a price tag.
 
-Still, in dire circumstances, a knight can attempt to heal themselves or another knight:
+Still, in dire circumstances, a character can attempt to heal themselves or another character:
 
 \colbox{
 \begin{enumerate}[nosep, leftmargin=*]
-    \item The \textbf{healing} knight rolls a \texttt{Clarity} save to determine how to treat this type of \texttt{Injury} most effectively.
-    \item The \textbf{healed} knight rolls a \texttt{Spirit} save to see if the are able to withstand the pain.
+    \item The one \textbf{healing} rolls a \texttt{Clarity} save to determine how to treat this type of \texttt{Injury} most effectively.
+    \item The one \textbf{healed} rolls a \texttt{Spirit} save to see if the are able to withstand the pain.
 \end{enumerate}
 }
-Only if both of the above saves are successful, the knight is healed from the \texttt{Injury}.
-Any one knight can endure only \texttt{1} healing attempt per day.
+Only if both of the above saves are successful the \texttt{Injury} is healed.
+Any one character can endure only \texttt{1} healing attempt per day.
 
-\paragraph{Getting tougher and acquiring quirks.} After suffering through the agony of medicine without painkillers, a knight is relieved from an injury completely.
+\paragraph{Getting tougher and acquiring quirks.} After suffering through the agony of medicine without painkillers, a character is relieved from an injury completely.
 
-If the maximum \texttt{Guard} of a knight is less than the maximum value on a die that is marked on the \texttt{Injury Slot}, increase \texttt{Guard} by \textbf{1}.
+If the maximum \texttt{Guard} of a character is less than the maximum value on a die that is marked on the \texttt{Injury Slot}, increase \texttt{Guard} by \textbf{1}.
 
 Free the \texttt{Injury Slot} that was occupied by the healed \texttt{Injury}.
 
-Choose or make the Referee choose a \texttt{Quirk} (p.\pageref*{sec:quirks}) for you that is described below and permanently add it to your knight.
+Choose or make the Referee choose a \texttt{Quirk} (p.\pageref*{sec:quirks}) for you that is described below and permanently add it to your character.
 
 \paragraph{Dealing with Trauma} removes it completely. 
 During your sleep, pass a \texttt{Clarity} and a \texttt{Spirit} save to successfully deal with \texttt{Trauma}. 
 For each point of \texttt{Stress} you have, treat those \texttt{Virtue} saves as if they were opposed with an additional \texttt{Focus}.
 
-Trauma leaves a permanent mark: acquire a \texttt{Quirk}(p.\pageref*{sec:quirks}) as if a knight healed from an \texttt{Injury}.
+Trauma leaves a permanent mark: acquire a \texttt{Quirk}(p.\pageref*{sec:quirks}) as if a character healed from an \texttt{Injury}.
 
 
 \end{multicols*}
@@ -722,9 +763,9 @@ Can only be used by a single person.
 \begin{itemize}[nosep, leftmargin=*]
     \item[\ding{60}] \textbf{Painkiller} removes \texttt{Vigor} save from injury treatment. 
     Allows treatment of an additional injury today while in effect. Wears off in an hour.
-    \item[\ding{60}] \textbf{Hallucinogen} renders the knight unable to perform basic tasks for six hours and allows them to fight all their inner demons at once.
+    \item[\ding{60}] \textbf{Hallucinogen} renders the character unable to perform basic tasks for six hours and allows them to fight all their inner demons at once.
     For each \texttt{Trauma}, they may roll a \texttt{Spirit} save. 
-    After each failed save, the corresponding \texttt{Trauma} worsens and changes the injury slot to lethal; otherwise, it's removed, and the knight receives a Quirk(p.\pageref*{sec:quirks}).
+    After each failed save, the corresponding \texttt{Trauma} worsens and changes the injury slot to lethal; otherwise, it's removed, and the character receives a Quirk(p.\pageref*{sec:quirks}).
     Can be taken during sleep.
 \end{itemize}
 These also can only be used individually. 
@@ -753,8 +794,8 @@ The spellweaving pool is described by
 }
 If several effects grant you a spellweaving pool, those exist independently unless specified. Consuming \textbf{Spur} refills \texttt{3} dice from any combination of pools.
 
-To weave a spell, a weaver rolls any number of those dice from any available pools as an Action from that set and then decides what to cast. This is a \texttt{Spellweaving roll}.
-Only one spell can be cast per roll. If the spell does not state otherwise, \texttt{Smite} \texttt{Feat} is not applicable for attacks performed within them.
+To weave a spell, weaver rolls any number of their dice from any available pools as an Action and then decides what to cast. This is a \texttt{Spellweaving roll}.
+Only one spell can be cast per roll. If the spell is performed during combat -- pass a \texttt{Clarity} save or become \texttt{Fatigued}.
 
 There are many spells one can learn during their mage training, but regardless of syllabus -- all spellweavers know \textit{Detect Magic} by heart.
 
@@ -772,10 +813,10 @@ They persist until spent, and count as in \texttt{Spellweaving Pool}. The amount
 
 \subsection*{Becoming a spellweaver}
 
-A knight who has been taught spellweaving gets their \texttt{Spellweaving Pool} at character creation. 
+A character who has been taught spellweaving gets their \texttt{Spellweaving Pool} at character creation. 
 They know any three spells from the list below in addition to \emph{Detect Magic} and one cantrip.
 \begin{itemize}[nosep, leftmargin=*]
-    \item \textbf{Dice} are all \texttt{d6}'s, and their amount is equal to the value of knights' \texttt{Clarity}.
+    \item \textbf{Dice} are all \texttt{d6}'s, and their amount is equal to the value of characters' \texttt{Clarity}.
     \item \textbf{Restoring} the pool is done through \texttt{Overnight Rest} or indulging a \texttt{Passion}, both methods restore \texttt{3} of the missing dice.
     \item \textbf{Improving} this pool is challenging; the limit of what could be thought is reached.
 \end{itemize}
@@ -800,6 +841,7 @@ The illusion ends if you dismiss it or cast this spell again.
 
 
 \subsection*{Spells}
+\label{sec:spells}
 
 \paragraph*{Detect Magic.}
 
@@ -853,7 +895,7 @@ Identical glowing bolts launch towards chosen targets, piercing bone and muscle.
 Pick any number of dice with the same value rolled.
 You can pick a different target for each bolt; it deals \texttt{Damage} equal to the rolled value.
 
-\paragraph{Mind Sliver.} Pick any amount of dice, perform a ranged attack as if they are your weapon dice. 
+\paragraph{Mind Sliver.} Pick any number of dice, perform a ranged attack as if they are your weapon dice. 
 
 However, the damage from this spell is dealt to \texttt{Spirit} or \texttt{Clarity} instead of \texttt{Vigor}. 
 If half or more \texttt{Virtue} is lost as a result of this spell, the target's attacks are \texttt{Impaired} until your next turn.
@@ -895,12 +937,15 @@ They last for a task you summoned them to fulfill or for one combat. Slowly diss
 
 Witches cast spells as manifestations of favors granted to them by their patrons.
 Favour is spent after a spell is complete and is regained when a witch indulges the passions of their patrons.
+If the spell is performed during combat -- pass a \texttt{Spirit} save or become \texttt{Fatigued}.
 
 Cantrips don't cost favor, but stop working when a witch has none.
 
 A witch can commune with their patron at will as long as their favour is not zero.
 Generally, a patron is helpful, but pursues their own goals and struggles to understand human ways outside of their domain. 
 Favour determines how many times a witch can request an audience and expect an answer. 
+
+
 
 \subsection*{Thaliat, a laughing spirit}
 
@@ -920,19 +965,20 @@ Treasures celebrations that bring sincere joy for those who participate.
 \begin{itemize}[nosep, leftmargin=*]
     \item[\ding{108}] \textbf{Last call bell.} You start a dance, a trick, or any other performance. As long as you are doing it, all doors to the room you are in, except maybe one, close and lock themselves.
     \item[\ding{108}] \textbf{Curtain drop.} You bow down as if you just ended a performance. Smoke or water mist envelopes you for a few seconds, giving you and up to one other person near you an opportunity to escape combat.
+    \newcolumn
+    \item[\ding{108}] \textbf{Disguise Voice.} Make your voice appear as somebody else's whom you heard within at least one conversation.
     \item[\ding{108}] \textbf{Invisible helper.} You summon an invisible, almost immaterial creature that obeys your mental commands. It can move and carry objects that a determined child can; it is easily scared of violence and likes sweets. Disappears when you fall unconscious.
     \item[\ding{108}] \textbf{Failed Rehearsal.} When you fail a \texttt{Spirit Save} or \texttt{Clarity Save}, you can immediately retry it. Each save can benefit from this spell only once.
-    \item[\ding{108}] \textbf{Disguise Voice.} Make your voice appear as somebody else's whom you heard within at least one conversation.
 \end{itemize}
 \paragraph{2 Favour spells}
 \begin{itemize}[nosep, leftmargin=*]
     \item[\ding{108}] \textbf{Am I here, am I there.} Suddenly it is very hard to understand where you are and what you are doing.
  Anybody who looks at you feels confused and puzzled, unable to understand your intentions.
- In combat, it means that for the remainder of it, when you \texttt{Deny} -- an additional die of your choice is discarded.
-    \item[\ding{108}] \textbf{Cursed Joke.} You tell your vilest joke and sprinkle enough magic to take it inside the target's head. Upon hearing it, target retracts themself from any conversation they were having or any activity they were doing.
- Goes to the corner or seeks solitude if the corner is unavailable and sits there in an increasingly catatonic state. The target falls unconscious after 10 minutes; when woken up, the effect ends.
+ In combat, it means that for the remainder of it, when you can use \texttt{Deny}. If you already could -- an additional die of your choice is discarded when you perform it.
+    \item[\ding{108}] \textbf{Cursed Joke.} You tell your vilest joke and sprinkle enough magic to take it inside the target's head. Upon hearing it, target retracts themself from any activity they were doing.
+ They seeks solitude and sit there in an increasingly catatonic state, after several minutes the recover.
  Their memory preserves a feeling of unpleasantness, but the content of the joke vanishes.
- If the target is in combat, their \texttt{Attacks} are \texttt{Impaired} until the effect ends.
+ If the target is in combat, their \texttt{Attacks} are \texttt{Impaired}.
 \end{itemize}
 \paragraph{3 Favour spells}
 \begin{itemize}[nosep, leftmargin=*]
@@ -1024,7 +1070,7 @@ In the beginning there were stillness and staleness. The sky and the earth were 
 
 But even in constant there is a change. A curious atom came into being under the iron sky. It ran and played along the iron folds and collided and fell and gained velocity until the iron started to ring and sing.
 
-And there was a great ramble and great fire. The iron earth collided with the iron sky. Aestus, the ravaging spirit, was born. The havoc ensorcelled it, and Aestus became determined to destroy. With great power, it broke off a mace out of the iron plane and went on a rampage through the universe.
+And there was a great ramble and great fire. The iron earth collided with the iron sky. Aestur, the ravaging spirit, was born. The havoc ensorcelled it, and Aestus became determined to destroy. With great power, it broke off a mace out of the iron plane and went on a rampage through the universe.
 
 And there were many things born in destruction. Light and sound, sand and water, fire and stars were the sparks of the great rumble. They were destroyed by Aestus in their turn.
 
@@ -1046,8 +1092,8 @@ Each time you roll maximum on your weapon die and chose it as a damage die of yo
 
 \paragraph{1 Favour Spell}
 \begin{itemize}
-    \item [\ding{108}] \textbf{Let this iron eat your flesh.} From a piece of iron you touch splits a rough, razor-sharp splinter with jagged edges. You fling it for \texttt{d6 damage}. 
-    If you rolled \textbf{6} on this damage die, you can discard it. In that case you choose either: to mortally wound(p.\pageref*{sec:hopefear}) your victim or deliver one \texttt{Severe Injury} or execute one Strong Gambit. 
+    \item [\ding{108}] \textbf{Let iron eat your flesh.} From a piece of iron you hold splits a rough, razor-sharp splinter with jagged edges. You fling it for \texttt{d6 damage}. 
+    If you rolled \textbf{6} on this damage die, you either: mortally wound(p.\pageref*{sec:hopefear}) your victim or deliver one \texttt{Severe Injury} or execute a Strong Gambit. 
     \item [\ding{108}] \textbf{Remember your weakness.} Let the presence of Aestur poss you for a split second to project power and induce fear. 
     That intimidates those near you. Treat the \texttt{Spirit} roll target makes to resist as if it is opposed with \texttt{1} additional \texttt{Stress}. 
     In combat, treat next incoming attack as if you allocated an additional \texttt{Focus} to your \emph{Defense}(p.\pageref*{sec:basic}) for each attacker.
@@ -1055,8 +1101,9 @@ Each time you roll maximum on your weapon die and chose it as a damage die of yo
 
 \paragraph{2 Favour Spell}
 \begin{itemize}
-    \item [\ding{108}] \textbf{Hear me.} You clap your hands with deafening clang of metal. This is a melee attack with \texttt{d4 Blast} damage dice.
-    Those in immediate vicinity of you who did not expect that do \texttt{Spirit} save and have their attacks impaired until your next turn if failed. The sound can be heard from \textbf{very} far.
+    \item [\ding{108}] \textbf{Hear my voice.} You clap your hands with deafening clang of metal. This is a melee attack with \texttt{d4 Blast} damage dice.
+    Those in immediate vicinity of you who did not expect that do \texttt{Spirit} save and have their attacks impaired until your next turn if failed. 
+    The sound can be heard from \textbf{very} far. After that is silence for a brief moment, if you speak, you can have focus-advantage to related \texttt{Clarity} or \texttt{Spirit} save.
     \item [\ding{108}] \textbf{This is mine now.} Turn a non-living palm-sized object you touch into solid pure iron. 
     Fine details can't be preserved, e.g. lock will stop working if you alter it like that, but cracks and imperfections vanish. 
     If you throw this object as a ranged attack it has \texttt{2d4} weapon dice. 
@@ -1068,9 +1115,6 @@ Each time you roll maximum on your weapon die and chose it as a damage die of yo
 \begin{itemize}
     \item [\ding{108}] \textbf{Your staff is broken.} Crush a non-living object you can clearly see. Enough to destroy wooden shields and weapon handles. 
     Not enough to destroy bricks and stone, but enough to send their shrapnel flying with \texttt{2d4 Blast} weapon dice originating from the object.
-
-    
-    
 \end{itemize}
 
 
@@ -1202,7 +1246,7 @@ You can choose the appearance of your soul and keep two pieces of your gear and 
 
     Your mind overloads with stress; you feel like insanity approaches, but instead of collapsing into the abyss -- your consciousness splits, and now you are not just one, but two.
 
-    You create another knight that from now on inhabits your body. 
+    You create another character that from now on inhabits your body. 
 
     \begin{itemize}[nosep, leftmargin=*]
         \item Roll three \texttt{d12 + d6} and pick two of them and assign to \texttt{Clarity} and \texttt{Spirit}. Determine values of \texttt{Focus} and \texttt{Stress} for your new personality and track these separately from the old ones.
@@ -1370,8 +1414,88 @@ However, each time you are \texttt{Fatigued} -- lose \texttt{2} \texttt{Spirit}.
 
 \paragraph{Strength in suffering.} When you attack, upface a die if you have at least one \texttt{Injury Slot} filled with active \texttt{Affliction}.
 
+\paragraph{Food aversion.} You suffer when eating food that is not cooked by you. 
+During overnight sleep you restore a single point of virtue if you are not the one who cooked the meal.
+However, if you cooked it yourself -- the Company, including you, restores and additional point of virtue instead.
+
 
 \end{multicols*}
+
+
+\newpage
+\section*{\centering \fontsize{35}{45}\selectfont Traits}
+\vspace*{0.4 cm}
+
+\begin{multicols*}{2}
+
+\subsection*{Martial traits}
+
+\label{sec:martial_traits}
+
+\paragraph{Fluency of Combat} occasionally comes to those who never engaged with the world of magic.
+
+During fights, you can spend your \texttt{Guard} to move in a strange dance of blade and fury. 
+When deciding what dice to spend on Gambits, you can use dice with value below \texttt{4} as long as you compensate the difference by reducing your \texttt{Guard}.
+
+\paragraph{Weapon mastery} manifests when a character develops an uncanny fascination with their weapons. 
+They treat them not as mere tools of the craft, but as partners or trustworthy friends.
+
+That allows them to see beyond the material, beyond the function, but towards possibilities.
+
+Each time you roll a maximum value on a weapon die, put a mark on the weapon it belongs to. 
+When amount of marks matches its largest weapon die -- you obtain a level of mastery with this weapon. 
+
+When you use \texttt{Focus} or \texttt{Stress} and choose to duplicate the dice that belong to your weapon -- for each mastery level
+you can keep the dice that otherwise would be discarded due to accumulated \texttt{Advantages}.
+
+Weapon mastery levels do not transfer between any weapons even if they are of the same type, e.g. replacing one shortsword with another does not allow to keep the mastery level.
+
+\paragraph{Riposte} is a risky and potentially deadly \texttt{Feat}. If you choose to \emph{Riposte}, you can use it instead of \texttt{Deny Feat}. 
+Roll your weapon dice as if you are performing an attack. 
+Spend any amount of \texttt{Hope} or \texttt{Focus} you allocated for \emph{Defense}, keep one weapon dice per point spent.
+% Choose the number of them equal to \texttt{Focus} you allocated to \emph{Defense}, spending one point per dice. You can also spend Hope to add those dice.
+
+You can match any of your dice with lower dice in the attack roll against you. 
+Deal damage equal to the sum of pairwise differences between matched dice. Discard enemy's dice that were matched. 
+The damage of the enemy's attack after \emph{Riposte} ignores your \texttt{Guard}.
+
+Pass a \texttt{Spirit} save or become \texttt{Fatigued}.
+
+\subsection*{Arcane traits}
+
+\paragraph{Rethreading dominion} permits a whole new level of control over spellweaving threads.
+
+When choosing dice to store during \emph{rethreading the arcane} you can combine those dice instead of storing them individually according to steps below.
+
+\colbox{
+\begin{enumerate}[nosep, leftmargin=*]
+    \item Identify dice to combine among chosen dice
+    \item Mark one of them as an accumulation die
+    \item Add all values among identified dice and set accumulation die to that value
+\end{enumerate}
+If the accumulating die can't hold that value -- \emph{rethreading of the arcane} fails.
+}
+
+For example, if you chose to store two \texttt{d6}'s with values \texttt{2} and \texttt{3} you can instead store the as a single \texttt{d6} with a value \texttt{5} on it. 
+
+On the other hand if you choose to store two \texttt{d4}'s with the same values rethreading fails as \texttt{d4} can't store value of \texttt{5}. 
+If one of them is \texttt{d6} instead, it becomes possible again.
+
+\subsection*{Wiccan traits}
+
+
+\paragraph{Natural affiliation} blooms when witch and their patron have personal synergy that permits them to reach understanding of each other no other can achieve.
+
+Discount on learning new spells?
+
+\end{multicols*}
+
+
+
+\newpage
+\label{sec:ch_sheet}
+\includepdf[pages={1}]{media/character-sheet.pdf}
+
 
 
 \end{document}
