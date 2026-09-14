@@ -38,7 +38,8 @@
     outer=1.6cm, % Outer margin
     top=2cm, % Top margin
     bottom=2.2cm, % Bottom margin
-    footskip=1.1cm % Space for the page number
+    footskip=1.1cm, % Space for the page number
+    headheight=12pt,
 }
 
 
@@ -63,6 +64,13 @@
 {0pt}{0.05cm}{0.05cm}
 \titlespacing*{\subsubsection}
 {0pt}{4pt}{1pt}
+
+
+% section command
+\newcommand{\pagetopsection}[1]{
+  \section*{\centering \fontsize{35}{45}\selectfont #1}
+  \vspace*{0.4 cm}
+}
 
 
 % paragraph settings
