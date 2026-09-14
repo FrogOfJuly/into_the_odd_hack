@@ -1,0 +1,63 @@
+\section*{\centering \fontsize{35}{45}\selectfont \fontsize{35}{45}\selectfont Combat}
+\vspace*{0.4 cm}
+
+\begin{multicols*}{2}
+
+\paragraph{Turn} is enough time to Move and then
+perform an action. Action could be an attack, a gambit or a spell. 
+
+
+\subsection*{Attacks}
+
+To attack -- take the \texttt{Weapon Dice} noted on your weapon(s), shield, and granted by bonuses and go through the steps below.
+
+\colbox{
+\begin{enumerate}[nosep, leftmargin=*]
+    \item Declare and spend \texttt{Focus}, if target allocated any \texttt{Focus} for its \emph{Defense} -- they may spent it. Remove matching \texttt{(Dis)Advantages}.
+    \item Those attacking the same target roll at the same time. Don't mix the dice: \texttt{Focus} and \texttt{Stress} apply individually.
+    \item Remove extra dice added through \texttt{Focus}.
+    \item Declare \texttt{Stress} gain. Target declares their \texttt{Stress} gain. Remove matching \texttt{(Dis)Advantages} and roll added dice.
+    \item Remove extra dice from \texttt{Stress}.
+    \item Now you can mix all dice and declare which one is used as a damage die and which are spent on \texttt{Gambits}.
+    \item If the target or their nearby allies can \texttt{Deny}, they may use it.
+    \item Resolve \texttt{Gambits} that may result in more damage dice(e.g. \texttt{Dismount}).
+    \item If the damage die is discarded -- assign a new one, possibly cancelling a \texttt{Gambit}. Other \texttt{Gambit} allocations can't change. 
+    \item Add any extra \texttt{Damage} from attackers who are \texttt{Bolstering} the Attack.
+    \item Subtract the target’s total \texttt{Armour score}.
+    \item The Attack causes that much \texttt{Damage}.
+    \item Resolve non-damaging \texttt{Gambits}.
+\end{enumerate}
+}
+
+
+\paragraph{Defense} is declared at the end of the turn. 
+Allocate any amount of \texttt{Focus}; when you are attacked next turn, you can spend any amount of \texttt{Hope} (p.\pageref*{sec:hopefear}) or allocated \texttt{Focus} to apply \texttt{Disadvantage} to the attack.
+At the end of that turn, mark all that \texttt{Focus} as spent. 
+
+\newcolumn 
+
+\subsection*{Damage}
+\label{sec:wounded}
+
+The attack’s \texttt{Damage} is split between the
+target’s \texttt{Guard} and their \texttt{Vigor} at the target's discretion; both are reduced by the respective amount.
+
+\textbf{If} their \texttt{Vigor} is unchanged -- they evade the \texttt{Attack}.
+
+\textbf{If} damage overspills into their \texttt{Vigor} -- they are \texttt{Wounded}.
+
+\textbf{Check if} \texttt{Damage} to \texttt{Vigor} causes a \texttt{Scar} or an \texttt{Injury}, see p.\pageref*{sec:injuries}.
+
+\textbf{If} it does cause an Injury -- fill the \texttt{Injury slot}, record damage die that dealt it and apply \texttt{Affliction}, also see p.\pageref*{sec:affliction}.
+
+\textbf{If} a knight is injured and has no required injury slot left, they are \textbf{Slain}.
+
+\subsection*{Attack properties}
+
+\paragraph{Impaired} attacks roll d4 only and cannot
+gain bonus dice or benefit from Feats.
+
+\paragraph{Blast} attacks target everybody in their area,
+rolling each separately.
+
+\end{multicols*}
