@@ -11,4 +11,4 @@ I wanted to have damage be more than just a number and make long-term impact on 
 I wanted to have combat system be dice-goblin-friendly, thus gambits from `Mythic Bastionland`, spellweaving and witchcraft. 
 
 
-I wanted to have no classes, but rather pick your meal character creation, which I decided to implement with `Feats`. 
+I wanted to have no classes, but rather pick your meal character creation, which I decided to implement with `Traits`. 
